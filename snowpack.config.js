@@ -3,6 +3,7 @@ module.exports = {
     build: "/",
   },
   plugins: [
+    "@snowpack/plugin-optimize",
     "@snowpack/plugin-postcss",
     ["@snowpack/plugin-run-script", { cmd: "eleventy", watch: "$1 --watch" }],
   ],
