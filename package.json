@@ -1,0 +1,21 @@
+{
+  "name": "focus-shift-landingpage",
+  "version": "0.0.1",
+  "private": "true",
+  "author": "Benjamin Seber <benjamin.seber@focus-shift.de> (https://www.focus-shift.de)",
+  "scripts": {
+    "dev": "npm run clean && npx snowpack dev",
+    "build": "npm run clean && npx snowpack build",
+    "clean": "rm -rf build dist"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "0.11.1",
+    "@11ty/eleventy-navigation": "0.1.6",
+    "@snowpack/plugin-postcss": "1.0.6",
+    "postcss": "8.1.3",
+    "postcss-cli": "8.1.0",
+    "prettier": "2.1.2",
+    "snowpack": "2.15.1",
+    "tailwindcss": "1.9.6"
+  }
+}
