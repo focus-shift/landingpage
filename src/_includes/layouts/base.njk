@@ -11,17 +11,8 @@
     <script src="/js/hello.js"></script>
   </head>
   <body>
-    <header class="p-4">
-      {% include "partials/nav.html" %}
-    </header>
-
     <main class="my-8 px-4">
-      <h1>{{ pageTitle }}</h1>
       {% block content %}{{ content | safe }}{% endblock %}
     </main>
-
-    <div class="px-4">
-      {% include "partials/footer.html" %}
-    </div>
   </body>
 </html>
