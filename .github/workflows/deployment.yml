@@ -1,4 +1,4 @@
-name: deploy to github pages
+name: Deploy to GitHub Pages
 
 on:
   schedule:
@@ -8,13 +8,13 @@ on:
       - master
 
 jobs:
-  deploy:
+  deploy-to-pages:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           persist-credentials: false
-      - name: setup nodejs
+      - name: setup node 12
         uses: actions/setup-node@v1
         with:
           node-version: "12"
@@ -24,13 +24,13 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Build
+      - name: Build landingpage
         run: |
           npm ci
           npm run build
           touch ./build/.nojekyll
           echo "focus-shift.de" > ./build/CNAME
-      - name: Deploy
+      - name: Deploy landingpage
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
