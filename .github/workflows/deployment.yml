@@ -20,11 +20,11 @@ jobs:
         run: |
           npm ci
           npm run build
-          touch ./out/.nojekyll
-          echo "focus-shift.de" > ./out/CNAME
+          touch ./build/.nojekyll
+          echo "focus-shift.de" > ./build/CNAME
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: out
+          FOLDER: build
