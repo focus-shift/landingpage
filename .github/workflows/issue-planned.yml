@@ -1,0 +1,20 @@
+name: Mark issue as planned
+
+on:
+  issues: {types: milestoned}
+
+jobs:
+  apply-label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v3
+        name: Add label 'status planned' to issue when milestoned
+        with:
+          github-token: ${{github.token}}
+          script: |
+            github.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['status: planned']
+            })
