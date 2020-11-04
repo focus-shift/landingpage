@@ -11,8 +11,13 @@
     <script src="/js/hello.js"></script>
   </head>
   <body>
-    <main class="my-8 px-4">
+    <header class="p-4 mb-12">
+      {% include "partials/header.html" %}
+    </header>
+
+    <main class="px-4 max-w-screen-xl mx-auto">
       {% block content %}{{ content | safe }}{% endblock %}
     </main>
+
   </body>
 </html>

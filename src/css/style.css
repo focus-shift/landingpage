@@ -126,32 +126,32 @@
 @layer base {
   h1 {
     font-family: roboto;
-    @apply text-6xl;
+    @apply text-4xl;
     @apply mb-4;
   }
 
   h2 {
     font-family: roboto;
-    @apply text-5xl;
+    @apply text-2xl;
     @apply mb-4;
   }
 
   h3 {
     font-family: roboto;
-    @apply text-4xl;
+    @apply text-xl;
     @apply mb-4;
   }
 
   h4 {
     font-family: roboto;
-    @apply text-3xl;
+    @apply text-lg;
     @apply mb-4;
     @apply mb-4;
   }
 
   h5 {
     font-family: roboto;
-    @apply text-2xl;
+    @apply text-lg;
     @apply mb-4;
   }
 
