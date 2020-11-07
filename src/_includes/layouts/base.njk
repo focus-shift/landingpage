@@ -11,11 +11,11 @@
     <script src="/js/hello.js"></script>
   </head>
   <body>
-    <header class="p-4 mb-12">
+    <header class="max-w-screen-xl mx-auto mb-12 md:mb-16 xl:mb-24 px-4 xl:px-0">
       {% include "partials/header.html" %}
     </header>
 
-    <main class="px-4 max-w-screen-xl mx-auto">
+    <main class="max-w-screen-xl mx-auto mb-12 px-4 xl:px-0">
       {% block content %}{{ content | safe }}{% endblock %}
     </main>
 
