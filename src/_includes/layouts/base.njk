@@ -4,15 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    {% set title = 'Focus Shift' %}
-    {% if meta.title %}
-        {% set title = title + ' ' + meta.title %}
-    {% endif %}
+    {% set title = 'Focus Shift' %} {% if meta.title %} {% set title = title + '
+    ' + meta.title %} {% endif %}
     <title>{{ title | escape }}</title>
-    <meta name="og:title" content="{{ title | escape }}">
+    <meta name="og:title" content="{{ title | escape }}" />
     {% if meta.description %}
-        <meta name="description" content="{{ meta.description | escape }}">
-        <meta property="og:description" content="{{ meta.description | escape }}">
+    <meta name="description" content="{{ meta.description | escape }}" />
+    <meta property="og:description" content="{{ meta.description | escape }}" />
     {% endif %}
 
     <link
@@ -32,15 +30,17 @@
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/hello.js"></script>
   </head>
-  <body>
+  <body class="flex flex-col items-stretch">
     <header
-      class="max-w-screen-xl mx-auto mb-12 md:mb-16 xl:mb-24 px-4 xl:px-0"
+      class="w-full max-w-screen-lg flex flex-col mx-auto mb-12 md:mb-16 xl:mb-24 px-4 xl:px-0"
     >
       {% include "partials/header.html" %}
     </header>
 
-    <main class="max-w-screen-xl mx-auto mb-12 px-4 xl:px-0">
-      {% block content %}{{ content | safe }}{% endblock %}
+    <main class="flex-1 mb-12 px-4 xl:px-0">
+      <div class="mx-auto max-w-screen-lg">
+        {% block content %}{{ content | safe }}{% endblock %}
+      </div>
     </main>
   </body>
 </html>
