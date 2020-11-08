@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <title>Focus Shift{{ · if meta.title }}{{ ' ' + meta.title if meta.title }}</title>
+    {% set title = 'Focus Shift' %}
+    {% if meta.title %}
+        {% set title = title + ' ' + meta.title %}
+    {% endif %}
+    <title>{{ title | escape }}</title>
+    <meta name="og:title" content="{{ title | escape }}">
 
     <link
       rel="preload"
