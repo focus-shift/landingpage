@@ -1,7 +1,6 @@
 {
   "name": "focus-shift-landingpage",
-  "version": "0.0.1",
-  "private": "true",
+  "private": true,
   "author": "Benjamin Seber <benjamin.seber@focus-shift.de> (https://www.focus-shift.de)",
   "scripts": {
     "dev": "npm run clean && npx snowpack dev",
