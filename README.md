@@ -9,6 +9,14 @@
 
 start developing with hot module reloading in the browser:
 
+first install all dependencies with
+
+```bash
+npm install
+```
+
+then run
+
 ```bash
 npm run dev
 ```
