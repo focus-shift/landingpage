@@ -1,1 +1,1 @@
-console.log("software made with 💜 for you in Karlsruhe.");
+console.log("software made with \u{1F49C} for you in Karlsruhe.");
