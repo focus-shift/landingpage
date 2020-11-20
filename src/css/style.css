@@ -2,6 +2,14 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
 /* roboto-100 - latin */
 @font-face {
   font-family: "Roboto";

@@ -35,17 +35,23 @@
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/hello.js"></script>
   </head>
-  <body class="flex flex-col items-stretch">
-    <header
-      class="w-full max-w-screen-lg flex flex-col mx-auto mb-12 xl:mb-16 pb-12 px-4 xl:px-0 border-gray-300 border-b"
-    >
-      {% include "partials/header.html" %}
-    </header>
-
-    <main class="flex-1 mb-12 px-4 xl:px-0">
-      <div class="mx-auto max-w-screen-lg">
-        {% block content %}{{ content | safe }}{% endblock %}
+  <body class="flex flex-col">
+    <div class="flex flex-col min-h-screen">
+      <header
+        class="w-full max-w-screen-lg flex flex-col mx-auto mb-12 xl:mb-16 pb-12 py-8 px-4 xl:px-0 border-gray-300 border-b"
+      >
+        {% include "partials/header.html" %}
+      </header>
+      <main class="flex-1 mb-12 px-4 xl:px-0">
+        <div class="mx-auto max-w-screen-lg">
+          {% block content %}{{ content | safe }}{% endblock %}
+        </div>
+      </main>
+    </div>
+    <footer class="bg-black text-white font-light">
+      <div class="max-w-screen-lg mx-auto py-8 px-4 xl:px-0">
+        {% include "partials/footer.html" %}
       </div>
-    </main>
+    </footer>
   </body>
 </html>
