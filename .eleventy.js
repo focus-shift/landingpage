@@ -1,7 +1,7 @@
-module.exports = function (config) {
-  config.addPassthroughCopy("./src/css");
-  config.addPassthroughCopy({ "./src/assets/fonts": "fonts" });
-  config.addPassthroughCopy("./src/js");
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy({ "./src/static": "." });
+  eleventyConfig.addPassthroughCopy("./src/css");
+  eleventyConfig.addPassthroughCopy("./src/js");
 
   return {
     dir: {
