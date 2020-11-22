@@ -6,6 +6,7 @@ module.exports = {
     "@snowpack/plugin-optimize",
     "@snowpack/plugin-postcss",
     ["@snowpack/plugin-run-script", { cmd: "eleventy", watch: "$1 --watch" }],
+    "snowpack-plugin-cache-bust",
   ],
   devOptions: {
     port: 3000,

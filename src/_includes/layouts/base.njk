@@ -4,19 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    {% set title = 'Focus Shift - Freiraum für dein Kerngeschäft' %}
-    {% if meta.title %}
-    {% set title = title + ' ' + meta.title %}
-    {% endif %}
+    {% set title = 'Focus Shift - Freiraum für dein Kerngeschäft' %} {% if
+    meta.title %} {% set title = title + ' ' + meta.title %} {% endif %}
     <title>{{ title | escape }}</title>
     <meta name="og:title" content="{{ title | escape }}" />
-    {% set description = 'SaaS-Produkte zur Digitalisierung deiner Unternehmensprozesse - Remote, Mobile, Online! Starte jetzt mit der Urlaubsverwaltung - Urlaubsverwaltung.cloud' %}
-    {% if meta.description %}
-        {% set description = description + ' ' + meta.description %}
-    {% endif %}
+    {% set description = 'SaaS-Produkte zur Digitalisierung deiner
+    Unternehmensprozesse - Remote, Mobile, Online! Starte jetzt mit der
+    Urlaubsverwaltung - Urlaubsverwaltung.cloud' %} {% if meta.description %} {%
+    set description = description + ' ' + meta.description %} {% endif %}
 
-    <meta name="description" content="{{ description | escape }}">
-    <meta property="og:description" content="{{ description | escape }}">
+    <meta name="description" content="{{ description | escape }}" />
+    <meta property="og:description" content="{{ description | escape }}" />
 
     <link
       rel="preload"
