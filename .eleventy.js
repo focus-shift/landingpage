@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/js");
 
   eleventyConfig.addFilter("title", (title) =>
-    title ? metadata.title + " " + title : metadata.title,
+    title ? metadata.title + " - " + title : metadata.title,
   );
 
   eleventyConfig.addFilter(
