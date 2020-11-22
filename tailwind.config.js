@@ -1,5 +1,3 @@
-const defaultConfig = require("tailwindcss/defaultConfig");
-
 const production = process.env.NODE_ENV === "production";
 
 module.exports = {
@@ -9,12 +7,7 @@ module.exports = {
     enabled: production,
   },
   theme: {
-    extend: {
-      boxShadow: {
-        ...defaultConfig.boxShadow,
-        text: "inset 0 -0.175em white, inset 0 -0.2em black;",
-      },
-    },
+    extend: {},
   },
   variants: {},
   plugins: [],
