@@ -1,7 +1,6 @@
 module.exports = {
   mount: {
     build: "/",
-    "src/assets/fonts": "/fonts",
   },
   plugins: [
     "@snowpack/plugin-optimize",
