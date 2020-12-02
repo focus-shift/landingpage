@@ -1,14 +1,5 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
-}
+@tailwind base;
+@tailwind components;
 
 /* roboto-100 - latin */
 @font-face {
@@ -132,6 +123,14 @@ body {
 }
 
 @layer base {
+  html {
+    height: 100%;
+  }
+
+  body {
+    min-height: 100%;
+  }
+
   h1 {
     font-family: roboto;
     @apply text-4xl;
@@ -167,3 +166,5 @@ body {
     @apply mb-4;
   }
 }
+
+@tailwind utilities;
