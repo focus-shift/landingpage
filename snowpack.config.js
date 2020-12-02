@@ -13,6 +13,7 @@ module.exports = {
     port: 3000,
     open: "none",
     hmr: true,
+    hmrDelay: 300,
   },
   buildOptions: {
     out: "dist",
