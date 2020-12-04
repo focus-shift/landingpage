@@ -1,7 +1,6 @@
 {
   "name": "focus-shift-landingpage",
-  "version": "0.0.1",
-  "private": "true",
+  "private": true,
   "author": "Benjamin Seber <benjamin.seber@focus-shift.de> (https://www.focus-shift.de)",
   "scripts": {
     "dev": "npm run clean && npx snowpack dev",
@@ -17,6 +16,7 @@
     "postcss-cli": "8.3.0",
     "prettier": "2.2.1",
     "snowpack": "2.17.1",
+    "snowpack-plugin-cache-bust": "git+ssh://git@github.com:focus-shift/snowpack-plugin-cache-bust.git",
     "tailwindcss": "1.9.6"
   }
 }

@@ -5,19 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>{{ meta.title }}</title>
+    <title>{{ meta.title | title | escape }}</title>
+    <meta name="og:title" content="{{ meta.title | title | escape }}" />
 
+    <meta
+      name="description"
+      content="{{ meta.description | description | escape }}"
+    />
+    <meta
+      property="og:description"
+      content="{{ meta.description | description | escape }}"
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/roboto-v20-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/roboto-v20-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/hello.js"></script>
   </head>
-  <body>
-    <header class="p-4 mb-12">
-      {% include "partials/header.html" %}
-    </header>
-
-    <main class="px-4 max-w-screen-xl mx-auto">
-      {% block content %}{{ content | safe }}{% endblock %}
-    </main>
-
+  <body class="flex flex-col">
+    <div class="flex flex-col min-h-screen">
+      <header
+        class="w-full max-w-screen-lg mx-auto mb-12 xl:mb-16 px-8 xl:px-0"
+      >
+        <div class="border-gray-300 border-b flex flex-col py-12">
+          {% include "partials/header.html" %}
+        </div>
+      </header>
+      <main class="flex-1 mb-24 px-8 xl:px-0">
+        <div class="mx-auto max-w-screen-lg">
+          {% block content %}{{ content | safe }}{% endblock %}
+        </div>
+      </main>
+    </div>
+    <footer class="bg-black text-white font-light">
+      <div class="max-w-screen-lg mx-auto px-8 py-12 xl:px-0">
+        {% include "partials/footer.html" %}
+      </div>
+    </footer>
   </body>
 </html>

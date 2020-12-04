@@ -1,5 +1,7 @@
 ---
 layout: layouts/base.njk
+meta:
+    title: Impressum
 ---
 
 # Impressum
