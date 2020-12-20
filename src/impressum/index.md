@@ -16,9 +16,8 @@ E-Mail: <a href="mailto:info@focus-shift.de">info@focus-shift.de</a>
 
 Geschäftsführer: Daniel Fuchs, Andreas Weigel  
 Handelsregisternummer: HRB 737998  
-Steuernummer: 35006/09853  
-Registergericht: Mannheim
-
+Registergericht: Mannheim  
+USt-Id: DE336161607
 
 ## Haftungsausschluss
 
