@@ -12,7 +12,7 @@
     "@11ty/eleventy-navigation": "0.1.6",
     "@snowpack/plugin-optimize": "0.2.9",
     "@snowpack/plugin-postcss": "1.0.7",
-    "postcss": "8.1.10",
+    "postcss": "8.2.2",
     "postcss-cli": "8.3.1",
     "prettier": "2.2.1",
     "snowpack": "2.18.5",
