@@ -13,7 +13,7 @@
     "@snowpack/plugin-optimize": "0.2.9",
     "@snowpack/plugin-postcss": "1.0.7",
     "postcss": "8.1.10",
-    "postcss-cli": "8.3.0",
+    "postcss-cli": "8.3.1",
     "prettier": "2.2.1",
     "snowpack": "2.18.5",
     "snowpack-plugin-cache-bust": "https://github.com/focus-shift/snowpack-plugin-cache-bust.git#v0.1.0",
