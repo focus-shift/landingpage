@@ -2,14 +2,19 @@ const puppeteer = require("puppeteer");
 
 (async () => {
   const browser = await puppeteer.launch({
-    args: ["--lang=de-DE"],
     defaultViewport: {
       width: 1720,
       height: 1360,
       isMobile: false,
     },
   });
+
   const page = await browser.newPage();
+
+  await page.setExtraHTTPHeaders({
+    "Accept-Language": "de",
+  });
+
   await page.goto("https://demo.urlaubsverwaltung.cloud");
 
   await page.waitForSelector("input[name=username]");
