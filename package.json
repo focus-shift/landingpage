@@ -11,7 +11,7 @@
     "@11ty/eleventy": "0.12.1",
     "@11ty/eleventy-navigation": "0.1.6",
     "@snowpack/plugin-optimize": "0.2.13",
-    "@snowpack/plugin-postcss": "1.2.1",
+    "@snowpack/plugin-postcss": "1.2.2",
     "@snowpack/plugin-run-script": "2.3.0",
     "date-fns": "2.21.1",
     "postcss": "8.2.10",
