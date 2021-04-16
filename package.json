@@ -18,7 +18,7 @@
     "postcss-cli": "8.3.1",
     "prettier": "2.2.1",
     "puppeteer": "8.0.0",
-    "snowpack": "3.0.13",
+    "snowpack": "3.3.2",
     "snowpack-plugin-cache-bust": "https://github.com/focus-shift/snowpack-plugin-cache-bust.git#v0.1.0",
     "tailwindcss": "1.9.6"
   }
