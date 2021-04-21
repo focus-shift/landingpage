@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@11ty/eleventy": "0.12.1",
-    "@11ty/eleventy-navigation": "0.1.6",
+    "@11ty/eleventy-navigation": "0.2.0",
     "@snowpack/plugin-optimize": "0.2.13",
     "@snowpack/plugin-postcss": "1.2.2",
     "@snowpack/plugin-run-script": "2.3.0",
