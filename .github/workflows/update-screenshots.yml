@@ -25,5 +25,7 @@ jobs:
         run: |
           git config --local user.name "Alfred Pennyworth[bot]"
           git config --local user.email alfred.pennyworth@urlaubsverwaltung.cloud
-          git commit -am "Update UV screenshots"
-          git push
+          git diff --quiet --name-only static/uv-startseite.png || (git add static/uv-startseite.png; git commit -m  "Update uv-startseite.png")
+          git diff --quiet --name-only static/uv-startseite-mobile.png || (git add static/uv-startseite-mobile.png; git commit -m  "Update uv-startseite-mobile.png")
+      - name: push screenshot updates
+        uses: ad-m/github-push-action@v0.6.0
