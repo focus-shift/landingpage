@@ -11,8 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.PAT }}
       - name: setup node 14
         uses: actions/setup-node@v2
         with:
@@ -29,3 +27,5 @@ jobs:
           git diff --quiet --name-only static/uv-startseite-mobile.png || (git add static/uv-startseite-mobile.png; git commit -m  "Update uv-startseite-mobile.png")
       - name: push screenshot updates
         uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.PAT }}
