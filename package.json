@@ -13,7 +13,7 @@
     "@snowpack/plugin-optimize": "0.2.13",
     "@snowpack/plugin-postcss": "1.4.3",
     "@snowpack/plugin-run-script": "2.3.0",
-    "date-fns": "2.25.0",
+    "date-fns": "2.27.0",
     "postcss": "8.3.11",
     "postcss-cli": "9.0.2",
     "prettier": "2.4.1",
