@@ -15,7 +15,7 @@
     "@snowpack/plugin-run-script": "2.3.0",
     "date-fns": "2.25.0",
     "postcss": "8.3.11",
-    "postcss-cli": "9.0.1",
+    "postcss-cli": "9.0.2",
     "prettier": "2.4.1",
     "puppeteer": "10.4.0",
     "snowpack": "3.0.13",
