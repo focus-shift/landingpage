@@ -1,5 +1,6 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 @layer base {
   /* roboto-100 - latin */
@@ -166,5 +167,3 @@
     @apply mb-4;
   }
 }
-
-@tailwind utilities;
