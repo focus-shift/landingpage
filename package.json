@@ -15,7 +15,7 @@
     "@snowpack/plugin-run-script": "2.3.0",
     "autoprefixer": "10.4.0",
     "date-fns": "2.27.0",
-    "postcss": "8.4.4",
+    "postcss": "8.4.5",
     "postcss-cli": "9.0.2",
     "prettier": "2.5.0",
     "puppeteer": "12.0.1",
