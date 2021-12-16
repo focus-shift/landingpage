@@ -29,7 +29,7 @@ const puppeteer = require("puppeteer");
   // wait for rendered calendar
   await page.waitForSelector(".datepicker-months-container");
 
-  await page.screenshot({ path: "static/uv-startseite.png" });
+  await page.screenshot({ path: "src/assets/uv-startseite.png" });
 
   // =============================================================================
   // mobile screenshot
@@ -43,7 +43,7 @@ const puppeteer = require("puppeteer");
   // scroll to calendar
   await page.tap("#calendar");
 
-  await page.screenshot({ path: "static/uv-startseite-mobile.png" });
+  await page.screenshot({ path: "src/assets/uv-startseite-mobile.png" });
 
   await browser.close();
 })();

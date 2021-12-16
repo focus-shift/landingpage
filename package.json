@@ -3,23 +3,29 @@
   "private": true,
   "author": "Benjamin Seber <benjamin.seber@focus-shift.de> (https://www.focus-shift.de)",
   "scripts": {
-    "dev": "npm run clean && npx snowpack dev",
-    "build": "npm run clean && npx snowpack build",
-    "clean": "rm -rf build dist"
+    "clean": "rm -rf $npm_package_config_outdir",
+    "predev": "npm run clean",
+    "dev": "concurrently 'npm:dev:*'",
+    "dev:eleventy": "NODE_ENV=development eleventy --serve",
+    "dev:css": "NODE_ENV=development postcss src/assets/css/*.css -d $npm_package_config_outdir/assets/css --watch",
+    "prebuild": "npm run clean",
+    "build": "concurrently 'npm:build:*'",
+    "build:eleventy": "NODE_ENV=production eleventy",
+    "build:css": "NODE_ENV=production postcss src/assets/css/*.css -d $npm_package_config_outdir/assets/css"
+  },
+  "config": {
+    "outdir": "dist"
   },
   "dependencies": {
     "@11ty/eleventy": "0.12.1",
-    "@11ty/eleventy-navigation": "0.3.2",
-    "@snowpack/plugin-optimize": "0.2.13",
-    "@snowpack/plugin-postcss": "1.4.3",
-    "@snowpack/plugin-run-script": "2.3.0",
+    "autoprefixer": "10.4.0",
+    "concurrently": "6.4.0",
+    "cssnano": "5.0.13",
     "date-fns": "2.27.0",
-    "postcss": "8.4.4",
-    "postcss-cli": "9.0.2",
-    "prettier": "2.5.0",
-    "puppeteer": "12.0.1",
-    "snowpack": "3.0.13",
-    "snowpack-plugin-cache-bust": "https://github.com/focus-shift/snowpack-plugin-cache-bust.git#v0.1.0",
-    "tailwindcss": "1.9.6"
+    "postcss": "8.4.5",
+    "postcss-cli": "9.1.0",
+    "prettier": "2.5.1",
+    "puppeteer": "13.0.0",
+    "tailwindcss": "3.0.5"
   }
 }
