@@ -21,7 +21,7 @@
     "autoprefixer": "10.4.0",
     "concurrently": "6.5.1",
     "cssnano": "5.0.14",
-    "date-fns": "2.27.0",
+    "date-fns": "2.28.0",
     "postcss": "8.4.5",
     "postcss-cli": "9.1.0",
     "prettier": "2.5.1",
