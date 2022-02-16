@@ -9,7 +9,7 @@ jobs:
   apply-label:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/github-script@v5
+      - uses: actions/github-script@v6
         name: Add label 'status planned' to issue when milestoned
         with:
           github-token: ${{github.token}}
