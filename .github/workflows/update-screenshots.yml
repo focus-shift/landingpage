@@ -14,7 +14,7 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
       - name: setup node 14
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: "14"
       - name: take screenshots
