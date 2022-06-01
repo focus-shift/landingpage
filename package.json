@@ -19,7 +19,7 @@
   "dependencies": {
     "@11ty/eleventy": "1.0.1",
     "autoprefixer": "10.4.7",
-    "concurrently": "7.1.0",
+    "concurrently": "7.2.1",
     "cssnano": "5.1.10",
     "date-fns": "2.28.0",
     "postcss": "8.4.14",
