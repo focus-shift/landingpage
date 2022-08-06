@@ -27,7 +27,7 @@ const puppeteer = require("puppeteer");
   page.click("button[type=submit]");
 
   // wait for rendered calendar
-  await page.waitForSelector(".datepicker-months-container");
+  await page.waitForSelector(".calendar-container");
 
   await page.screenshot({ path: "src/assets/uv-startseite.png" });
 
