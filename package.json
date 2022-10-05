@@ -20,7 +20,7 @@
     "@11ty/eleventy": "1.0.1",
     "autoprefixer": "10.4.12",
     "concurrently": "7.4.0",
-    "cssnano": "5.1.12",
+    "cssnano": "5.1.13",
     "date-fns": "2.29.3",
     "postcss": "8.4.17",
     "postcss-cli": "10.0.0",
