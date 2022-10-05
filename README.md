@@ -27,7 +27,16 @@ build the production page:
 npm run build
 ```
 
-The production build
+### git hooks (optional)
+
+Zum Automatisieren verschiedener Dinge bietet dir das Projekt [git hooks](https://git-scm.com/book/uz/v2/Customizing-Git-Git-Hooks)
+an. Diese kannst du mit folgendem Befehl installieren:
+
+```bash
+./scripts/install-git-hooks.sh
+```
+
+### The production build
 
 - creates non optimized html files with [eleventy](https://www.11ty.dev/)
 - optimizes (e.g. minfies) html files with `@snowpack/plugin-optimize`
