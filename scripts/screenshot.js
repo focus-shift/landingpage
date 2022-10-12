@@ -44,7 +44,8 @@ const puppeteer = require("puppeteer");
   // tap: scroll into the center of the view
   await page.tap("#calendar");
   // and scroll some pixels to the top
-  await page.$eval('#calendar', () => window.scrollBy(0, 25));
+  const node = await page.$('#calendar');
+  const url = await page.evaluate(() => window.scrollBy(0, 25), node);
 
   // minimizing the viewport shows the menu overlay shortly.
   await wait(500);
