@@ -15,13 +15,7 @@ const puppeteer = require("puppeteer");
     "Accept-Language": "de",
   });
 
-  await page.goto("https://demo.urlaubsverwaltung.cloud");
-
-  await page.waitForSelector("input[name=username]");
-  await page.type("input[name=username]", "office");
-
-  await page.waitForSelector("input[name=password]");
-  await page.type("input[name=password]", "secret");
+  await page.goto("https://urlaubsverwaltung.demo.urlaubsverwaltung.cloud/oauth2/authorization/oidc?login_hint=office");
 
   await page.waitForSelector("button[type=submit]");
   page.click("button[type=submit]");
