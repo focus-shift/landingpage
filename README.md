@@ -31,8 +31,10 @@ Zum Automatisieren verschiedener Dinge bietet dir das Projekt [git hooks](https:
 an. Diese kannst du mit folgendem Befehl installieren:
 
 ```bash
-./scripts/install-git-hooks.sh
+git config core.hooksPath '.githooks'
 ```
+
+Die Git-Hooks sind im [.githooks](./.githooks/) Verzeichnis zu finden.
 
 ### The production build
 
