@@ -1,4 +1,4 @@
-const formatDate = require("date-fns/format");
+const { format } = require("date-fns/format");
 const metadata = require("./src/_data/metadata.json");
 
 const paths = {
@@ -16,8 +16,8 @@ module.exports = function (eleventyConfig) {
     title ? metadata.title + " - " + title : metadata.title,
   );
 
-  eleventyConfig.addFilter("date", function (date, format) {
-    return formatDate(date, format);
+  eleventyConfig.addFilter("date", function (date, formatFunction) {
+    return format(date, formatFunction);
   });
 
   eleventyConfig.addFilter(
