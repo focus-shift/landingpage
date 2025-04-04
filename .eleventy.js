@@ -1,12 +1,12 @@
-const { format } = require("date-fns/format");
-const metadata = require("./src/_data/metadata.json");
+import {format} from "date-fns/format";
+import metadata from "./src/_data/metadata.json" with { "type": "json" };
 
 const paths = {
   input: "src",
   output: process.env.npm_package_config_outdir,
 };
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(["njk", "md", "html"]);
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
   eleventyConfig.addPassthroughCopy("./src/assets/js");
