@@ -15,3 +15,11 @@ updates:
   labels:
     - "type: dependencies"
     - "javascript"
+  groups:
+    eleventy:
+      patterns:
+        - "@11ty/*"
+    postcss:
+      patterns:
+        - "postcss"
+        - "postcss-*"
