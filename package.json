@@ -23,7 +23,7 @@
     "cssnano": "7.0.7",
     "date-fns": "4.1.0",
     "lint-staged": "16.0.0",
-    "postcss": "8.5.3",
+    "postcss": "8.5.4",
     "postcss-cli": "11.0.1",
     "prettier": "3.5.3",
     "puppeteer": "24.8.2",
