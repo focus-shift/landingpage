@@ -17,7 +17,7 @@
     "outdir": "dist"
   },
   "dependencies": {
-    "@11ty/eleventy": "3.1.0",
+    "@11ty/eleventy": "3.1.2",
     "autoprefixer": "10.4.21",
     "concurrently": "9.1.2",
     "cssnano": "7.0.7",
