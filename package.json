@@ -27,7 +27,7 @@
     "postcss-cli": "11.0.1",
     "prettier": "3.6.2",
     "puppeteer": "24.22.3",
-    "tailwindcss": "3.4.14"
+    "tailwindcss": "4.1.16"
   },
   "lint-staged": {
     "*.js": "eslint --fix",
