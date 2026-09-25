@@ -24,10 +24,10 @@ Ab sofort findest du im **Avatar-Menü** einen direkten Zugang zur [**Hilfe-Seit
     <figure>
             <img
               src="help.png"
-              alt="Hilfe der Zeiterfassung auf urlaubsverwaltung.cloud"
+              alt="Hilfe der Zeiterfassung auf focus-shift.de"
               class="rounded-lg"
             />
-        <figcaption class="text-sm text-center">Hilfe der Zeiterfassung auf urlaubsverwaltung.cloud</figcaption>
+        <figcaption class="text-sm text-center">Hilfe der Zeiterfassung auf focus-shift.de</figcaption>
     </figure>
 </div>
 

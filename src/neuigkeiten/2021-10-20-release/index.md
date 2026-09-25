@@ -26,7 +26,7 @@ _Version 4.25.0 veröffentlicht_
       sehr leichtgewichtig anfühlt, sodass sich jeder Benutzer direkt wohlfühlt und das Anliegen einfach und
       bequem erledigen kann. Es kommt jedoch ab und an vor, dass man Fragen zu einem bestimmten Feature
       hat und die Antworten auf eigene Faust finden möchte. Deshalb haben wir für euch die <a href="/hilfe/">Hilfe</a> auf
-      <a href="/hilfe/">urlaubsverwaltung.cloud</a> erstellt und in der Urlaubsverwaltung im Avatar-Menü verlinkt.
+      focus-shift.de erstellt und in der Urlaubsverwaltung im Avatar-Menü verlinkt.
     </p>
     <p>
       Helfe dir selbst und sei dein eigener Held!

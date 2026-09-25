@@ -8,7 +8,7 @@ eleventyNavigation:
   parent: urlaubsverwaltung
 ---
 
-# Feiertage in der urlaubsverwaltung.cloud
+# Feiertage in focus:shift
 
 ## Wie kann ich die Feiertage für die Urlaubsverwaltung konfigurieren?
 

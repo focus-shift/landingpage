@@ -57,7 +57,7 @@ Statistik **verlässlich** berechnet wird.
               alt=""
               class="rounded-lg"
             />
-        <figcaption class="text-sm text-center">Statistik der Zeiterfassung bei urlaubsverwaltung.cloud</figcaption>
+        <figcaption class="text-sm text-center">Statistik der Zeiterfassung bei focus:shift</figcaption>
     </figure>
 </div>
 
@@ -85,4 +85,4 @@ Mitarbeit einer aktiven Community und dem konstruktiven Feedback.
 Mit dem Fokus auf User Experience und Accessibility verfolgen wir stetig das Ziel die Software allen Menschen gleichermaßen
 zur Verfügung zu stellen.
 
-Als Reaktion auf das oben genannte Urteil stellen wir unsere Lösung den urlaubsverwaltung.cloud Kunden zunächst kostenlos zur Verfügung.
+Als Reaktion auf das oben genannte Urteil stellen wir unsere Lösung den focus:shift Kunden zunächst kostenlos zur Verfügung.

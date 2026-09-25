@@ -8,7 +8,7 @@ eleventyNavigation:
   parent: urlaubsverwaltung
 ---
 
-# Krankmeldungen in der urlaubsverwaltung.cloud
+# Krankmeldungen in focus:shift
 
 ## Kann eine Krankmeldung eingetragen werden?
 

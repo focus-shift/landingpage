@@ -8,14 +8,14 @@ eleventyNavigation:
   parent: kundenportal
 ---
 
-# Single Sign-On in der urlaubsverwaltung.cloud
+# Single Sign-On in focus:shift
 
 ## Welchen Vorteil habe ich durch die Verwendung von Single Sign-On?
 
 Wenn du einen der unterstützten Single Sign-On Provider in deinen Unternehmen verwendest, können alle
-Personen deiner Organisation _ohne_ zusätzliche Anmeldedaten auf urlaubsverwaltung.cloud zugreifen.
+Personen deiner Organisation _ohne_ zusätzliche Anmeldedaten auf focus-shift.de zugreifen.
 Ist eine Person gegenüber deinem Single Sign-On Provider authentifiziert, so muss sie sich nicht erneut bei
-urlaubsverwaltung.cloud authentifizieren.
+focus-shift.de authentifizieren.
 
 ## Welche Single Sign-On Provider werden unterstützt?
 

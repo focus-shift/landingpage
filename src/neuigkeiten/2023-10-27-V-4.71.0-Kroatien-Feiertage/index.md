@@ -28,7 +28,7 @@ Eine Übersicht muss die individuellen Abwesenheiten im Kontext der Mitarbeitend
 um nicht nur eine aktuelle Übersicht für die nächste Abwesenheit zu bieten, sondern auch die langfristige Planung von
 Projekten und Aufgaben zu ermöglichen.
 
-Die Urlaubsverwaltung.cloud hat sich diesen Herausforderungen gestellt und bietet sowohl automatisierte Berechnungen
+Die focus:shift hat sich diesen Herausforderungen gestellt und bietet sowohl automatisierte Berechnungen
 der Urlaubsansprüche als auch eine übersichtliche Darstellung der Abwesenheiten der Mitarbeitenden.
 
 <div class="flex my-8">

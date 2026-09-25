@@ -8,7 +8,7 @@ eleventyNavigation:
   parent: urlaubsverwaltung
 ---
 
-# E-Mail Benachrichtigungen in der urlaubsverwaltung.cloud
+# E-Mail Benachrichtigungen in focus:shift
 
 Um auf dem Laufenden zu bleiben und die Prozesse zu beschleunigen werden Benachrichtigungen
 und Erinnerungen versendet, für Ereignisse die eine Aktion benötigen.
