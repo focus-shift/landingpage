@@ -9,13 +9,13 @@
 		"dev": "concurrently 'npm:dev:*'",
 		"dev:eleventy": "NODE_ENV=development eleventy --serve --port 3000",
 		"dev:css": "NODE_ENV=development postcss 'src/static/css/*.css' '!src/static/css/{config,theme}.css' -d $npm_package_config_outdir/static/css --watch",
-		"dev:js": "NODE_ENV=development esbuild common=src/static/js/common/index.js zammad=src/static/js/zammad.js klaro=src/static/js/klaro.js --bundle --outdir=$npm_package_config_outdir/static/js --watch",
+		"dev:js": "NODE_ENV=development esbuild 'src/static/js/*.js' --bundle --outdir=$npm_package_config_outdir/static/js --watch",
 		"dev:jquery": "mkdir -p $npm_package_config_outdir/static/js && cp node_modules/jquery/dist/jquery.min.js $npm_package_config_outdir/static/js",
 		"prebuild": "npm run clean",
 		"build": "concurrently 'npm:build:*'",
 		"build:eleventy": "NODE_ENV=production eleventy",
 		"build:css": "NODE_ENV=production postcss 'src/static/css/*.css' '!src/static/css/{config,theme}.css' -d $npm_package_config_outdir/static/css",
-		"build:js": "NODE_ENV=production esbuild common=src/static/js/common/index.js zammad=src/static/js/zammad.js klaro=src/static/js/klaro.js --bundle --outdir=$npm_package_config_outdir/static/js --minify",
+		"build:js": "NODE_ENV=production esbuild 'src/static/js/*.js' --bundle --outdir=$npm_package_config_outdir/static/js --minify",
 		"build:jquery": "mkdir -p $npm_package_config_outdir/static/js && cp node_modules/jquery/dist/jquery.min.js $npm_package_config_outdir/static/js"
 	},
 	"config": {
