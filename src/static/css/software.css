@@ -1,0 +1,255 @@
+@reference "./config.css";
+
+@layer components {
+	body:has([id="focusapp"]:target) a[href="#focusapp"],
+	body:has([id="single-sign-on"]:target) a[href="#single-sign-on"],
+	body:has([id="arbeitszeiterfassung"]:target) a[href="#arbeitszeiterfassung"],
+	body:has([id="abwesenheitsarten"]:target) a[href="#abwesenheitsarten"],
+	body:has([id="teamuebersicht"]:target) a[href="#teamuebersicht"],
+	body:has([id="ueberstunden"]:target) a[href="#ueberstunden"],
+	body:has([id="krankmeldungen"]:target) a[href="#krankmeldungen"],
+	body:has([id="kalenderintegration"]:target) a[href="#kalenderintegration"],
+	body:has([id="kalender"]:target) a[href="#kalender"] {
+		background-color: var(--color-green);
+		color: var(--color-black);
+	}
+
+	[id="focusapp"]:target,
+	[id="single-sign-on"]:target,
+	[id="arbeitszeiterfassung"]:target,
+	[id="abwesenheitsarten"]:target,
+	[id="teamuebersicht"]:target,
+	[id="ueberstunden"]:target,
+	[id="krankmeldungen"]:target,
+	[id="kalenderintegration"]:target,
+	[id="kalender"]:target {
+		outline: 3px solid var(--color-green);
+		outline-offset: --spacing(4);
+		border-radius: var(--radius-lg);
+	}
+
+	.image-mask--beige {
+		position: relative;
+
+		border-radius: var(--radius-2xl);
+		overflow: clip;
+
+		width: 100%;
+		height: 300px;
+
+		& > picture > img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			border-radius: var(--radius-2xl);
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background-color: --alpha(var(--color-beige) / 40%);
+			pointer-events: none;
+			mix-blend-mode: multiply;
+		}
+	}
+
+	.features-grid {
+		& > .feature-card {
+			grid-column-end: span 4;
+		}
+
+		.feature-card__image {
+			margin-block-start: --spacing(4);
+
+			height: 300px;
+			aspect-ratio: var(--aspect-video);
+		}
+	}
+
+	.feature-detail-popover {
+		--popover-inset-x: --spacing(8);
+		--popover-inset-y: --spacing(8);
+		--popover-background-color: var(--color-white);
+
+		height: stretch;
+
+		border: 1px solid var(--color-beige);
+		box-shadow: 15px 15px 23px 0 var(--color-beige);
+		overflow: clip;
+
+		@variant md {
+			--popover-inset-x: --spacing(12);
+			--popover-inset-y: --spacing(12);
+		}
+
+		&::backdrop {
+			background-color: --alpha(var(--color-beige) / 80%);
+			backdrop-filter: blur(2px);
+		}
+
+		&:popover-open {
+			display: grid;
+			grid-template-rows: minmax(0, 1fr);
+
+			&::before {
+				content: "";
+				position: absolute;
+				display: block;
+				width: var(--accent-line-width);
+				left: 0;
+				top: 10rem;
+				height: 300px;
+				background-color: var(--color-lila);
+			}
+		}
+
+		.feature-detail-popover__inner {
+			padding-block: --spacing(8);
+			padding-inline: --spacing(8);
+
+			/* grid item min-height:auto would grow the row past the popover -> no scroll */
+			min-height: 0;
+			overflow: scroll;
+			overscroll-behavior: contain;
+
+			scrollbar-color: var(--color-orange) var(--color-beige);
+
+			@variant lg {
+				padding-inline: --spacing(32);
+			}
+		}
+	}
+}
+
+@layer components {
+	/*
+	 * words spread over the whole area, as big as possible.
+	 * positions are deterministic (css only) and randomized by word-cloud.js.
+	 *
+	 * --x and --y are fractions [0, 1] of the free space:
+	 * 0 = word touches left/top edge, 1 = word touches right/bottom edge.
+	 * therefore a word never overflows, regardless of its width.
+	 *
+	 * --size is the font-size relative to the width of the word cloud.
+	 * it is chosen so that the words of the widest row (in em) fit in one line
+	 * (basteleur: time 2.73em, balance 4.47em, work 2.97em, cloud 3.14em, life 1.98em, shift 2.89em).
+	 */
+	.word-cloud {
+		--rows: 5;
+		--size: 0.195;
+		--row-height: 1.1;
+
+		position: relative;
+		container-type: size;
+		width: 100%;
+		aspect-ratio: 1 / calc(var(--rows) * var(--size) * var(--row-height));
+
+		@variant md {
+			--rows: 3;
+			--size: 0.14;
+		}
+
+		& > li {
+			--x: 0;
+			--y: 0;
+
+			position: absolute;
+			left: calc(var(--x) * 100%);
+			top: calc(var(--y) * 100%);
+			translate: calc(var(--x) * -100%) calc(var(--y) * -100%);
+
+			font-size: calc(var(--size) * 100cqi);
+			line-height: 1;
+			white-space: nowrap;
+
+			@media (prefers-reduced-motion: no-preference) {
+				animation: word-cloud-in 1.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+				animation-delay: calc(150ms + var(--i, 0) * 90ms);
+			}
+
+			/* wait for word-cloud.js to position the words, otherwise they jump
+			   from the css positions to the random ones while animating */
+			@media (scripting: enabled) {
+				animation-play-state: paused;
+			}
+		}
+
+		&[data-ready] > li {
+			animation-play-state: running;
+		}
+
+		/* mobile: 5 rows */
+		& > li:nth-child(1) {
+			--i: 2;
+			--x: 1;
+			--y: 0.5;
+		} /* time */
+		& > li:nth-child(2) {
+			--i: 0;
+			--x: 0.5;
+			--y: 0.25;
+		} /* balance */
+		& > li:nth-child(3) {
+			--i: 4;
+			--x: 0.3;
+			--y: 1;
+		} /* work */
+		& > li:nth-child(4) {
+			--i: 1;
+			--x: 0.2;
+			--y: 0;
+		} /* cloud */
+		& > li:nth-child(5) {
+			--i: 5;
+			--x: 0;
+			--y: 0.5;
+		} /* life */
+		& > li:nth-child(6) {
+			--i: 3;
+			--x: 0.8;
+			--y: 0.75;
+		} /* shift */
+
+		/* desktop: 3 rows */
+		@variant md {
+			& > li:nth-child(1) {
+				--x: 0.1;
+				--y: 0.5;
+			} /* time */
+			& > li:nth-child(2) {
+				--x: 0.08;
+				--y: 0;
+			} /* balance */
+			& > li:nth-child(3) {
+				--x: 0.85;
+				--y: 1;
+			} /* work */
+			& > li:nth-child(4) {
+				--x: 0.95;
+				--y: 0.5;
+			} /* cloud */
+			& > li:nth-child(5) {
+				--x: 0.97;
+				--y: 0;
+			} /* life */
+			& > li:nth-child(6) {
+				--x: 0.05;
+				--y: 1;
+			} /* shift */
+		}
+	}
+
+	/* words fly out of the center to their position */
+	@keyframes word-cloud-in {
+		from {
+			opacity: 0;
+			filter: blur(12px);
+			transform: translate(
+					calc((0.5 - var(--x)) * (100cqi - 100%)),
+					calc((0.5 - var(--y)) * (100cqb - 100%))
+				)
+				scale(0.2);
+		}
+	}
+}

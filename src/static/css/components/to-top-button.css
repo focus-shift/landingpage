@@ -1,0 +1,28 @@
+@keyframes to-top-button-reveal {
+	from {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	to {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+@layer components {
+	.to-top-button {
+		display: inline-block;
+		background-color: var(--color-lila-dark);
+		padding: --spacing(2);
+		border-radius: var(--radius-full);
+		color: var(--color-white);
+
+		/* reveal once the page has been scrolled down a bit (scroll-driven animation) */
+		@supports (animation-timeline: scroll()) {
+			animation: to-top-button-reveal linear both;
+			animation-timeline: scroll(root block);
+			animation-range: 300px 500px;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+@theme {
+	/* disable tailwind breakpoints, use custom */
+	--breakpoint-*: initial;
+	--breakpoint-xxs: 375px; /* e.g. iphone SE (smallest device in chrome devtools default list) */
+	--breakpoint-xs: 480px; /* above most (or all) phones (not phablets, foldables, ...) */
+	--breakpoint-sm: 640px;
+	--breakpoint-md: 768px; /* tablets */
+	--breakpoint-lg: 1200px;
+	--breakpoint-nav: 1360px;
+
+	--spacing-page-grid-gap: 1.25rem;
+
+	--aspect-retro: 4 / 3;
+	--aspect-portrait: 4 / 5;
+	--aspect-cinematic: 21 / 9;
+
+	--radius-2xl: 1rem; /* 16px */
+	--radius-3xl: 1.5rem; /* 24px */
+	--radius-full: calc(infinity * 1px);
+
+	/* disable tailwind colors, use custom */
+	--color-*: initial;
+	--color-black: #000000;
+	--color-white: #ffffff;
+	--color-beige: #f2ede9;
+	--color-lila: #9b9bff;
+	--color-lila-dark: #50287d;
+	--color-yellow: #f1fe99;
+	--color-green: #d2ff89;
+	--color-light-blue: #b0ecfb;
+	--color-orange: #ff6133;
+
+	--font-basteleur: "Basteleur", sans-serif;
+	--font-outfit: "Outfit", sans-serif;
+}
+
+:root {
+	--z-index-header: 999;
+	--z-index-dot-visual: 1;
+
+	--main-header-height: 90px;
+	--main-navigation-padding-inline: --spacing(9);
+
+	--accent-line-width: 13px;
+
+	--button-radius: var(--radius-full);
+	--button-padding-block: --spacing(2);
+	--button-padding-inline: --spacing(8);
+	--button-outline-color: var(--color-lila-dark);
+
+	@variant md {
+		--accent-line-width: 15px;
+	}
+
+	@variant lg {
+		--accent-line-width: 21px;
+		--button-padding-block: --spacing(0);
+		--button-padding-inline: --spacing(3);
+	}
+}

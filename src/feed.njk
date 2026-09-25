@@ -1,0 +1,35 @@
+---
+permalink: "/feed.xml"
+eleventyExcludeFromCollections: true
+metadata:
+  title: focus:shift
+  subtitle:
+  url: https://focus-shift.de
+  feedUrl: https://focus-shift.de/feed.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="de">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link rel="self" href="{{ metadata.feedUrl }}" />
+  <link rel="alternate" type="text/html" href="{{ metadata.url }}" />
+  <updated>{{ collections.blogposts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}</id>
+  {%- for post in collections.blogposts -%}
+  {%- if not post.data.isDraft -%}
+  {%- if post.data.date | isPublicationDateReached -%}
+  {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}" />
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <author>
+      <name>{{ post.data.author }}</name>
+    </author>
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+  </entry>
+  {%- endif -%}
+  {%- endif -%}
+  {%- endfor %}
+</feed>

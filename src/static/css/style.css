@@ -1,0 +1,149 @@
+@import "./config.css";
+
+@import "./components/button.css";
+@import "./components/carousel.css";
+@import "./components/dot-visual.css";
+@import "./components/footer.css";
+@import "./components/grid.css";
+@import "./components/highlight-box.css";
+@import "./components/main-header.css";
+@import "./components/popover.css";
+@import "./components/price.css";
+@import "./components/references.css";
+@import "./components/section-hero.css";
+@import "./components/section-title-pill.css";
+@import "./components/to-top-button.css";
+
+@import "./components/demo-popover.css";
+
+/* source every file in our project; only style.css emits the theme, so it must see all usages */
+@source "../..";
+
+@view-transition {
+	navigation: auto;
+}
+
+::view-transition-old(root) {
+	animation: 150ms ease both fade-out;
+}
+
+::view-transition-new(root) {
+	animation: 200ms ease both fade-in;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+}
+
+@keyframes fade-out {
+	to {
+		opacity: 0;
+	}
+}
+
+@layer base {
+	:root {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+		text-decoration-skip-ink: none;
+		text-underline-position: from-font;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	html,
+	body {
+		height: 100svh;
+		/* note: lila, lila-dark, beige and white are background colors and should not be used as scrollbar color! */
+		scrollbar-color: var(--color-orange) var(--color-beige);
+	}
+
+	body {
+		/* TODO maybe set padding with env(safe-area-inset-top) to push ui above the ios tab bar?
+               -- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/env */
+
+		font-family: "Outfit", sans-serif;
+
+		/* note: safari uses this for tab-bar color (if enabled by user) */
+		background-color: var(--color-beige);
+
+		@variant dark {
+			/* note: safari uses this for tab-bar color (if enabled by user) */
+			background-color: var(--color-lila-dark);
+		}
+	}
+
+	* > .font-basteleur {
+		font-size: 0.9em;
+	}
+
+	[id] {
+		scroll-margin-top: calc(var(--main-header-height) + --spacing(4));
+	}
+
+	@media (hover: hover) {
+		a,
+		button,
+		input:is([type="button"], [type="submit"], [type="file"]) {
+			z-index: 0;
+			outline-style: solid;
+			outline-width: 0;
+			outline-color: var(--button-outline-color);
+			outline-offset: 0;
+
+			cursor: pointer;
+
+			/* I think this isn't a good idea, is it? */
+			border-radius: var(--radius-full);
+			/* -- */
+
+			--transition-duration: 80ms;
+
+			transition:
+				all var(--transition-duration) ease-in-out,
+				transform 150ms ease-in-out;
+			transition-behavior: allow-discrete;
+
+			&:focus-visible {
+				z-index: 1;
+				outline-width: 2px;
+				outline-offset: 2px;
+			}
+
+			@media (hover: hover) {
+				&:hover {
+					z-index: 1;
+					outline-width: 2px;
+					outline-offset: 2px;
+				}
+			}
+		}
+	}
+}
+
+@utility hover-no-outline {
+	&:focus-visible {
+		outline-width: 0;
+	}
+
+	@media (hover: hover) {
+		&:hover {
+			outline-width: 0;
+		}
+	}
+}
+
+@utility page-subgrid-full {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: subgrid;
+}
+
+@utility button--shadow {
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+}

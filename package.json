@@ -1,36 +1,57 @@
 {
-  "name": "focus-shift-landingpage",
-  "private": true,
-  "author": "Benjamin Seber <benjamin.seber@focus-shift.de> (https://www.focus-shift.de)",
-  "scripts": {
-    "clean": "rm -rf $npm_package_config_outdir",
-    "predev": "npm run clean",
-    "dev": "concurrently 'npm:dev:*'",
-    "dev:eleventy": "NODE_ENV=development eleventy --serve",
-    "dev:css": "NODE_ENV=development postcss src/assets/css/*.css -d $npm_package_config_outdir/assets/css --watch",
-    "prebuild": "npm run clean",
-    "build": "concurrently 'npm:build:*'",
-    "build:eleventy": "NODE_ENV=production eleventy",
-    "build:css": "NODE_ENV=production postcss src/assets/css/*.css -d $npm_package_config_outdir/assets/css"
-  },
-  "config": {
-    "outdir": "dist"
-  },
-  "dependencies": {
-    "@11ty/eleventy": "3.1.6",
-    "autoprefixer": "10.5.0",
-    "concurrently": "10.0.4",
-    "cssnano": "8.0.1",
-    "date-fns": "4.4.0",
-    "lint-staged": "17.2.0",
-    "postcss": "8.5.23",
-    "postcss-cli": "11.0.1",
-    "prettier": "3.9.6",
-    "puppeteer": "25.1.0",
-    "tailwindcss": "3.4.14"
-  },
-  "lint-staged": {
-    "*.js": "eslint --fix",
-    "*.{css,html,md}": "prettier --write"
-  }
+	"private": true,
+	"author": "Benjamin Seber <benjamin.seber@focus-shift.de> (https://www.focus-shift.de)",
+	"type": "module",
+	"scripts": {
+		"lint": "eslint src",
+		"clean": "rm -rf $npm_package_config_outdir",
+		"predev": "npm run clean",
+		"dev": "concurrently 'npm:dev:*'",
+		"dev:eleventy": "NODE_ENV=development eleventy --serve --port 3000",
+		"dev:css": "NODE_ENV=development postcss 'src/static/css/*.css' '!src/static/css/{config,theme}.css' -d $npm_package_config_outdir/static/css --watch",
+		"dev:js": "NODE_ENV=development esbuild 'src/static/js/*.js' --bundle --outdir=$npm_package_config_outdir/static/js --watch",
+		"dev:jquery": "mkdir -p $npm_package_config_outdir/static/js && cp node_modules/jquery/dist/jquery.min.js $npm_package_config_outdir/static/js",
+		"prebuild": "npm run clean",
+		"build": "concurrently 'npm:build:*'",
+		"build:eleventy": "NODE_ENV=production eleventy",
+		"build:css": "NODE_ENV=production postcss 'src/static/css/*.css' '!src/static/css/{config,theme}.css' -d $npm_package_config_outdir/static/css",
+		"build:js": "NODE_ENV=production esbuild 'src/static/js/*.js' --bundle --outdir=$npm_package_config_outdir/static/js --minify",
+		"build:jquery": "mkdir -p $npm_package_config_outdir/static/js && cp node_modules/jquery/dist/jquery.min.js $npm_package_config_outdir/static/js"
+	},
+	"config": {
+		"outdir": "dist"
+	},
+	"dependencies": {
+		"@11ty/eleventy": "3.1.6",
+		"@11ty/eleventy-img": "7.0.0",
+		"@11ty/eleventy-navigation": "1.0.5",
+		"@11ty/eleventy-plugin-handlebars": "1.0.0",
+		"@11ty/eleventy-plugin-rss": "3.0.0",
+		"@eslint/js": "10.0.1",
+		"@tailwindcss/postcss": "4.3.1",
+		"concurrently": "10.0.5",
+		"cssnano": "8.0.2",
+		"date-fns": "4.4.0",
+		"esbuild": "0.28.1",
+		"eslint": "10.9.1",
+		"eslint-config-prettier": "10.1.8",
+		"eslint-plugin-prettier": "5.5.6",
+		"globals": "17.6.0",
+		"handlebars": "4.7.9",
+		"html-minifier-terser": "7.2.0",
+		"http-server": "14.1.1",
+		"jquery": "3.7.1",
+		"klaro": "0.7.22",
+		"lint-staged": "17.4.1",
+		"markdown-it": "15.0.1",
+		"markdown-it-anchor": "9.2.1",
+		"postcss": "8.5.26",
+		"postcss-cli": "11.0.1",
+		"prettier": "3.9.6",
+		"tailwindcss": "4.3.3"
+	},
+	"lint-staged": {
+		"*.js": "eslint --fix",
+		"*.{css,html,md,svg}": "prettier --write"
+	}
 }

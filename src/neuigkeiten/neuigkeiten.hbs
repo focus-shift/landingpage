@@ -1,0 +1,10 @@
+---
+layout: layout-neuigkeiten.hbs
+title: Neuigkeiten auf focus-shift.de
+description: Alle Neuigkeiten rund um die Themen Human Resource, Open Source, Releases und Updates von focus:shift
+pagination:
+  data: collections.neuigkeiten
+  size: 10
+  alias: posts
+permalink: "neuigkeiten/{{#if pagination.pageNumber}}seite/{{addOne pagination.pageNumber}}/{{/if}}index.html"
+---

@@ -1,29 +1,27 @@
-# Focus Shift Software GmbH - Landingpage
+# Urlaubsverwaltung
+
+Landing Page für die [Open Source Urlaubsverwaltung & Zeiterfassung](https://github.com/urlaubsverwaltung)
 
 ## Development
 
-- [eleventy](https://www.11ty.dev/) static site generator: builds the static html sites which can be found in `build`
-  - including assets (css, js) which will be copied
+Was du benötigst:
 
-start developing with hot module reloading in the browser:
+- Spaß an der Arbeit :o)
+- NodeJS
+  - die genaue Version findest du in der [.nvmrc](.nvmrc) Datei
+  - am besten installierst du dir ein Tool zum Verwalten verschiedener NodeJS Versionen wie z. B. [node version manager (nvm)](https://github.com/creationix/nvm) oder [nodenv](https://github.com/nodenv/nodenv)
 
-first install all dependencies with
-
-```bash
-npm install
-```
-
-then run
+Hast du NodeJS installiert und dieses Repository geklont kannst du direkt loswerkeln.
 
 ```bash
+
+git clone --depth 1 git@github.com:focus-shift/urlaubsverwaltung-landingpage.git
+cd urlaubsverwaltung-landingpage
+npm ci
 npm run dev
 ```
 
-build the production page:
-
-```bash
-npm run build
-```
+`npm run dev` startet einen Server und baut nach dem Bearbeiten von Dateien alles neu.
 
 ### git hooks (optional)
 
@@ -34,11 +32,48 @@ an. Diese kannst du mit folgendem Befehl installieren:
 git config core.hooksPath '.githooks'
 ```
 
-Die Git-Hooks sind im [.githooks](./.githooks/) Verzeichnis zu finden.
+Die Githooks sind im [.githooks](./.githooks/) Verzeichnis zu finden.
 
-### The production build
+## Homepage bauen
 
-- creates non optimized html files with [eleventy](https://www.11ty.dev/)
-- optimizes (e.g. minfies) html files with `@snowpack/plugin-optimize`
-- optimizes css via `@snowpack/plugin-postcss`
-- add content hashes to scripts and stylesheets with `./snowpack-plugin-cache-bust`
+Eine optimierte Version der Landingpage kannst du bauen mit:
+
+```bash
+npm run build
+```
+
+### Verzeichnisstruktur
+
+- **public**
+  - enthält statische Resourcen die nicht transformiert werden müssen (z. B. favicon, robots.txt, ...)
+- **src**
+  - enthält den Inhalt der Webseite, CSS, JavaScript und alles was transformiert werden muss.
+
+## Deployment
+
+Jeder commit auf den Branch `main` wird automatisiert gebaut, auf den `gh-pages` branch gemerged und damit live genommen.
+
+siehe `.github/workflows/deployment.yml`
+
+## Hilfreiches
+
+### Bilder optimieren
+
+Resize image, cut file size:
+
+```bash
+ffmpeg -i source.jpg -vf scale=2000:-1 -q:v 3 out.jpg
+```
+
+Visually lossless, big win (`ffmpeg`): drop to 4:2:0 chroma + high quality factor. Eye can't tell diff, file shrinks a lot.  
+`-q:v 2` = near-max quality (scale 2-31, lower better).
+
+```bash
+ffmpeg -i source.jpg -q:v 2 -pix_fmt yuv420p out.jpg
+```
+
+## Bilder & Icons
+
+- [Bild-Optimierung](https://squoosh.app/)
+- Screenshots via [flameshot](https://flameshot.org/)
+- [Icon Set](https://heroicons.com/)

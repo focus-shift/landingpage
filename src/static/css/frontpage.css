@@ -1,0 +1,378 @@
+@reference "./config.css";
+
+@keyframes concept-teaser-cycle {
+	0% {
+		transform: translateY(0%);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
+}
+
+@layer components {
+	.section-benefits {
+		grid-column: 1 / -1;
+
+		display: grid;
+		grid-template-columns: subgrid;
+
+		background-color: var(--color-beige);
+
+		margin-block-start: --spacing(19);
+
+		& > div {
+			grid-column: 1 / -1;
+			padding-inline-start: var(--spacing-page-grid-gap);
+		}
+
+		.main-benefits-grid {
+			margin-block-start: --spacing(22);
+			grid-column: 1 / -1;
+
+			display: grid;
+			grid-template-columns: subgrid;
+			grid-row-gap: --spacing(4);
+
+			.main-benefits-card {
+				grid-column-end: span var(--page-grid-columns);
+
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: --spacing(4);
+
+				padding-block: --spacing(8) --spacing(4);
+				padding-inline: --spacing(4);
+				border-radius: var(--radius-2xl);
+			}
+
+			@variant xxs {
+				.main-benefits-card {
+					/* all cards in two rows */
+					grid-column-end: span 2;
+				}
+			}
+
+			@variant md {
+				.main-benefits-card {
+					/* all cards in one row */
+					grid-column-end: span calc(var(--page-grid-columns) / 4);
+				}
+			}
+
+			@variant lg {
+				.main-benefits-card {
+					margin-inline: var(--spacing-page-grid-gap);
+				}
+			}
+		}
+
+		.main-benefits-card__icon {
+			margin-inline: auto;
+		}
+
+		.main-benefits-card__text {
+			text-align: center;
+			word-break: auto-phrase;
+		}
+
+		.main-benefits-card__read-more {
+			margin-block-start: auto;
+			text-align: center;
+		}
+
+		@variant md {
+			& > div {
+				grid-column: 2 / -2;
+				padding-inline-start: 0;
+			}
+		}
+	}
+
+	.section-welfare {
+		margin-block: --spacing(22);
+		grid-column: 1 / -1;
+
+		display: grid;
+		grid-template-columns: subgrid;
+
+		padding-inline: var(--spacing-page-grid-gap);
+		background-color: var(--color-beige);
+		grid-row-gap: --spacing(8);
+
+		& > * {
+			grid-column: 1 / -1;
+		}
+
+		@variant md {
+			& > * {
+				grid-column: 2 / -2;
+				padding-inline-start: 0;
+			}
+
+			ul {
+				/* list has list-style, align with paragraphs */
+				padding-inline-start: --spacing(5);
+			}
+		}
+
+		@variant lg {
+			margin-block: --spacing(52);
+
+			p:first-of-type {
+				grid-column-end: span 4;
+			}
+
+			ul {
+				grid-column: 7 / span 5;
+			}
+		}
+	}
+
+	.section-software {
+		margin-block-start: --spacing(22);
+		padding-inline: var(--spacing-page-grid-gap);
+
+		grid-column: 1 / -1;
+
+		display: grid;
+		grid-template-columns: subgrid;
+
+		& > * {
+			grid-column: 1 / -1;
+		}
+
+		& > .section-software__features {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: --spacing(2);
+			justify-content: start;
+		}
+
+		@variant md {
+			& > * {
+				grid-column: 2 / -2;
+				padding-inline-start: 0;
+			}
+		}
+
+		@variant lg {
+			margin-top: --spacing(52);
+
+			& > * {
+				grid-column: 3 / -3;
+			}
+
+			& > .section-software__features {
+				margin-block-start: --spacing(52);
+				grid-column: 4 / span 6;
+				justify-content: center;
+			}
+
+			& > p:last-child {
+				margin-block-start: --spacing(32);
+			}
+		}
+
+		@variant nav {
+			& > p:nth-of-type(1) {
+				/*grid-column-end: 13;*/
+			}
+
+			& > .section-software__features {
+				/*grid-column-start: 8;*/
+				/*grid-column-end: 19;*/
+			}
+		}
+	}
+
+	.section-purpose {
+		grid-column: 1 / -1;
+
+		display: grid;
+		grid-template-columns: subgrid;
+
+		& > div:first-child {
+			grid-column: 1 / -1;
+		}
+	}
+
+	.section-demo {
+		grid-column: 1 / -1;
+
+		display: grid;
+		grid-template-columns: subgrid;
+
+		& > * {
+			grid-column: 1 / -1;
+		}
+
+		.section-title-pill,
+		.section-demo__text {
+			place-self: start;
+			margin-inline: var(--spacing-page-grid-gap);
+		}
+
+		@variant md {
+			.section-title-pill,
+			.section-demo__text {
+				grid-column: 2 / -2;
+			}
+		}
+
+		@variant lg {
+			& > * {
+				grid-column: 2 / -2;
+			}
+
+			.section-title-pill {
+				margin-inline: 0;
+			}
+
+			.section-demo__text {
+				margin-inline: 0;
+				grid-column-end: span 5;
+			}
+		}
+	}
+
+	.section-concept {
+		grid-column: 1 / -1;
+
+		display: grid;
+		grid-template-columns: subgrid;
+
+		& > * {
+			grid-column: 1 / -1;
+		}
+
+		.section-title-pill {
+			display: none;
+
+			@variant lg {
+				display: inline-block;
+				place-self: start;
+				grid-column-start: 2;
+			}
+		}
+
+		.section-concept__teaser {
+			position: relative;
+			view-timeline-name: --concept-teaser;
+			view-timeline-axis: block;
+
+			margin-block-end: --spacing(22);
+
+			@variant lg {
+				margin-block-start: --spacing(26);
+			}
+
+			ul {
+				/* align focus:shift in one line. overridden when animation is supported. */
+				/* value is chosen by try & error randomly using firefox on my machine :shrug: */
+				transform: translateY(calc(-1lh + 0.75rem));
+				@variant sm {
+					transform: translateY(calc(-1lh + 1.5rem));
+				}
+				@variant lg {
+					transform: translateY(calc(-1lh + 2rem));
+				}
+
+				@supports (animation-timeline: view()) and (view-timeline: --t) {
+					animation-name: concept-teaser-cycle;
+					animation-duration: 1ms; /* overridden by animation-timeline, required for Firefox */
+					animation-timing-function: linear;
+					animation-fill-mode: both;
+					animation-timeline: --concept-teaser;
+					animation-range: cover 0% cover 100%;
+				}
+
+				@media (prefers-reduced-motion: reduce) {
+					animation: none;
+				}
+
+				li {
+					--color-top: var(--color-black);
+					--color-bottom: var(--color-black);
+
+					&:first-child,
+					&:last-child {
+						color: transparent;
+						background-clip: text;
+						background-image: linear-gradient(
+							var(--color-top),
+							var(--color-bottom)
+						);
+					}
+
+					&:first-child {
+						--color-top: var(--color-white);
+					}
+
+					&:last-child {
+						--color-bottom: var(--color-white);
+					}
+				}
+			}
+		}
+
+		.section-concept__text {
+			margin-inline: var(--spacing-page-grid-gap);
+
+			grid-column-end: -1;
+
+			& ~ .section-concept__text {
+				margin-block-start: --spacing(5);
+			}
+		}
+
+		.section-concept__read-more {
+			margin-block-start: --spacing(8);
+			margin-inline: var(--spacing-page-grid-gap);
+		}
+
+		@variant md {
+			.section-concept__text {
+				margin-inline-start: var(--spacing-page-grid-gap);
+				margin-inline-end: 0;
+				margin-block: 0;
+
+				grid-column-start: auto;
+				grid-column-end: span calc(var(--page-grid-columns) / 2);
+
+				& ~ .section-concept__text {
+					margin-inline-start: 0;
+					margin-inline-end: var(--spacing-page-grid-gap);
+					margin-block: 0;
+				}
+			}
+
+			.section-concept__read-more {
+				margin-inline: var(--spacing-page-grid-gap);
+			}
+		}
+
+		@variant lg {
+			/*& > * {*/
+			/*	grid-column-start: 4;*/
+			/*	grid-column-end: 23;*/
+			/*}*/
+
+			/*.section-title-pill,*/
+			/*.section-concept__text,*/
+			/*.section-concept__read-more {*/
+			/*	margin-inline: 0;*/
+			/*}*/
+
+			/*.section-concept__teaser {*/
+			/*	margin-block-start: --spacing(26);*/
+			/*}*/
+
+			/*.section-concept__text {*/
+			/*	column-gap: --spacing(18);*/
+			/*	margin-block-start: --spacing(48);*/
+			/*}*/
+		}
+	}
+}

@@ -1,0 +1,127 @@
+@reference "./config.css";
+
+@layer components {
+	.section-faq {
+		grid-column: 1 / -1;
+		padding-block: --spacing(14);
+
+		display: grid;
+		grid-template-columns: subgrid;
+
+		& > * {
+			grid-column: 1 / -1;
+		}
+
+		& > div {
+			/* align with faq item text */
+			margin-inline-start: calc(var(--spacing-page-grid-gap) + --spacing(4));
+		}
+
+		@variant lg {
+			grid-column-start: 6;
+		}
+	}
+
+	.section-docs {
+		grid-column: 1 / -1;
+		padding-block: --spacing(14);
+		background-color: var(--color-beige);
+
+		display: grid;
+		grid-template-columns: subgrid;
+		grid-row-gap: --spacing(14);
+
+		& > * {
+			grid-column: 1 / -1;
+		}
+
+		.docs-list-group {
+			> *:not(:last-of-type) {
+				margin-bottom: --spacing(4);
+			}
+		}
+	}
+
+	.section-contact {
+		grid-column: 1 / -1;
+		padding-block: --spacing(16);
+	}
+
+	.docs-list-group {
+		/* these buttons should have big padding (default is different) */
+		--button-padding-block: --spacing(2) !important;
+		--button-padding-inline: --spacing(8) !important;
+
+		> *:not(:last-child) {
+			margin-bottom: --spacing(4);
+		}
+
+		.docs-list-title {
+			display: inline-block;
+
+			padding-inline: --spacing(4);
+			padding-block: --spacing(1);
+
+			text-transform: uppercase;
+			color: var(--color-black);
+			background-color: var(--color-lila);
+			border-radius: var(--radius-full);
+		}
+
+		.docs-list {
+			display: flex;
+			flex-direction: column;
+			gap: --spacing(4);
+
+			@variant md {
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+		}
+	}
+
+	.faq-list {
+		display: flex;
+		flex-direction: column;
+		gap: --spacing(4);
+
+		.faq-list-item {
+			--border-color: var(--color-white);
+			border-left: var(--accent-line-width) solid var(--border-color);
+			transition: border 150ms ease-in-out;
+
+			padding-inline: --spacing(4);
+
+			.faq-list-item__title {
+				cursor: pointer;
+				font-weight: 600;
+				display: inline-flex;
+
+				&::before {
+					content: "+";
+					color: var(--color-lila);
+					margin-right: --spacing(2);
+				}
+			}
+
+			.faq-list-item__text {
+				margin-top: --spacing(2);
+				max-width: 65ch;
+			}
+
+			&:has(details:open) {
+				--border-color: var(--color-lila);
+
+				.faq-list-item__title::before {
+					content: "—";
+				}
+			}
+
+			details {
+				summary {
+					list-style: none;
+				}
+			}
+		}
+	}
+}

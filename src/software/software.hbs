@@ -1,0 +1,325 @@
+---
+layout: layout.hbs
+title: Urlaubsverwaltung & Zeiterfassung — Open Source, DSGVO-konform
+description: Open-Source-Urlaubsverwaltung und Zeiterfassung für den Mittelstand. In Deutschland gehostet, DSGVO-konform, ohne Mitarbeiterüberwachung. 30 Tage kostenlos testen.
+navigation:
+  activeItem: software
+stylesheets:
+- /static/css/software.css
+scripts:
+- /static/js/software.js
+---
+
+<div class="bg-lila pt-(--main-header-height) pb-8">
+	<div class="page-grid px-page-grid-gap">
+		<section class="col-span-full">
+			<div class="py-5 text-center">
+				<span class="text-white text-3xl">focus:</span>
+				<ul class="word-cloud text-white">
+					<li class="font-basteleur">time</li>
+					<li class="font-basteleur">balance</li>
+					<li class="font-basteleur">work</li>
+					<li class="font-basteleur">cloud</li>
+					<li class="font-basteleur">life</li>
+					<li class="font-basteleur">shift</li>
+				</ul>
+			</div>
+			<div class="px-9 flex flex-col items-center">
+				<p class="text-center font-bold">Unsere Software ist so vielseitig wie einfach.</p>
+				<p class="text-center">Verschaffe dir hier einen Überblick aller Funktionen mit allem was möglich ist.</p>
+				<p class="mt-8 flex items-center gap-2">
+					{{> partials/dots-horizontal color="bg-green" }}
+					<a href="#funktionen" class="button button--light-blue">Zu den Funktionen</a>
+				</p>
+			</div>
+		</section>
+	</div>
+</div>
+
+<div class="bg-white">
+	<div class="page-grid px-page-grid-gap py-22">
+		<section class="hidden col-span-full lg:grid lg:grid-cols-subgrid lg:py-32">
+			<div class="col-start-2 col-span-8">
+				<p class="text-4xl max-w-[61vw]">
+					Ihr braucht keine neue Software, weil ihr neue <span class="font-bold">Funktionen</span> braucht.
+					Ihr braucht focus:shift, weil sich etwas <strong>verschoben</strong> hat.
+				</p>
+				<div class="dot-visual -left-16 -top-16">
+					<span class="dot bg-yellow"></span>
+					<span class="dot bg-yellow"></span>
+				</div>
+			</div>
+			<div class="mt-16 page-subgrid-full">
+				<div class="col-start-2 col-span-4">
+					<h2 class="font-bold">Vom Verwalten zum Gestalten.</h2>
+					<p>
+						Die meisten Unternehmen merken Überlastung erst, wenn Mitarbeitende ausfallen.
+						focus:shift macht sie früher sichtbar – aus den Arbeitszeit- und Abwesenheitsdaten, die ohnehin erfasst werden.
+						Ohne zusätzliches Tracking, ohne Fragebögen, vollständig Open Source und in Deutschland gehostet.
+						Damit du führen kannst, bevor du reagieren musst.
+					</p>
+				</div>
+				<div class="col-start-7 col-span-5">
+					<h2>Erlebt mit focus:shift <span aria-hidden="true">...</span></h2>
+					<ul class="ml-5 list-disc">
+						<li>Einfachere Gewährleistung der Fürsorgepflicht</li>
+						<li>Krankenstand-Reports</li>
+						<li>Gefährdungsbeurteilungen (gem. § 5 ArbSchG)</li>
+						<li>Entlastung von Führungskräften</li>
+						<li>Compliance-Sicherheit</li>
+						<li>Leichtere Risiko-Einschränkung</li>
+						<li>Einfachere Übernahme unternehmerischer Verantwortung</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="funktionen" class="page-subgrid-full px-page-grid-gap">
+			<h2 class="mb-14 col-span-full justify-self-start section-title-pill lg:col-start-2 lg:mb-6">Funktionen</h2>
+			<p class="mb-14 text-3xl col-span-full lg:col-start-2 lg:col-span-5 lg:text-5xl lg:mb-35">
+				Wir machen Muster <span class="font-basteleur">sichtbar</span>,
+				damit Führung <span class="font-basteleur">handeln</span> kann.
+			</p>
+			<ul class="mb-14 col-span-full flex flex-row flex-wrap justify-center gap-4 lg:col-start-7 lg:col-span-6 lg:justify-start lg:gap-2 lg:place-self-start lg:mb-35">
+				<li>
+					<a href="#focusapp" class="button button--sm button--lila">focus:<span class="font-basteleur">app</span></a>
+				</li>
+				<li>
+					<a href="#single-sign-on" class="button button--sm button--lila">Single Sign-on</a>
+				</li>
+				<li>
+					<a href="#arbeitszeiterfassung" class="button button--sm button--lila">Arbeitszeit erfassen</a>
+				</li>
+				<li>
+					<a href="#abwesenheitsarten" class="button button--sm button--lila">Individualisierbare Abwesenheiten</a>
+				</li>
+				<li>
+					<a href="#teamuebersicht" class="button button--sm button--lila">Teamübersicht</a>
+				</li>
+				<li>
+					<a href="#ueberstunden" class="button button--sm button--lila">Überstunden</a>
+				</li>
+				<li>
+					<a href="#krankmeldungen" class="button button--sm button--lila">Krankmeldungen</a>
+				</li>
+				<li>
+					<a href="#kalenderintegration" class="button button--sm button--lila">Kalenderintegration</a>
+				</li>
+				<li>
+					<a href="#kalender" class="button button--sm button--lila">Kalendarische Übersicht</a>
+				</li>
+			</ul>
+			<div class="features-grid page-subgrid-full grid-flow-row gap-13">
+				<div id="focusapp" class="feature-card">
+					<h3 class="font-basteleur"><span class="font-outfit">focus:</span>app</h3>
+					<p>
+						Deine Mitarbeitenden können jetzt unterwegs noch einfacher ihre Abwesenheiten beantragen und einsehen,
+						Zeiten erfassen und den Überblick behalten. Erhältlich im Apple App Store und Google Play Store.
+					</p>
+					<div class="feature-card__image image-mask--beige">
+						<img src="app-hero.png" alt="Drei Smartphones mit der Urlaubsverwaltung App, daneben die Merkmale „Security first“, „Stoppuhr starten und stoppen“, „Alle Funktionen und Daten wie im Browser“ und „Schnelle Freigabe“ sowie die Download-Badges für Apple App Store und Google Play" />
+					</div>
+					<p class="mt-4 ci-dots-button-group">
+						{{> partials/dots-horizontal color="bg-green" }}
+						<button popovertarget="feature-detail-mobile-app" class="button button--lila px-3 py-0 text-white">Mehr</button>
+					</p>
+					{{#> partials/popover id="feature-detail-mobile-app" class="feature-detail-popover"}}
+						<div class="feature-detail-popover__inner">
+							{{> software/feature-detail-app }}
+						</div>
+					{{/partials/popover}}
+				</div>
+				<div id="arbeitszeiterfassung" class="feature-card">
+					<h3 class="font-basteleur">Arbeitszeit erfassen</h3>
+					<p>
+						Du möchtest (oder musst) Arbeitszeiten in deinem Unternehmen digital erfassen und nachweisen können?
+						Dann tauche tiefer ein und erfahre mehr über die Zeiterfassung von focus:shift.
+					</p>
+					<div class="feature-card__image image-mask--beige">
+						<img src="feature-arbeitszeiterfassung.png" alt="Zeiterfassung mit Eingabemaske für einen neuen Zeiteintrag sowie Auflistung der heutigen Arbeitszeiten samt Wochen- und Tagessumme." />
+					</div>
+					<p class="mt-4 ci-dots-button-group">
+						{{> partials/dots-horizontal color="bg-green" }}
+						<button popovertarget="feature-detail-zeiterfassung" class="button button--lila px-3 py-0 text-white">Weiterlesen</button>
+					</p>
+					{{#> partials/popover id="feature-detail-zeiterfassung" class="feature-detail-popover"}}
+						<div class="feature-detail-popover__inner">
+							{{> software/feature-detail-zeiterfassung }}
+						</div>
+					{{/partials/popover}}
+				</div>
+				<div id="abwesenheitsarten" class="feature-card">
+					<h3 class="font-basteleur">Individualisierbare Abwesenheiten</h3>
+					<p>
+						Du möchtest die Abwesenheiten der Urlaubsverwaltung anpassen? Kein Problem!
+						Wähle aus verschiedenen Abwesenheiten die Richtigen für dich aus. Wähle aus Erholungsurlaub, Fortbildung,
+						Kur, Home-Office und vielen weiteren!
+					</p>
+					<div class="feature-card__image image-mask--beige">
+						<img src="feature-abwesenheitsarten.png" alt="Konfigurationstabelle der Abwesenheitsarten wie Erholungsurlaub, Sonderurlaub, Home-Office oder Fortbildung – je Zeile ein Schalter zum Aktivieren, Häkchen für Genehmigungs- und Stornierungsprozess, Sichtbarkeit für alle sowie eine Farbe." />
+					</div>
+				</div>
+				<div id="teamuebersicht" class="feature-card">
+					<h3 class="font-basteleur">Teamübersicht</h3>
+					<p>
+						Wann sind meine Kolleginnen und Kollegen abwesend? Kann nächsten Monat ein neues Projekt gestartet werden?
+						Die Teamübersicht gibt dir Einsicht auf alle Teams und das komplette Jahr.
+					</p>
+					<div class="feature-card__image image-mask--beige">
+						<img src="feature-teamuebersicht.png" alt="Abwesenheitsübersicht eines Monats mit Auswahl von Jahr, Monat und mehreren Abteilungen, darunter eine Matrix mit einer Zeile je Person und farbigen Markierungen an den Abwesenheitstagen." />
+					</div>
+				</div>
+				<div id="kalender" class="feature-card">
+					<h3 class="font-basteleur">Kalendarische Übersicht</h3>
+					<p>
+						Wann ist welcher Feiertag? Wie hast du deinen Urlaub verplant? Wann warst du krank?
+						Bei uns hast du immer alles im Blick. Außerdem kannst du über den Kalender direkt damit beginnen
+						deinen Urlaub zu planen.
+					</p>
+					<div class="feature-card__image image-mask--beige">
+						<img src="feature-kalender.png" alt="Kalender mit drei aufeinanderfolgenden Monaten, farbige Markierungen an Tagen mit Urlaub oder Krankmeldung, Wochenenden und Feiertage grau hervorgehoben." />
+					</div>
+				</div>
+				<div id="krankmeldungen" class="feature-card">
+					<h3 class="font-basteleur">Krankmeldungen</h3>
+					<p>
+						Wer ist heute krank? Behalte als Arbeitgeber:in die Krankmeldungen datenschutzkonform im Blick.
+					</p>
+					<div class="feature-card__image image-mask--beige">
+						<img src="feature-krankmeldungen.png" alt="Tabelle der Krankmeldungen für einen wählbaren Zeitraum: je Person die Anzahl der Krankheitstage und Kind-Krankheitstage, inklusive Hinweis auf Tage mit AU-Bescheinigung und CSV-Export." />
+					</div>
+				</div>
+				<div id="kalenderintegration" class="feature-card">
+					<h3 class="font-basteleur">Kalenderintegration</h3>
+					<p>
+						Die Abwesenheitskalender können ganz einfach freigegeben
+						und in alle gängigen Kalender Apps integriert werden.
+					</p>
+					<div class="feature-card__image image-mask--beige">
+						<img src="feature-kalenderintegration.png" alt="Maske „Mein Kalender“ mit Auswahl, wie weit vergangene Abwesenheiten freigegeben werden – Quartal, halbes Jahr, Jahr oder alle – und Button zum Freigeben des Kalenders." />
+					</div>
+					<p class="mt-4 ci-dots-button-group">
+						{{> partials/dots-horizontal color="bg-green" }}
+						<button popovertarget="feature-detail-kalenderintegration" class="button button--lila px-3 py-0 text-white">Weiterlesen</button>
+					</p>
+					{{#> partials/popover id="feature-detail-kalenderintegration" class="feature-detail-popover"}}
+						<div class="feature-detail-popover__inner">
+							{{> software/feature-detail-kalenderintegration }}
+						</div>
+					{{/partials/popover}}
+				</div>
+				<div id="ueberstunden" class="feature-card">
+					<h3 class="font-basteleur">Überstunden</h3>
+					<p>Länger im Büro gewesen oder doch früher Feierabend gemacht? Behalte immer den Überblick über deine erfassten und abgebauten Überstunden.</p>
+					<div class="feature-card__image image-mask--beige">
+						<img src="feature-ueberstunden.png" alt="Überstundenkonto eines Jahres mit Summe der eingetragenen und der abbaubaren Stunden, darunter die einzelnen Einträge für Überstundenaufbau, -abbau und Übertrag aus dem Vorjahr mit laufender Summe." />
+					</div>
+				</div>
+				<div id="single-sign-on" class="feature-card">
+					<h3 class="font-basteleur">Single Sign-On</h3>
+					<p>Dein Unternehmen hat bereits einen OpenId Provider wie z. B. Microsoft 365, Azure Active Directory, Microsoft Entra, Auth0, Okta oder Google Workspace im Einsatz? Wir helfen dir gerne bei der Einrichtung deiner Urlaubsverwaltung im eigenen Intranet.</p>
+					<div class="feature-card__image image-mask--beige"></div>
+				</div>
+			</div>
+		</section>
+	</div>
+	{{> partials/section-references }}
+</div>
+
+<div class="bg-lila py-14 lg:py-25">
+	<div class="page-grid px-page-grid-gap">
+		<section id="open-source" class="page-subgrid-full">
+			<h2 class="col-span-full place-self-start section-title-pill border-white md:mx-page-grid-gap lg:col-start-2 lg:mx-0">
+				Open-Source
+			</h2>
+			<p class="mt-8 col-span-full text-lg md:mx-page-grid-gap lg:col-start-2 lg:mx-0">
+				Wir sind da ganz offen:
+				Unsere <span class="font-basteleur">Open-Source</span>-Software bietet Transparenz und Möglichkeiten.
+			</p>
+			<p class="mt-4 col-span-full flex items-center gap-2 md:mx-page-grid-gap lg:col-start-2 lg:mx-0">
+				{{> partials/dots-horizontal color="bg-orange" }}
+				<a href="{{links.github}}" class="button button--light-blue">Jetzt Ansehen</a>
+			</p>
+			<ul class="mt-22 page-subgrid-full gap-22 md:gap-0 md:grid-rows-4 md:gap-y-16 lg:grid-rows-1 lg:mt-41">
+				<li class="col-span-full flex flex-col md:mx-page-grid-gap md:row-span-2 md:col-span-4 lg:row-span-1">
+					<img src="/static/img/icon-digital-souveraen.svg" alt="" class="w-20 h-auto mx-auto" />
+					<h3 class="mt-4 text-xl font-bold">Digitale Souveränität statt Vendor Lock-In</h3>
+					<p class="mt-2 text-lg">
+						Wir geben Teams Daten an die Hand, die zeigen, wann die Belastungsgrenze erreicht ist &dash;
+						bevor es zu spät ist.
+					</p>
+				</li>
+				<li class="col-span-full flex flex-col md:mx-page-grid-gap md:row-start-2 md:row-span-2 md:col-span-4 md:col-start-5 lg:row-span-1 lg:col-start-auto">
+					<img src="/static/img/icon-transparenz.svg" alt="" class="w-20 h-auto mx-auto" />
+					<h3 class="mt-4 text-xl font-bold">Sicherheit durch Transparenz</h3>
+					<p class="mt-2 text-lg">
+						Wir glauben fest daran, dass wahre Produktivität nur aus einer regenerierten Basis entstehen kann.
+						Deshalb ist Erholung in unserem Tool kein „Abfallprodukt“, sondern ein messbarer Erfolgsfaktor.
+					</p>
+				</li>
+				<li class="col-span-full flex flex-col md:mx-page-grid-gap md:row-span-2 md:col-span-4 lg:row-span-1 lg:col-start-auto">
+					<img src="/static/img/icon-innovation.svg" alt="" class="w-20 h-auto mx-auto" />
+					<h3 class="mt-4 text-xl font-bold">Innovation durch Community</h3>
+					<p class="mt-2 text-lg">
+						Unsere Software erinnert nicht nur an Fristen, sondern regt dazu an,
+						bewusst Pausen einzulegen und die eigene Energie über den Tag hinweg zu reflektieren.
+					</p>
+				</li>
+			</ul>
+		</section>
+	</div>
+</div>
+
+<div class="bg-white">
+	<div class="my-14 page-grid px-page-grid-gap">
+		<section class="page-subgrid-full">
+			<div class="page-subgrid-full px-page-grid-gap lg:px-0">
+				<h2 class="mt-8 col-span-full place-self-start section-title-pill lg:col-start-2">Datensouveränität</h2>
+				<p class="mt-8 col-span-full text-2xl lg:col-start-2 lg:col-span-5 lg:text-5xl">
+					Hosting & Betrieb in Deutschland, weil uns eure Daten & Sicherheit <strong class="font-normal font-basteleur">wichtig</strong> sind.
+				</p>
+				<p class="mt-4 col-span-full lg:col-start-2 lg:col-span-5 lg:text-lg">
+					Sicherheit und Datenschutz ist eines unserer Kernthemen. Nicht nur die Kommunikation ist nach aktuellsten
+					Sicherheitsstandards verschlüsselt, sondern auch die Backups.
+				</p>
+				<p class="mt-4 col-span-full lg:col-start-7 lg:col-span-5 lg:text-lg">
+					Die Urlaubsverwaltung wird im <strong>ISO 27001 zertifizierten Datenzentrum von Hetzner</strong> in Deutschland
+					gehostet und betrieben. Somit steht guter und sicherer Arbeit nichts im Weg.
+				</p>
+				<div class="col-span-full relative lg:row-start-3 lg:grid lg:grid-cols-subgrid lg:grid-rows-1">
+					<div class="lg:col-start-2 lg:col-span-5 lg:row-start-1">
+						<img src="/static/img/hetzner.png" alt="Deutschlandkarte mit den Hetzner-Siegeln „ISO/IEC 27001 zertifiziert“ und „0 % CO2-Emission, 100 % Ökostrom“" class="w-full lg:w-auto">
+					</div>
+					<div class="lg:col-start-5 lg:col-span-5 lg:row-start-1 lg:mt-16">
+						<img src="/static/img/baer-datensouveraen.png" alt="" class="absolute scale-35 -translate-x-24 top-16 lg:static lg:mix-blend-multiply lg:scale-50">
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+<section id="preis">
+	<div class="bg-white mt-34 my-14">
+		<div class="page-grid px-page-grid-gap">
+			<div class="page-subgrid-full px-page-grid-gap">
+				<h2 class="col-span-full place-self-start section-title-pill lg:col-start-2">Preise</h2>
+				<p class="mt-8 col-span-full text-2xl lg:col-start-2 lg:col-span-5 lg:text-5xl">
+					Preisgestaltung so <span class="font-basteleur">einfach</span> wie fair.
+				</p>
+				<p class="mt-4 col-span-full lg:col-start-2 lg:col-span-5 lg:text-lg">
+					Wähle dir den passenden Tarif aus &dash; ob in der Cloud oder on Premise.
+					Das Richtige ist nicht dabei? Kontaktiere uns für weitere Möglichkeiten und Beratung.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="bg-beige mt-14 py-14">
+		<div class="page-grid px-page-grid-gap">
+			{{> partials/price }}
+		</div>
+	</div>
+</section>
+
+{{> partials/section-meeting }}
+
+{{> partials/section-jetzt-testen }}

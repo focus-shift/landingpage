@@ -1,0 +1,57 @@
+---
+layout: layout.hbs
+navigation:
+  activeItem: neuigkeiten
+stylesheets:
+- /static/css/neuigkeiten.css
+---
+
+<div class="bg-beige">
+	<div class="page-grid px-page-grid-gap">
+		<section class="section-hero">
+			<div class="section-hero__image highlight-box border-green">
+				<div class="highlight-box__image bg-light-blue">
+					<img
+						src="{{teaserImage.src}}"
+						alt="{{teaserImage.alt}}"
+						class="{{teaserImage.class}}"
+						fetchpriority="high"
+						decoding="async"
+					/>
+				</div>
+			</div>
+			<div class="section-hero__title">
+				<p class="section-title-pill">Neuigkeiten</p>
+				<h1 class="mt-8 text-5xl">
+					{{title}}
+				</h1>
+			</div>
+		</section>
+	</div>
+</div>
+
+{{#if isDraft}}
+	<div class="fixed left-0 right-0 top-0 px-8 border-2 border-orange bg-green text-lg font-bold flex justify-between z-20">
+		<span>DRAFT</span>
+		<span>DRAFT</span>
+		<span>DRAFT</span>
+	</div>
+{{/if}}
+
+<div class="bg-white py-16">
+	<div class="page-grid px-page-grid-gap">
+		<div class="col-span-full text-3xl lg:col-start-2">
+			{{{excerptContent excerpt}}}
+		</div>
+		<div class="mt-22 page-subgrid-full">
+			<div class="col-span-full col-start-4 blog">
+				{{{restContent content excerpt}}}
+			</div>
+			<div class="dot-visual left-0 top-0 lg:left-20">
+				<span class="dot bg-lila"></span>
+				<span class="dot bg-lila"></span>
+			</div>
+		</div>
+	</div>
+</div>
+

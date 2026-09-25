@@ -1,0 +1,340 @@
+---
+layout: layout.hbs
+title: Hilfe und FAQs zu focus:shift
+description: Hilfe zu ausgewählten Themen und FAQs zu focus:shift
+navigation:
+  activeItem: hilfe
+eleventyNavigation:
+  key: hilfe
+  title: Dokumentation
+  url: /hilfe#dokumentation
+stylesheets:
+- /static/css/hilfe.css
+---
+
+<div class="bg-white">
+	<div class="page-grid px-page-grid-gap">
+		<section class="section-hero">
+			<div class="section-hero__image highlight-box border-green bg-beige">
+				<div class="highlight-box__image p-14">
+					<img
+						src="/static/img/hero-help.svg"
+						alt=""
+						class="object-contain aspect-square"
+						fetchpriority="high"
+						decoding="async"
+					/>
+				</div>
+			</div>
+
+			<div class="section-hero__title">
+				<h1 class="mt-8 text-5xl">
+					Oft gestellte Fragen &dash;&nbsp;<br class="hidden lg:inline" /><span style="font-size: 1em" class="font-basteleur">wir helfen gerne!</span>
+				</h1>
+			</div>
+		</section>
+		<section id="faq" class="section-faq">
+			<div>
+				<h2 class="section-title-pill">FAQ</h2>
+			</div>
+			<ul class="mt-8 faq-list">
+				<li class="faq-list-item">
+					<details>
+						<summary class="faq-list-item__title">
+							Ist die Testphase wirklich kostenlos?
+						</summary>
+						<div class="faq-list-item__text">
+							<p>
+								Ja, du kannst die Urlaubsverwaltung 30 Tage lang unverbindlich und kostenlos testen.
+								Während der Testphase sind alle Funktionen der Software vollständig freigeschaltet.
+								Es folgt <b>kein</b> automatischer Abo-Vertragsabschluss.
+							</p>
+						</div>
+					</details>
+				</li>
+				<li class="faq-list-item">
+					<details>
+						<summary class="faq-list-item__title">
+							Was passiert nach der kostenlosen Testphase?
+						</summary>
+						<div class="faq-list-item__text">
+							<p>
+								Wenn du über die kostenlose Testphase hinaus weiter Interesse an der Urlaubsverwaltung hast,
+								kannst du im Kundenportal deinen Status ändern und durchstarten.
+								Melde dich dafür über "Login" an und wähle dann "Mein Kundenportal".
+								Solltest du kein Interesse mehr haben, löschen wir deine Urlaubsverwaltung mit allen darin generierten Daten nach der Testphase.
+							</p>
+						</div>
+					</details>
+				</li>
+				<li class="faq-list-item">
+					<details>
+						<summary class="faq-list-item__title">
+							Wie kann ich an der kostenlosen Testphase teilnehmen?
+						</summary>
+						<div class="faq-list-item__text">
+							<p>
+								<a href="{{ links.registration }}" class="font-bold">Melde dich kostenlos an</a> und registriere dir damit deine eigene Urlaubsverwaltung.
+								Sie steht dir in wenigen Minuten zur Verfügung. Ohne Terminabsprache oder langen Wartezeiten.
+							</p>
+						</div>
+					</details>
+				</li>
+				<li class="faq-list-item">
+					<details>
+						<summary class="faq-list-item__title">
+							Welche Zahlungsarten gibt es?
+						</summary>
+						<div class="faq-list-item__text">
+							<p>
+								Du bekommst monatlich nach dem Leistungszeitraum eine Rechnung per E-Mail zugestellt.
+								Diese kannst du entweder in Form einer Überweisung begleichen oder ein SEPA-Lastschriftmandat erteilen.
+							</p>
+						</div>
+					</details>
+				</li>
+				<li class="faq-list-item">
+					<details>
+						<summary class="faq-list-item__title">
+							Wie erteile ich ein SEPA-Lastschriftmandat?
+						</summary>
+						<div class="faq-list-item__text">
+							<p>
+								Gerne kannst du uns ein SEPA-Lastschriftmandat über unser Kundenportal hinterlegen.
+								Melde dich dafür über den Punkt "Login" an. Danach hast du die Möglichkeit über "Mein Kundenportal" im Bereich "Mein Abo" ein SEPA-Lastschriftmandat zu hinterlegen.
+							</p>
+						</div>
+					</details>
+				</li>
+				<li class="faq-list-item">
+					<details>
+						<summary class="faq-list-item__title">
+							Welche Kündigungsfristen gelten?
+						</summary>
+						<div class="faq-list-item__text">
+							<p>
+								Kündigen kannst du mit 14 Tagen zum jeweiligen Ende eines jeden Vertragsmonats.<br>
+								Ein Jahresvertrag verlängert sich automatisch um jeweils ein Jahr, wenn nicht ein Monat vor Ablauf des
+								Vertrages schriftlich gekündigt wird.
+							</p>
+						</div>
+					</details>
+				</li>
+				<li class="faq-list-item">
+					<details>
+						<summary class="faq-list-item__title">
+							Wie viel kostet mich die Urlaubsverwaltung?
+						</summary>
+						<div class="faq-list-item__text">
+							<p>
+								Jeder Benutzende mit dem Status <i>aktiv</i>, kostet 2,00€ (zzgl. MwSt.) pro Monat. Kommen neue
+								Benutzende während dem Leistungszeitraum hinzu, wird der anteilige Zeitraum abgerechnet.
+							</p>
+							<p>
+								Werden Benutzende auf den Status <i>inaktiv</i> gesetzt oder gelöscht, wird die Änderung ab dem folgenden Leistungszeitraum in der Rechnung berücksichtigt.
+							</p>
+							<p>
+								Es gilt eine Mindestabnahme von fünf aktiven Nutzern. Dies bedeutet, dass der monatliche Mindestpreis für die Urlaubsverwaltung bei 10,00 € (zzgl. MwSt.) liegt,
+								auch wenn weniger als fünf Nutzer in deiner Organisation aktiv sind.
+							</p>
+						</div>
+					</details>
+				</li>
+				<li class="faq-list-item">
+					<details>
+						<summary class="faq-list-item__title">
+							Wie viel kostet mich die Zeiterfassung?
+						</summary>
+						<div class="faq-list-item__text">
+							<p>
+								Zusätzlich zur Urlaubsverwaltung kannst du auch die Zeiterfassung nutzen.
+								Dafür werden 2,00 € (zzgl. MwSt.) pro Monat und Nutzer berechnet.
+							</p>
+						</div>
+					</details>
+				</li>
+				<li class="faq-list-item">
+					<details>
+						<summary class="faq-list-item__title">
+							Gibt es einen Jahresvertrag und was kostet dieser?
+						</summary>
+						<div class="faq-list-item__text">
+							<p>
+								Ja, es besteht die Möglichkeit, einen Jahresvertrag abzuschließen.
+								In diesem Fall gewähren wir einen Rabatt von 10%.
+								Ein Jahresvertrag wird im Voraus auf Basis der zu erwartenden Nutzerzahl abgeschlossen.
+								Benutzende, die während des Leistungszeitraumes hinzukommen, werden anteilig bis zum regulären Abrechnungszeitraum des Hauptvertrages abgerechnet.
+								Hierfür wird eine Nachberechnung erstellt. Werden Benutzende auf den Status inaktiv gesetzt oder gelöscht, wird die Änderung ab dem folgenden Leistungszeitraum in der Rechnung berücksichtigt.
+								Für einen Jahresvertrag wende dich bitte
+								<a href="mailto:support@focus-shift.de?subject=Anfrage%20Jahresvertrag" class="underline">direkt an uns</a>.
+							</p>
+						</div>
+					</details>
+				</li>
+				<li class="faq-list-item">
+					<details>
+						<summary class="faq-list-item__title">
+							Sind meine Daten sicher? Wo werden meine Daten gespeichert?
+						</summary>
+						<div class="faq-list-item__text">
+							<p>
+								Deine Daten werden DSGVO-konform verarbeitet und in Deutschland verschlüsselt gespeichert. Wir erstellen täglich ein Backup.
+							</p>
+						</div>
+					</details>
+				</li>
+				<li class="faq-list-item">
+					<details>
+						<summary class="faq-list-item__title">
+							Wie lege ich Mitarbeitende an? Kann ich Mitarbeitende importieren?
+						</summary>
+						<div class="faq-list-item__text">
+							<p>
+								Wenn du eine Urlaubsverwaltung registrierst, bekommst du von uns privilegiert Rechte. Nach dem Login auf focus-shift.de
+								kannst du in das Kundenportal wechseln und dort die Mitarbeitenden einladen.
+								Eine Anleitung dazu findest du <a class="font-bold underline" href="/hilfe/kundenportal/onboarding/">hier</a>.
+								Verwendet ihr einen OpenID Connect Anbieter (wie z. B. Microsoft 365, Azure Active Directory, Auth0, Google, SAP, etc.)
+								kannst du diesen im Kundenportal konfigurieren, sodass ihr euren gewohnten Login benutzen könnt.
+								Eine Anleitung dazu findest du <a class="font-bold underline" href="/hilfe/kundenportal/sso/">hier</a>.
+							</p>
+						</div>
+					</details>
+				</li>
+				<li class="faq-list-item">
+					<details>
+						<summary class="faq-list-item__title">
+							Gibt es eine Kalenderintegration?
+						</summary>
+						<div class="faq-list-item__text">
+							<p>
+								Jeder Benutzende der Urlaubsverwaltung kann seinen eigenen Kalender, sowie einen Kalender pro Abteilung abonnieren.
+								Ist der Firmen-weite Kalender freigeschaltet, lässt sich auch dieser von jedem Mitarbeiter abonnieren.
+							</p>
+						</div>
+					</details>
+				</li>
+				<li class="faq-list-item">
+					<details>
+						<summary class="faq-list-item__title">
+							Gibt es eine Android- oder iOS-App?
+						</summary>
+						<div class="faq-list-item__text">
+							<p>
+								Die Urlaubsverwaltung ist für mobile Endgeräte optimiert und benötigt keine eigene App.
+								Möchtest du dennoch eine App verwenden, findest du die
+								<a href="https://play.google.com/store/apps/details?id=cloud.urlaubsverwaltung.mobile.urlaubsverwaltung" class="font-bold underline">Android-App im Play Store</a>.
+								Füge auf iOS die Seite deiner Urlaubsverwaltung einfach dem Startbildschirm deines Handys hinzu.
+							</p>
+						</div>
+					</details>
+				</li>
+				<li class="faq-list-item">
+					<details>
+						<summary class="faq-list-item__title">
+							Kann die Urlaubsverwaltung um eine Funktion erweitert werden?
+						</summary>
+						<div class="faq-list-item__text">
+							<p>
+								Hast du einen Vorschlag für eine Verbesserung oder fehlt dir eine Funktion, nimm Kontakt mit uns auf.
+								Schreibe uns entweder per <a class="font-bold underline" href="mailto:support@focus-shift.de?subject=Anfrage%20Feature">E-Mail</a> oder öffne direkt ein Issue auf <a class="font-bold underline" href="https://github.com/urlaubsverwaltung/urlaubsverwaltung/issues">Github</a>.
+							</p>
+						</div>
+					</details>
+				</li>
+			</ul>
+		</section>
+	</div>
+</div>
+
+<div class="bg-beige">
+	<div class="page-grid px-page-grid-gap">
+		<section id="dokumentation" class="section-docs">
+			<div>
+				<h2 class="section-title-pill">Dokumentation</h2>
+			</div>
+			<div>
+				<p class="lg:font-bold">Finde Hilfe in der Nutzung der Software in jedem Bereich</p>
+				<p>Unsere ausführliche Dokumentation bietet in Einblick in alle wichtigen Funktionen.</p>
+			</div>
+			<div class="docs-list-group">
+				<h3 id="kundenportal" class="docs-list-title">Kundenportal</h3>
+				<ul class="docs-list">
+					<li>
+						<a href="/hilfe/kundenportal/onboarding" class="button button--white px-10 py-5">Onboarding</a>
+					</li>
+					<li>
+						<a href="/hilfe/kundenportal/sso" class="button button--white px-10 py-5">Single Sign-On</a>
+					</li>
+				</ul>
+			</div>
+			<div class="docs-list-group">
+				<h3 id="urlaubsverwaltung" class="docs-list-title">Urlaubsverwaltung</h3>
+				<ul class="docs-list">
+					<li>
+						<a href="/hilfe/urlaubsverwaltung/abwesenheiten" class="button button--white px-10 py-5">Abwesenheiten</a>
+					</li>
+					<li>
+						<a href="/hilfe/urlaubsverwaltung/ueberstunden" class="button button--white px-10 py-5">Überstunden</a>
+					</li>
+					<li>
+						<a href="/hilfe/urlaubsverwaltung/krankmeldungen" class="button button--white px-10 py-5">Krankmeldungen</a>
+					</li>
+					<li>
+						<a href="/hilfe/urlaubsverwaltung/benutzer" class="button button--white px-10 py-5">Benutzer</a>
+					</li>
+					<li>
+						<a href="/hilfe/urlaubsverwaltung/abteilungen" class="button button--white px-10 py-5">Abteilungen</a>
+					</li>
+					<li>
+						<a href="/hilfe/urlaubsverwaltung/kalender" class="button button--white px-10 py-5">Kalender</a>
+					</li>
+					<li>
+						<a href="/hilfe/urlaubsverwaltung/feiertage" class="button button--white px-10 py-5">Feiertage</a>
+					</li>
+					<li>
+						<a href="/hilfe/urlaubsverwaltung/benachrichtigungen" class="button button--white px-10 py-5">Benachrichtigungen</a>
+					</li>
+				</ul>
+			</div>
+			<div class="docs-list-group">
+				<h3 id="zeiterfassung" class="docs-list-title">Zeiterfassung</h3>
+				<ul class="docs-list">
+					<li>
+						<a href="/hilfe/zeiterfassung/zeiteintraege" class="button button--white px-10 py-5">Zeiteinträge</a>
+					</li>
+					<li>
+						<a href="/hilfe/zeiterfassung/pausen" class="button button--white px-10 py-5">Pausen</a>
+					</li>
+					<li>
+						<a href="/hilfe/zeiterfassung/berichte" class="button button--white px-10 py-5">Berichte</a>
+					</li>
+					<li>
+						<a href="/hilfe/zeiterfassung/feiertage" class="button button--white px-10 py-5">Feiertage</a>
+					</li>
+					<li>
+						<a href="/hilfe/zeiterfassung/personen" class="button button--white px-10 py-5">Personen</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+</div>
+
+<div class="bg-white">
+	<div class="page-grid px-page-grid-gap">
+		<section class="section-contact">
+			<div class="relative">
+				<div class="px-5 relative space-y-8 z-10 max-w-[30ch]">
+					<h2 class="section-title-pill">Kontakt</h2>
+					<p class="font-basteleur">Deine Frage wird hier nicht beantwortet?</p>
+					<p>Dann schreib uns eine E-Mail oder ruf uns an. Wir helfen gerne weiter.</p>
+					{{> partials/contact-email-phone }}
+				</div>
+				<div class="dot-visual -top-7 left-0">
+					<span class="dot bg-yellow"></span>
+					<span class="dot bg-yellow"></span>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
