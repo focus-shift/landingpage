@@ -1,7 +1,7 @@
 ---
 redirect_from: /hilfe/sso/azuread/
 title: Azure AD - Single Sign-On (SSO) - Hilfe
-description: Single Sign-On (SSO) mit Azure EntraID bzw. Azure Active Directory (Azure AD) für urlaubsverwaltung.cloud
+description: Single Sign-On (SSO) mit Azure EntraID bzw. Azure Active Directory (Azure AD) für focus-shift.de
 eleventyNavigation:
   key: azure-ad
   title: Azure AD
@@ -13,14 +13,14 @@ eleventyNavigation:
 ## Welcher Benutzer darf die Azure AD Anbindung konfigurieren?
 
 Die Konfiguration kann nur von dem Benutzer durchgeführt werden, welcher die Registrierung zu
-urlaubsverwaltung.cloud durchgeführt hat. Dieser Benutzer hat die Berechtigung auf _Mein Kundenportal_, über
+focus-shift.de durchgeführt hat. Dieser Benutzer hat die Berechtigung auf _Mein Kundenportal_, über
 welches die Konfiguration durchgeführt werden kann.
 
-Zu _Mein Kundenportal_ gelangst du über _[urlaubsverwaltung.cloud](https://urlaubsverwaltung.cloud)_ > _Login_ und nach erfolgreichem Login über die Kachel _Mein Kundenportal_.
+Zu _Mein Kundenportal_ gelangst du über _https://focus-shift.de_ > _Login_ und nach erfolgreichem Login über die Kachel _Mein Kundenportal_.
 
 ## Wie können Benutzer aus Active Directory verwendet werden?
 
-Eine direkte Anbindung von einer lokalen Active Directory Instanz zu urlaubsverwaltung.cloud wird nicht
+Eine direkte Anbindung von einer lokalen Active Directory Instanz zu focus-shift.de wird nicht
 unterstützt. Jedoch ist es möglich Benutzer aus deinem Active Directory zu verwenden, wenn dieses via Azure
 AD Connect mit Azure AD synchronisiert wird.
 Details dazu findest du bei Microsoft in der Dokumentation [Installation von Azure AD Connect](https://learn.microsoft.com/de-de/entra/identity/hybrid/connect/how-to-connect-install-express).
@@ -62,7 +62,7 @@ Registrierung starten.
       alt="App-Registrierung durchführen"
     />
 
-1. Als _Name_ der Anwendung kann z. B. _urlaubsverwaltung.cloud_ verwendet werden
+1. Als _Name_ der Anwendung kann z. B. _focus-shift.de_ verwendet werden
 2. Für den Punkt _Unterstütze Kontotypen_ muss _Nur Konten in diesem Organisationsverzeichnis_ ausgewählt werden
 3. Umleitungs-URI überspringen und wird in [Schritt 3](#schritt-3-fuer-app-registrierung-umleitungs-uri-konfigurieren) konfiguriert
 4. Nun auf _Registrieren_ klicken
@@ -97,7 +97,7 @@ Neuer geheimer Clientschlüssel erstellen
   <p>
     Hierbei ist darauf zu achten, dass ein paar Tage <span class="font-bold">vor Ablauf</span> des Clientschlüssels ein neuer Clientschlüssel für
     die Anwendung in Azure AD erzeugt werden muss. Dieser neue Clientschlüssel kann danach im Portal von
-    urlaubsverwaltung.cloud konfiguriert werden. Falls dies nicht vor Ablauf des Clientschlüssel durchgeführt
+    focus-shift.de konfiguriert werden. Falls dies nicht vor Ablauf des Clientschlüssel durchgeführt
     wird, ist <span class="font-bold">kein</span> Zugriff auf die Urlaubsverwaltung mehr möglich ist.
     Solltest du den Zeitpunkt verpasst haben, ist das kein Problem! Melde dich einfach via <a href="mailto:support@focus-shift.de?subject=Unterstützung%20Client-Secret%20abgelaufen">E-Mail</a> bei uns und wir beheben zusammen das Problem - Daten gehen dabei <span class="font-bold">nicht</span> verloren!
     Am besten richtest du in deinem Kalender 7-14 Tage vor Ablauf des Clientschlüssels eine Erinnerung für den Wechsel ein.
@@ -134,7 +134,7 @@ entsprechende Microsoft Graph-Berechtigung aktiviert werden muss.
 
 ### Schritt 2: Auf Mein Kundenportal die Anbindung konfigurieren
 
-Dazu muss man nun zu _Mein Kundenportal_ von [urlaubsverwaltung.cloud](https://urlaubsverwaltung.cloud) via _Login_ und über die Kachel
+Dazu muss man nun zu _Mein Kundenportal_ von https://focus-shift.de via _Login_ und über die Kachel
 _Mein Kundenportal_ wechseln. Unter _Single-Sign-On_ > _Azure AD_ gelangst du nun auf die Konfigurationsseite.
 
 Zuerst kopierst du die hervorgehobene URI in die Textdatei, welche in [Schritt 3](#schritt-3-fuer-app-registrierung-umleitungs-uri-konfigurieren) als Umleitungs-URI konfiguriert wird.
@@ -149,7 +149,7 @@ Nun brauchen wir die Werte aus der Textdatei von [Schritt 1](#schritt-1-neue-app
 1. Wert von _Anwendungs-Id_
 2. Wert von _Clientschlüssel_
 3. Wert von _Verzeichnis-Id_
-4. Ein Klick auf _speichern_ konfiguriert nun die Anbindung von urlaubsverwaltung.cloud zu Azure AD
+4. Ein Klick auf _speichern_ konfiguriert nun die Anbindung von focus-shift.de zu Azure AD
 
 ### Schritt 3: Für App-Registrierung Umleitungs-URI konfigurieren
 
@@ -186,8 +186,8 @@ Nun ist die Konfiguration auf Seiten von Azure AD abgeschlossen.
 </aside>
 
 Nachdem die Konfiguration von Schritt 1 bis 3 erfolgreich durchgeführt wurde, kann nun die Anmeldung zu
-urlaubsverwaltung.cloud via Azure AD erfolgen.
-Dazu öffnest du _[urlaubsverwaltung.cloud](https://urlaubsverwaltung.cloud)_ > _Login_, gibst deine E-Mail ein, klickst auf _Weiter_.
+focus-shift.de via Azure AD erfolgen.
+Dazu öffnest du _https://focus-shift.de_ > _Login_, gibst deine E-Mail ein, klickst auf _Weiter_.
 Nun wirst du zur Anmelde-Seite von Microsoft umgeleitet und musst dich mit deinem Microsoft Konto anmelden.
 
 Es erscheint eine Meldung, dass der Zugriff auf die angeforderten Berechtigungen (Details siehe [Schritt 2](#schritt-2-auf-mein-kundenportal-die-anbindung-konfigurieren))
@@ -201,7 +201,7 @@ akzeptiert werden muss.
 1. _Zustimmung im Name Ihrer Organisation_ anklicken, somit akzeptierst du den Zugriff für alle Personen innerhalb deiner Organisation
 2. _Akzeptieren_ anklicken
 
-Danach wirst du auf den Authentifizierungsserver von urlaubsverwaltung.cloud weitergeleitet. Dieser merkt,
+Danach wirst du auf den Authentifizierungsserver von focus-shift.de weitergeleitet. Dieser merkt,
 dass es zu deiner E-Mail-Adresse schon ein Konto gibt.
 
     <img
@@ -210,16 +210,16 @@ dass es zu deiner E-Mail-Adresse schon ein Konto gibt.
     />
 
 1. Durch einen Klick auf _Zu einem bestehenden Benutzerkonto hinzufügen_ weist du den
-   Authentifizierungsserver von urlaubsverwaltung.cloud an, dass du das Azure AD Konto mit dem
-   urlaubsverwaltung.cloud Konto verknüpfen möchtest.
+   Authentifizierungsserver von focus-shift.de an, dass du das Azure AD Konto mit dem
+   focus-shift.de Konto verknüpfen möchtest.
 
-Der Authentifizierungsserver von urlaubsverwaltung.cloud schickt dir nun eine E-Mail mit einem Link, um
+Der Authentifizierungsserver von focus-shift.de schickt dir nun eine E-Mail mit einem Link, um
 sicher zu stellen, dass die Verknüpfung der Benutzerkonten auch wirklich von dir angefordert wurde und du im
 Besitz beider Benutzerkonten bist.
 
     <img
       src="schritt_4_konto_bestaetigen.png"
-      alt="Existierendes urlaubsverwaltung.cloud Konto mit Azure AD Konto verknüpfen"
+      alt="Existierendes focus-shift.de Konto mit Azure AD Konto verknüpfen"
     />
 
 E-Mail mit Link zum Bestätigen der Benutzerkonto-Verknüpfung
@@ -229,10 +229,10 @@ E-Mail mit Link zum Bestätigen der Benutzerkonto-Verknüpfung
       alt="E-Mail mit Link zum Konto verknüpfen"
     />
 
-1. Nach einem Klick auf _Link zur Bestätigung der Kontoverknüpfung_ gelangst du nun in das Portal von urlaubsverwaltung.cloud
+1. Nach einem Klick auf _Link zur Bestätigung der Kontoverknüpfung_ gelangst du nun in das Portal von focus-shift.de
 
-Nun hast du erfolgreich die Integration von Azure AD und urlaubsverwaltung.cloud durchgeführt.
+Nun hast du erfolgreich die Integration von Azure AD und focus-shift.de durchgeführt.
 
-Die Verknüpfung des Kontos von urlaubsverwaltung.cloud und Azure AD erfolgt nur für deinen Benutzer bzw.
-für Benutzer, welche _vor_ der Integration mit Azure AD Zugriff auf urlaubsverwaltung.cloud haben.
+Die Verknüpfung des Kontos von focus-shift.de und Azure AD erfolgt nur für deinen Benutzer bzw.
+für Benutzer, welche _vor_ der Integration mit Azure AD Zugriff auf focus-shift.de haben.
 Für neue Benutzer ist dies _nicht_ erforderlich und sie können direkt auf die Urlaubsverwaltung zugreifen.

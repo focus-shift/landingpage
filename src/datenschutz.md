@@ -81,7 +81,7 @@ DSGVO-konforme Verarbeitung deiner Daten.
 
 ## 5. Ein aktueller Auftragsverarbeitungsvertrag
 
-Unser [Vertrag zur Auftragsverarbeitung](https://urlaubsverwaltung.cloud/av-vertrag/) (AVV) ist
+Unser [Vertrag zur Auftragsverarbeitung](/av-vertrag/) (AVV) ist
 öffentlich einsehbar und muss nicht erst angefordert werden. Die Transparenz darüber welche Arten von Daten und
 wie diese verarbeitet werden, ist uns wichtig. Dabei achten wir auf Datensparsamkeit und Zweckbindung.
 
