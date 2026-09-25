@@ -61,4 +61,4 @@ dass sie auch für mobile Mitarbeitende mit unterschiedlichen Arbeitsorten geeig
     </figure>
 </div>
 
-Die Zeiterfassung auf <a href="https://urlaubsverwaltung.cloud">urlaubsverwaltung.cloud</a> bietet genau diese Möglichkeit.
+Die Zeiterfassung auf [focus-shift.de](https://focus-shift.de) bietet genau diese Möglichkeit.

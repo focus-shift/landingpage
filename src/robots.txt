@@ -1,4 +1,4 @@
-Sitemap: https://urlaubsverwaltung.cloud/sitemap.xml
+Sitemap: https://focus-shift.de/sitemap.xml
 
 User-agent: *
 Disallow:

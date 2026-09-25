@@ -157,7 +157,7 @@ Da jedes Bundesland individuell Feiertage festgelegt hat, sind auch weitere Komb
 		</p>
 		<div class="md:max-w-sm md:mx-auto text-lg sm:text-xl md:text-lg">
 			<a data-append-utm
-				 href="https://registry.apps.urlaubsverwaltung.cloud/registration"
+				 href="{{ links.registration }}"
 				 class="px-3 py-2 text-lg font-medium flex items-center justify-center no-underline rounded whitespace-nowrap bg-yellow-300 text-sky-900 text-opacity-90 hover:text-opacity-100 border border-sky-100 hover:border-blue-200 hover:shadow-md active:shadow"
 				 data-goal="signup"
 				 data-goal-trigger="eye-catcher"

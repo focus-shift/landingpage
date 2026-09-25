@@ -26,7 +26,7 @@ Hier bekommst du eine Schritt-für-Schritt-Anleitung:
 #### Vorab: Funktion aktivieren
 
 Dein Office bzw. deine Personalabteilung kann die Funktion "Mitarbeiter-Krankmeldung" aktivieren/deaktivieren.
-Mehr zur Konfiguration der urlaubsverwaltung.cloud findest du in unserer [Hilfe zu Krankmeldungen](https://urlaubsverwaltung.cloud/hilfe/urlaubsverwaltung/krankmeldungen/#kann-eine-mitarbeitende-die-krankmeldung-selbst-einreichen).
+Mehr zur Konfiguration von focus:shift findest du in unserer [Hilfe zu Krankmeldungen](/hilfe/urlaubsverwaltung/krankmeldungen/#kann-eine-mitarbeitende-die-krankmeldung-selbst-einreichen).
 
 #### 1. Krankmeldung eintragen
 

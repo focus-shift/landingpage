@@ -1,7 +1,7 @@
 ---
 layout: layout-legal.hbs
-title: Impressum der urlaubsverwaltung.cloud
-description: Impressum der urlaubsverwaltung.cloud
+title: Impressum focus-shift.de
+description: Impressum focus-shift.de
 ---
 
 # Impressum

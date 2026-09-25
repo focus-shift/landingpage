@@ -1,6 +1,6 @@
 ---
 layout: layout-legal
-title: AGB der urlaubsverwaltung.cloud
+title: AGB der focus:shift
 description: Faire allgemeine Geschäftsbedingungen als Basis der Partnerschaft
 ---
 
@@ -12,7 +12,7 @@ Stand: 30. November 2022
 
 ### § 1 Gegenstand der Teilnahme- und Nutzungsbedingungen
 
-(1) Die Focus Shift Software GmbH (nachfolgend „Diensteanbieter“ genannt) stellt auf <a href="https://urlaubsverwaltung.cloud" class="underline">https://urlaubsverwaltung.cloud</a> eine Plattform zur Verfügung (nachfolgend „das Portal“ genannt), über welche die ordnungsgemäß angemeldeten Nutzer ihre Urlaubsverwaltung im Unternehmen durchführen können. Nähere Informationen zu den Diensten finden sich in der Dienstebeschreibung, § 8.
+(1) Die Focus Shift Software GmbH (nachfolgend „Diensteanbieter“ genannt) stellt auf https://focus-shift.de eine Plattform zur Verfügung (nachfolgend „das Portal“ genannt), über welche die ordnungsgemäß angemeldeten Nutzer ihre Urlaubsverwaltung im Unternehmen durchführen können. Nähere Informationen zu den Diensten finden sich in der Dienstebeschreibung, § 8.
 
 (2) Die vorliegenden Teilnahme- und Nutzungsbedingungen regeln die Zurverfügungstellung der Dienste durch den Diensteanbieter und die Nutzung dieser Dienste durch Sie als ordnungsgemäß angemeldeten Teilnehmer.
 
@@ -119,7 +119,7 @@ Der Diensteanbieter ist jederzeit berechtigt, auf dem Portal unentgeltlich berei
 ### § 13 Referenznennung
 
 Der Dienstanbieter behält sich das Recht vor, solange ein vertragliches Verhältnis mit Ihnen besteht, den Namen sowie das Logo Ihres Unternehmens,
-sowohl auf der Landingpage des Portals <a href="https://urlaubsverwaltung.cloud" class="underline">https://urlaubsverwaltung.cloud</a> und dessen Unterseiten,
+sowohl auf der Landingpage des Portals https://focus-shift.de und dessen Unterseiten,
 als auch auf den Social Media Kanälen des Dienstanbieters als Referenzkunden zu nennen.
 Der Dienstanbieter darf ferner die erbrachten Leistungen zu Demonstrationszwecken öffentlich wiedergeben oder auf sie hinweisen.
 Der Referenznennung kann in Schriftform oder per E-Mail widersprochen werden

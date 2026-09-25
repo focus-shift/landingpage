@@ -66,7 +66,7 @@ Abteilungen können nun nicht mehr mit gleichen Namen doppelt angelegt werden, u
 
 ## Exchange Kalenderintegration entfernt
 
-Die Kalenderintegration für Exchange (EWS) wurde von Microsoft abgekündigt und im Zuge dessen aus der Urlaubsverwaltung entfernt. Zur Synchronisation von Abwesenheiten kann die Kalenderintegration via [abonnierten ICal-Kalender](https://urlaubsverwaltung.cloud/hilfe/urlaubsverwaltung/kalender/) genutzt werden.
+Die Kalenderintegration für Exchange (EWS) wurde von Microsoft abgekündigt und im Zuge dessen aus der Urlaubsverwaltung entfernt. Zur Synchronisation von Abwesenheiten kann die Kalenderintegration via [abonnierten ICal-Kalender](/hilfe/urlaubsverwaltung/kalender/) genutzt werden.
 
 ## Vereinfachter Ablauf bei Korrektur von Anträgen
 

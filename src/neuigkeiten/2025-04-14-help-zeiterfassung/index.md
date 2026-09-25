@@ -18,7 +18,7 @@ So findest du schneller die passenden Informationen und kannst die Zeiterfassung
 
 ## Neue Hilfe-Funktion im Avatar-Menü für die Zeiterfassung
 
-Ab sofort findest du im **Avatar-Menü** einen direkten Zugang zur [**Hilfe-Seite der Zeiterfassung**](https://urlaubsverwaltung.cloud/hilfe/#dokumentation-zeiterfassung) – damit du noch schneller und einfacher Antworten auf deine Fragen bekommst.
+Ab sofort findest du im **Avatar-Menü** einen direkten Zugang zur [**Hilfe-Seite der Zeiterfassung**](/hilfe/#dokumentation-zeiterfassung) – damit du noch schneller und einfacher Antworten auf deine Fragen bekommst.
 
 <div class="flex my-8">
     <figure>
@@ -35,18 +35,18 @@ Die Hilfe ist übersichtlich in vier zentrale Bereiche gegliedert:
 
 - **Zeiteinträge**  
   Erfahre alles rund um das Erfassen, Bearbeiten und Verwalten deiner Zeiteinträge und die für deine Mitarbeitenden. Ob manuelle Einträge oder automatische Zeiterfassung – diese Sektion führt dich Schritt für Schritt durch alle Funktionen.  
-  [Hilfe zu Zeiteinträgen](https://urlaubsverwaltung.cloud/hilfe/zeiterfassung/zeiteintraege/)
+  [Hilfe zu Zeiteinträgen](/hilfe/zeiterfassung/zeiteintraege/)
 
 - **Berichte**  
   Lerne, wie du aussagekräftige Berichte erstellst, analysierst und exportierst. Egal individuelle Auswertungen oder Teamübersichten – hier findest du alle wichtigen Informationen.  
-  [Hilfe zu den Berichten](https://urlaubsverwaltung.cloud/hilfe/zeiterfassung/berichte/)
+  [Hilfe zu den Berichten](/hilfe/zeiterfassung/berichte/)
 
 - **Personen**  
   Hier erfährst du, wie du Mitarbeitende verwaltest und Berechtigungen definierst. Zusätzlich gibt es Informationen zur Konfiguration von individuellen Arbeitszeiten und Überstundenregelungen.  
-  [Hilfe zu Personen](https://urlaubsverwaltung.cloud/hilfe/zeiterfassung/personen/)
+  [Hilfe zu Personen](/hilfe/zeiterfassung/personen/)
 
 - **Feiertage**  
   Wie werden Feiertage berücksichtigt? Wie kannst du die globale Feiertagsregelung für Mitarbeitenden anpassen?  
-  [Hilfe zu Feiertagen](https://urlaubsverwaltung.cloud/hilfe/zeiterfassung/feiertage/)
+  [Hilfe zu Feiertagen](/hilfe/zeiterfassung/feiertage/)
 
 Dank der neuen Struktur findest du schneller die Informationen, die du brauchst – direkt erreichbar über dein Avatar-Menü.
