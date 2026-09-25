@@ -15,6 +15,21 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 		}
 
+		if (carousel.dataset.carouselStart === "center") {
+			const item = items[Math.floor(items.length / 2)];
+			const offset =
+				item.getBoundingClientRect().left -
+				carousel.getBoundingClientRect().left;
+			// instant: skip smooth scroll-behavior of the carousel
+			carousel.scrollTo({
+				left:
+					carousel.scrollLeft +
+					offset -
+					(carousel.clientWidth - item.offsetWidth) / 2,
+				behavior: "instant",
+			});
+		}
+
 		carousel.addEventListener("click", function (event) {
 			const item = items.find(child => child.contains(event.target));
 			if (item) {
@@ -22,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		});
 
-		// browser generates buttons itself with ::scroll-marker (see demo.css)
+		// browser generates buttons itself with ::scroll-marker (see carousel.css)
 		const buttons = supportsScrollMarkers
 			? []
 			: createButtons(carousel, items, scrollToItem);
@@ -53,13 +68,16 @@ function createButtons(carousel, items, scrollToItem) {
 	const list = document.createElement("ul");
 	list.className = "mt-4 col-span-full flex justify-center gap-1";
 
+	const plain = carousel.classList.contains("carousel--plain-markers");
+
 	const buttons = items.map(function (item, index) {
 		const button = document.createElement("button");
 		button.type = "button";
-		button.textContent = index + 1;
+		if (!plain) {
+			button.textContent = index + 1;
+		}
 		button.setAttribute("aria-label", `Bild ${index + 1}`);
-		button.className =
-			"flex items-center justify-center w-8 h-8 rounded-full border border-lila cursor-pointer aria-[current=true]:bg-lila";
+		button.className = `flex items-center justify-center ${plain ? "w-3 h-3" : "w-8 h-8"} rounded-full border border-lila cursor-pointer aria-[current=true]:bg-lila`;
 		button.addEventListener("click", () => scrollToItem(item));
 
 		const listItem = document.createElement("li");

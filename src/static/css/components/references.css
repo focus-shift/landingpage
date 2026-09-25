@@ -1,18 +1,19 @@
 @layer components {
-	.references-list {
-		width: 100%;
-		padding-block: --spacing(8);
+	/* logos are small, show several at once instead of one per slide */
+	.carousel.references-carousel {
+		--references-item-width: --spacing(64);
+		--carousel-peek: 15%;
 
-		display: flex;
-		gap: var(--spacing-page-grid-gap);
-
-		filter: grayscale(100%);
+		grid-auto-columns: var(--references-item-width);
+		/* first and last logo can be scrolled into the center */
+		padding-inline: calc(50% - var(--references-item-width) / 2);
 
 		img {
 			height: 90px;
-			width: auto;
-			max-width: 220px;
+			width: 100%;
 			object-fit: contain;
+			border-radius: 0;
+			filter: grayscale(100%);
 		}
 	}
 }
