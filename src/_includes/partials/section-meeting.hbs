@@ -1,0 +1,66 @@
+<div class="bg-white py-16">
+	<div class="page-grid px-page-grid-gap">
+		<section class="page-subgrid-full">
+			<div class="page-subgrid-full px-page-grid-gap lg:px-0">
+				<h2 class="place-self-start col-span-full section-title-pill lg:col-start-2">
+					Termin vereinbaren
+				</h2>
+				<p class="mt-10 col-span-full font-bold text-xl lg:col-start-2">
+					Noch Fragen?
+				</p>
+				<p class="col-span-full text-xl lg:col-start-2 lg:col-span-5">
+					Wir sind gerne für dich da und klären Unklarheiten auf und sprechen über Angebote.
+					Vereinbare einfach einen Wunsch-Termin oder schicke uns eine Mail.
+				</p>
+			</div>
+			<div class="page-subgrid-full mt-14 highlight-box bg-lila border-green p-8 lg:p-22">
+				<div class="col-span-full bg-white shadow rounded-2xl place-self-center p-4 w-full lg:col-start-2 lg:-col-end-2">
+					<div id="meeting-calendar" class="w-full h-full"></div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+<script type="text/javascript">
+	(function (C, A, L) {
+		let p = function (a, ar) {
+			a.q.push(ar);
+		};
+		let d = C.document;
+		C.Cal = C.Cal || function () {
+			let cal = C.Cal;
+			let ar = arguments;
+			if (!cal.loaded) {
+				cal.ns = {};
+				cal.q = cal.q || [];
+				d.head.appendChild(d.createElement("script")).src = A;
+				cal.loaded = true;
+			}
+			if (ar[0] === L) {
+				const api = function () {
+					p(api, arguments);
+				};
+				const namespace = ar[1];
+				api.q = api.q || [];
+				typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar);
+				return;
+			}
+			p(cal, ar);
+		};
+	})(window, "https://app.cal.com/embed/embed.js", "init");
+	Cal("init", {origin: "https://cal.com"});
+
+	Cal("inline", {
+		elementOrSelector: "#meeting-calendar",
+		calLink: "aweigel/demo",
+		layout: "month_view"
+	});
+
+	Cal("ui", {
+		"theme": "light",
+		"styles": {"branding": {"brandColor": "#f0f9ff"}},
+		"hideEventTypeDetails": false,
+		"layout": "month_view"
+	});
+</script>

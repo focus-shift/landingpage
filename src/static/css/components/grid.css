@@ -1,0 +1,23 @@
+@layer components {
+	.page-grid {
+		--page-grid-columns: 4;
+
+		display: grid;
+		grid-template-columns: repeat(var(--page-grid-columns), minmax(0, 1fr));
+		grid-column-gap: var(--spacing-page-grid-gap);
+
+		max-width: 1440px;
+
+		@variant md {
+			--page-grid-columns: 8;
+		}
+
+		@variant lg {
+			--page-grid-columns: 12;
+		}
+
+		@media screen and (width > 1440px) {
+			margin-inline: auto;
+		}
+	}
+}

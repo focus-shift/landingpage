@@ -1,0 +1,70 @@
+@reference "./config.css";
+
+@layer components {
+	.article-datenschutz {
+		font-size: var(--text-lg);
+		line-height: var(--text-lg--line-height);
+
+		h2,
+		h3 {
+			color: var(--color-lila);
+			font-size: var(--text-2xl);
+			line-height: var(--text-2xl--line-height);
+			margin-block: --spacing(8);
+
+			&:first-child {
+				margin-block-start: 0;
+			}
+		}
+
+		a {
+			text-decoration: underline;
+		}
+
+		p {
+			margin-block: --spacing(2);
+		}
+
+		ul {
+			list-style: disc;
+			margin-inline-start: 1.25rem;
+			margin-block: --spacing(4);
+
+			ul {
+				margin-block: 0;
+			}
+		}
+
+		table {
+			--border: 1px solid var(--color-beige);
+
+			thead th {
+				text-align: left;
+				border-bottom: var(--border);
+			}
+
+			th,
+			td {
+				padding-block: --spacing(1);
+				padding-inline: --spacing(2);
+
+				font-size: var(--text-base);
+				line-height: var(--text-base--line-height);
+
+				&:first-child {
+					padding-inline-start: 0;
+				}
+
+				&:last-child {
+					padding-inline-end: 0;
+				}
+			}
+
+			tr:not(:last-child) {
+				td {
+					border-bottom: var(--border);
+				}
+			}
+		}
+	}
+}

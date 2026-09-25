@@ -1,0 +1,17 @@
+name: Check Links (with external)
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+
+jobs:
+  link-check-on-uv-cloud:
+    runs-on: ubuntu-24.04
+    concurrency:
+      group: ${{ github.workflow }}-link-check-on-uv-cloud-${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check all links
+        run: docker run --rm --network host -v "./link-check-skip-file.txt:/skipfiles/link-check-skip-file.txt" tennox/linkcheck:3.0.0 https://focus-shift.de -e --skip-file /skipfiles/link-check-skip-file.txt

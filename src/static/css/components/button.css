@@ -1,0 +1,76 @@
+@layer components {
+	.button {
+		display: inline-block;
+		padding-block: var(--button-padding-block);
+		padding-inline: var(--button-padding-inline);
+		border-radius: var(--button-radius);
+		white-space: nowrap;
+		text-transform: uppercase;
+		text-align: center;
+
+		cursor: pointer;
+		user-select: none;
+
+		transition-property: scale, color, background-color, box-shadow;
+		transition-duration: 200ms;
+		transition-timing-function: ease-out;
+
+		&:active {
+			scale: 0.97;
+			transform: translateY(1px);
+		}
+	}
+
+	.button--sm {
+		--button-padding-inline: --spacing(2);
+	}
+
+	.button--circle {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		aspect-ratio: 1 / 1;
+		padding: --spacing(2);
+		border-radius: var(--radius-full);
+	}
+
+	.button--white {
+		background-color: var(--color-white);
+		color: var(--color-black);
+	}
+
+	.button--beige {
+		background-color: var(--color-beige);
+		color: var(--color-black);
+	}
+
+	.button--green {
+		background-color: var(--color-green);
+		color: var(--color-black);
+	}
+
+	.button--yellow {
+		background-color: var(--color-yellow);
+		color: var(--color-black);
+	}
+
+	.button--orange {
+		background-color: var(--color-orange);
+		color: var(--color-white);
+	}
+
+	.button--lila {
+		background-color: var(--color-lila);
+		color: var(--color-black);
+	}
+
+	.button--lila-dark {
+		background-color: var(--color-lila-dark);
+		color: var(--color-white);
+	}
+
+	.button--light-blue {
+		background-color: var(--color-light-blue);
+		color: var(--color-black);
+	}
+}

@@ -1,0 +1,123 @@
+<div class="bg-lila-dark border-t-lila border-t-8 text-white w-full">
+	<div class="page-grid px-page-grid-gap">
+		<footer class="footer">
+
+			<div class="footer__brand">
+				{{> partials/logo }}
+			</div>
+
+			<div class="footer__contact">
+				<h2 class="section-title-pill">Kontakt</h2>
+				<address class="not-italic">
+					<p>
+						<span class="font-bold">Focus Shift Software GmbH</span><br />
+						Lindenallee 126<br />
+						76189 Karlsruhe, Deutschland
+					</p>
+				</address>
+				{{> partials/contact-email-phone }}
+				<div class="flex items-center gap-2">
+					{{> partials/dots-horizontal }}
+					<a href="mailto:support@focus-shift.de" class="button button--yellow">Lass uns sprechen</a>
+				</div>
+			</div>
+
+			<div class="footer__app">
+				<h2 class="section-title-pill">Testen</h2>
+				<p class="mt-8">
+					<span class="font-bold">Direkt laden und loslegen.</span><br />Im AppStore oder bei Google Play.
+				</p>
+				<div class="mt-4 flex flex-row gap-4 items-center">
+					<a href="{{links.appleAppStore}}" class="hover:outline-0">
+						<img src="/static/img/app-store-badge.svg" height="120" alt="Laden im App Store" class="h-8 w-auto" />
+					</a>
+					<a href="{{links.googlePlayStore}}" class="hover:outline-0">
+						<img src="/static/img/google-play-badge.svg" height="120" alt="Jetzt bei Google Play" class="h-8 w-auto" />
+					</a>
+				</div>
+			</div>
+
+			<nav class="footer__navigation">
+				<ul class="footer-navigation__list">
+					<li>
+						<a href="/fuersorge/" class="footer-navigation__link">Fürsorge</a>
+					</li>
+					<li>
+						<a href="/software/" class="footer-navigation__link">Software</a>
+						<ul class="footer-navigation__sublist">
+							<li class="footer-navigation__item">
+								<a href="/software/#funktionen" class="footer-navigation__link">Funktionen</a>
+							</li>
+							<li class="footer-navigation__item">
+								<a href="/software/#open-source" class="footer-navigation__link">Open-Source</a>
+							</li>
+							<li class="footer-navigation__item">
+								<a href="/software/#preis" class="footer-navigation__link">Preis</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="/wir/" class="footer-navigation__link">Wir</a>
+					</li>
+					<li>
+						<a href="/neuigkeiten/" class="footer-navigation__link">Neuigkeiten</a>
+						<ul class="hidden lg:block footer-navigation__sublist">
+							<li class="footer-navigation__item">
+								<a href="/neuigkeiten/blog#posts" class="footer-navigation__link">focus:life</a>
+							</li>
+							<li class="footer-navigation__item">
+								<a href="/neuigkeiten/update#posts" class="footer-navigation__link">up:date</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="/demo/" class="footer-navigation__link">Demo</a>
+					</li>
+					<li>
+						<a href="/hilfe/" class="footer-navigation__link">Hilfe</a>
+						<ul class="footer-navigation__sublist">
+							<li class="footer-navigation__item">
+								<a href="/hilfe/#faq" class="footer-navigation__link">FAQ</a>
+							</li>
+							<li class="footer-navigation__item">
+								<a href="/hilfe/#dokumentation" class="footer-navigation__link">Dokumentation</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<a href="{{links.login}}" class="footer-nav-login-button footer-navigation__link">Login</a>
+				<a href="{{links.registration}}" class="footer-nav-test-button footer-navigation__link">Testen</a>
+			</nav>
+
+			<div class="footer__social">
+				<ul class="flex flex-row gap-8">
+					<li>
+						<a href="{{links.lingedIn}}" class="hover:outline-0" title="linkedIn">
+							<span class="sr-only">LinkedIn</span><img src="/static/img/linkedin-white.png" width="32" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="{{links.github}}" class="hover:outline-0" title="Github">
+							<span class="sr-only">Github</span><img src="/static/img/GitHub_Invertocat_White.svg" width="32" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="/feed.xml" class="hover:outline-0" title="RSS Newsfeed">
+							<span class="sr-only">Newsfeed</span><img src="/static/img/rss-white.svg" width="32" alt="" />
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer__legal">
+				<p>
+					<a href="/datenschutzerklaerung">Datenschutzerklärung</a> <span aria-hidden="true">|</span>
+					<a href="/impressum">Impressum</a>
+				</p>
+				<p>
+					© {{date page.date 'yyyy'}} Focus Shift Software Gmbh
+				</p>
+			</div>
+		</footer>
+	</div>
+</div>

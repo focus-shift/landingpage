@@ -1,0 +1,331 @@
+---
+layout: layout.hbs
+title: Urlaubsverwaltung & Zeiterfassung — Open Source, DSGVO-konform
+description: Open-Source-Urlaubsverwaltung und Zeiterfassung für den Mittelstand. In Deutschland gehostet, DSGVO-konform, ohne Mitarbeiterüberwachung. 30 Tage kostenlos testen.
+stylesheets:
+- /static/css/frontpage.css
+---
+
+<div class="bg-beige">
+	<div class="page-grid px-page-grid-gap">
+
+		<section class="section-hero">
+			<div class="highlight-box border-yellow bg-lila">
+				<div class="highlight-box__image">
+					<img
+						src="/static/img/VEGF05900.jpg"
+						alt="Ein Mann sitzt mit Laptop und oranger Tasse auf dem Wohnzimmerboden und füttert seinen Hund."
+						class="aspect-retro object-cover h-full"
+						fetchpriority="high"
+						decoding="async"
+					/>
+				</div>
+				<div class="highlight-box__text">
+					<p class="flex flex-col items-start gap-8">
+						<span class="section-title-pill border-white">focus:<span class="font-basteleur">shift</span></span>
+						<span class="flex flex-col text-4xl lg:text-6xl"><span>Time for</span><span>what <span class="font-basteleur">matters</span>.</span></span>
+					</p>
+					<div class="max-w-sm flex flex-col gap-8">
+						<p class="lg:text-xl">
+							<span class="font-bold">Zeiterfassung und Urlaubsverwaltung mit Weitblick:</span>
+							alle gängigen Arbeitsfunktionen plus <span class="font-basteleur">Fürsorge</span>-Faktor.
+						</p>
+						<p class="ci-dots-button-group">
+							{{> partials/dots-horizontal color="bg-green" }}
+							<a href="/fuersorge" class="button button--lila-dark">Mehr erfahren</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-benefits">
+			<div class="relative">
+				<p class="text-4xl lg:text-5xl lg:max-w-2xl">
+					Gesunde Arbeit beginnt&nbsp;<br class="hidden sm:inline" />mit <span class="font-basteleur">Überblick</span>
+				</p>
+				<p class="mt-6 text-xl max-w-lg lg:mt-8 lg:text-3xl">
+					Pure HR-Verwaltung gibt es schon zu Hauf und wird der heutigen Arbeitswelt nicht mehr gerecht.
+					focus:<span class="font-basteleur">shift</span> verbindet operative Verwaltung mit organisatorischer Fürsorge.
+				</p>
+				<div class="dot-visual left-0 top-28 xs:top-15 md:-left-12 lg:top-42">
+					<span class="dot bg-green"></span>
+					<span class="dot bg-green"></span>
+				</div>
+			</div>
+			<ul class="main-benefits-grid">
+				<li class="main-benefits-card bg-light-blue">
+					<div class="main-benefits-card__icon">
+						<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M28.5357 27.0338C35.9889 27.0338 42.0526 20.9701 42.0526 13.5169C42.0526 6.06368 35.9889 0 28.5357 0C21.0825 0 15.0188 6.06368 15.0188 13.5169C15.0188 20.9701 21.0825 27.0338 28.5357 27.0338ZM28.5357 3.00376C34.3327 3.00376 39.0489 7.71996 39.0489 13.5169C39.0489 19.3139 34.3327 24.0301 28.5357 24.0301C22.7388 24.0301 18.0226 19.3139 18.0226 13.5169C18.0226 7.71996 22.7388 3.00376 28.5357 3.00376Z" fill="#F1FE99"/>
+							<path d="M23.5295 13.5169C24.3589 13.5169 25.0313 12.8444 25.0313 12.015V10.0125C25.0313 9.18306 24.3589 8.51062 23.5295 8.51062C22.7 8.51062 22.0276 9.18306 22.0276 10.0125V12.015C22.0276 12.8444 22.7 13.5169 23.5295 13.5169Z" fill="#F1FE99"/>
+							<path d="M33.5419 13.5169C34.3714 13.5169 35.0438 12.8444 35.0438 12.015V10.0125C35.0438 9.18306 34.3714 8.51062 33.5419 8.51062C32.7125 8.51062 32.04 9.18306 32.04 10.0125V12.015C32.04 12.8444 32.7125 13.5169 33.5419 13.5169Z" fill="#F1FE99"/>
+							<path d="M24.9705 19.5496C25.9227 20.5019 27.1888 21.0263 28.5356 21.0263C29.8824 21.0263 31.1485 20.5019 32.1008 19.5496C32.6872 18.963 32.6872 18.0122 32.1008 17.4256C31.5142 16.839 30.5633 16.8392 29.9768 17.4256C29.5918 17.8106 29.08 18.0226 28.5356 18.0226C27.9912 18.0226 27.4794 17.8106 27.0945 17.4256C26.508 16.8391 25.5571 16.8391 24.9706 17.4256C24.384 18.0122 24.384 18.963 24.9705 19.5496Z" fill="#F1FE99"/>
+							<path d="M49.8983 29.6701C48.2294 27.8166 45.3776 27.6574 43.5128 29.3136L36.005 35.9819C36.0124 35.8764 36.0162 35.7703 36.0163 35.663C36.0172 33.1837 33.9155 31.1556 31.4362 31.1556H25.8218C24.4647 31.1556 23.1394 30.7653 21.9869 30.0488C20.0361 28.8362 17.7072 28.3136 15.4264 28.5782C13.1369 28.8433 10.9823 29.891 9.35941 31.5283L0.435244 40.5312C0.156396 40.8124 0 41.1925 0 41.5885V49.7622C0 50.5916 0.672441 51.2641 1.50188 51.2641H11.3141C11.7196 51.2641 12.1078 51.1002 12.3906 50.8095L14.952 48.177H32.4472C34.7967 48.177 37.0525 47.3135 38.799 45.7455L49.5581 36.0824C51.4243 34.4063 51.5767 31.5341 49.8983 29.6701ZM47.5512 33.8477L36.7922 43.5106C35.5979 44.5828 34.0549 45.1733 32.4473 45.1733H14.37C13.7098 45.1452 13.3124 45.5549 13.1125 45.7603L10.68 48.2603H3.00376V42.2067L11.4926 33.6431C13.8749 31.24 17.5442 30.8147 20.4154 32.6091C22.0385 33.6234 23.9079 34.1595 25.8217 34.1595H31.4671C32.2748 34.1595 32.9707 34.7789 33.0106 35.5856C33.0532 36.4479 32.3639 37.1632 31.5106 37.1632H21.5693C20.7606 37.1632 20.0647 37.7847 20.0266 38.5925C19.986 39.455 20.6733 40.167 21.5268 40.167H34.1042C35.2047 40.167 36.2636 39.7666 37.0879 39.0374L45.5073 31.5594C46.1377 30.9995 47.1018 31.0533 47.666 31.68C48.2335 32.3102 48.182 33.2811 47.5512 33.8477Z" fill="#50287D"/>
+						</svg>
+					</div>
+					<p class="main-benefits-card__text">
+						<span class="lg:font-basteleur">Mentale Gesundheit</span> als integraler Bestandteil der Software.
+					</p>
+					<div class="main-benefits-card__read-more">
+						<a
+							href="/fuersorge"
+							class="button button--lila-dark"
+						>
+							Mehr →
+						</a>
+					</div>
+				</li>
+				<li class="main-benefits-card bg-white">
+					<div class="main-benefits-card__icon">
+						<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_8004_168)">
+								<path d="M25.6513 0C11.5271 0 0 11.5279 0 25.6513C0 39.7754 11.5279 51.3025 25.6513 51.3025C39.7754 51.3025 51.3025 39.7745 51.3025 25.6513C51.3025 11.5271 39.7746 0 25.6513 0ZM25.6513 48.2965C13.1646 48.2965 3.00601 38.1379 3.00601 25.6513C3.00601 13.1646 13.1646 3.00601 25.6513 3.00601C38.1379 3.00601 48.2965 13.1646 48.2965 25.6513C48.2965 38.1379 38.1379 48.2965 25.6513 48.2965Z" fill="#FF6133"/>
+								<path d="M12.8978 39.9076C13.7279 39.9076 14.4008 39.2347 14.4008 38.4046C14.4008 37.5745 13.7279 36.9016 12.8978 36.9016C12.0678 36.9016 11.3948 37.5745 11.3948 38.4046C11.3948 39.2347 12.0678 39.9076 12.8978 39.9076Z" fill="#FF6133"/>
+								<path d="M38.4046 14.4009C39.2347 14.4009 39.9076 13.728 39.9076 12.8979C39.9076 12.0678 39.2347 11.3949 38.4046 11.3949C37.5745 11.3949 36.9016 12.0678 36.9016 12.8979C36.9016 13.728 37.5745 14.4009 38.4046 14.4009Z" fill="#FF6133"/>
+								<path d="M11.835 11.835C11.248 12.422 11.248 13.3736 11.835 13.9606C12.422 14.5475 13.3736 14.5475 13.9606 13.9606C14.5475 13.3736 14.5475 12.422 13.9606 11.835C13.3737 11.248 12.422 11.248 11.835 11.835Z" fill="#FF6133"/>
+								<path d="M37.3419 37.342C36.7549 37.9289 36.7549 38.8805 37.3419 39.4675C37.9289 40.0545 38.8805 40.0545 39.4674 39.4675C40.0544 38.8805 40.0544 37.9289 39.4674 37.342C38.8805 36.755 37.9288 36.755 37.3419 37.342Z" fill="#FF6133"/>
+								<path d="M25.6513 12.1242C26.4813 12.1242 27.1543 11.4513 27.1543 10.6212V7.61519C27.1543 6.78513 26.4813 6.11218 25.6513 6.11218C24.8212 6.11218 24.1483 6.78513 24.1483 7.61519V10.6212C24.1483 11.4513 24.8212 12.1242 25.6513 12.1242Z" fill="#FF6133"/>
+								<path d="M25.6513 39.1783C24.8212 39.1783 24.1483 39.8513 24.1483 40.6813V43.6874C24.1483 44.5174 24.8212 45.1904 25.6513 45.1904C26.4813 45.1904 27.1543 44.5174 27.1543 43.6874V40.6813C27.1543 39.8513 26.4813 39.1783 25.6513 39.1783Z" fill="#FF6133"/>
+								<path d="M12.1242 25.6513C12.1242 24.8213 11.4513 24.1483 10.6212 24.1483H7.61519C6.78513 24.1483 6.11218 24.8213 6.11218 25.6513C6.11218 26.4814 6.78513 27.1543 7.61519 27.1543H10.6212C11.4513 27.1543 12.1242 26.4814 12.1242 25.6513Z" fill="#FF6133"/>
+								<path d="M39.1783 25.6513C39.1783 26.4814 39.8512 27.1543 40.6813 27.1543H43.6873C44.5174 27.1543 45.1903 26.4814 45.1903 25.6513C45.1903 24.8213 44.5174 24.1483 43.6873 24.1483H40.6813C39.8512 24.1483 39.1783 24.8213 39.1783 25.6513Z" fill="#FF6133"/>
+								<path d="M27.1543 25.0287V16.6333C27.1543 15.8032 26.4813 15.1302 25.6513 15.1302C24.8212 15.1302 24.1483 15.8032 24.1483 16.6333V25.6513C24.1483 26.0499 24.3067 26.4321 24.5885 26.7141L33.6066 35.7321C34.1934 36.319 35.1451 36.3191 35.7321 35.7321C36.3191 35.1452 36.3191 34.1936 35.7321 33.6066L27.1543 25.0287Z" fill="#50287D"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_8004_168">
+									<rect width="51.3025" height="51.3025" fill="white"/>
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+					<p class="main-benefits-card__text">
+						An- und Abwesenheiten <span class="lg:font-basteleur">übersichtlich</span> erfassen.
+					</p>
+					<div class="main-benefits-card__read-more">
+						<a href="/uebersicht" class="button button--lila-dark">
+							Mehr →
+						</a>
+					</div>
+				</li>
+				<li class="main-benefits-card bg-lila">
+					<div class="main-benefits-card__icon">
+						<svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_8004_181)">
+								<path d="M33.8968 41.1016H38.2462C44.1746 41.1016 48.9968 36.2701 48.9968 30.3323V29.3689C48.9968 27.4094 48.5135 25.4989 47.591 23.7915C48.504 21.951 48.9729 19.9091 48.9538 17.8375C48.9212 14.3931 47.5547 11.1471 45.1058 8.69687C42.6569 6.2466 39.4137 4.88246 35.9763 4.85466C35.9399 4.85466 35.9045 4.85466 35.8691 4.85466C33.2633 4.85466 30.7771 5.61102 28.6555 7.02214C28.1885 5.41738 27.3109 3.95259 26.0764 2.75525C24.1778 0.912752 21.6773 -0.0669733 19.0293 0.00396573C16.5106 0.0691529 14.1402 1.10064 12.3535 2.90959C10.5678 4.71854 9.56299 7.10458 9.52567 9.62771C9.50844 10.7407 9.67783 11.8326 10.0214 12.8679C6.36289 13.33 3.52452 16.4657 3.52452 20.2532C3.52452 20.9914 3.63553 21.7286 3.85084 22.4332C1.44885 24.1942 0 27.0059 0 30.039C0 36.1397 4.95423 41.1026 11.0444 41.1026H15.1718L15.0818 38.2315H11.0444C6.53514 38.2315 2.86612 34.5561 2.86612 30.039C2.86612 27.6271 4.18387 25.4164 6.30547 24.2689C6.99257 23.897 7.25574 23.0429 6.89783 22.3469C6.56194 21.6941 6.39064 20.9895 6.39064 20.2532C6.39064 17.732 8.43855 15.6805 10.9554 15.6805C11.3142 15.6805 11.6741 15.7237 12.0243 15.8071C12.5985 15.9451 13.1976 15.717 13.5344 15.2319C13.8713 14.7468 13.877 14.1045 13.5497 13.6137C12.7698 12.4471 12.3698 11.0839 12.3908 9.67181C12.4176 7.89258 13.1277 6.20825 14.3909 4.92943C15.6541 3.65061 17.3269 2.92014 19.1021 2.87508C20.972 2.82619 22.7405 3.51736 24.0812 4.81919C25.4228 6.12198 26.1674 7.86861 26.1779 9.73891C26.1808 10.3189 26.532 10.8394 27.0679 11.059C27.6038 11.2785 28.2181 11.1539 28.6268 10.7436C30.5608 8.79657 33.1303 7.72769 35.8682 7.72769C35.8959 7.72769 35.9237 7.72769 35.9524 7.72769C41.4894 7.77179 46.036 12.3196 46.0876 17.8662C46.1049 19.7097 45.6283 21.5205 44.7086 23.1032C44.4388 23.5682 44.4512 24.1462 44.7402 24.5987C45.6493 26.0213 46.1307 27.6711 46.1307 29.3698V30.3333C46.1307 34.6884 42.5937 38.2315 38.2462 38.2315H33.9868L33.8968 41.1026V41.1016Z" fill="#D2FF89"/>
+								<path d="M24.4984 39.9932C25.2899 39.9932 25.931 39.3509 25.931 38.5581V37.0703C25.931 36.2775 25.2899 35.6353 24.4984 35.6353C23.707 35.6353 23.0659 36.2775 23.0659 37.0703V38.5581C23.0659 39.3509 23.707 39.9932 24.4984 39.9932Z" fill="#50287D"/>
+								<path d="M33.6624 27.7669H31.0824V26.0615C31.0824 22.4244 28.1282 19.4651 24.4975 19.4651C20.8668 19.4651 17.9126 22.4244 17.9126 26.0615V27.7669H15.3326C14.5412 27.7669 13.9 28.4092 13.9 29.2019V38.2313L13.99 41.1024C14.6149 45.5582 18.4437 48.9978 23.0611 48.9978H25.933C30.5503 48.9978 34.3801 45.5582 35.0041 41.1024L35.094 38.2313V29.2019C35.094 28.4092 34.4528 27.7669 33.6614 27.7669H33.6624ZM20.7797 26.0605C20.7797 24.0061 22.4477 22.3352 24.4985 22.3352C26.5492 22.3352 28.2172 24.0061 28.2172 26.0605V27.7659H20.7806V26.0605H20.7797ZM32.2298 39.8198C32.2298 43.2968 29.4058 46.1257 25.9349 46.1257H23.063C19.5921 46.1257 16.7681 43.2968 16.7681 39.8198V30.637H32.2298V39.8198Z" fill="#50287D"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_8004_181">
+									<rect width="48.9968" height="48.9968" fill="white"/>
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+					<p class="main-benefits-card__text">
+						<span class="lg:font-basteleur">Datenschutz</span> mit Mitarbeitenden im Fokus
+					</p>
+					<div class="main-benefits-card__read-more">
+						<a
+							href="/datenschutz"
+							class="button button--lila-dark"
+						>
+							Mehr →
+						</a>
+					</div>
+				</li>
+				<li class="main-benefits-card bg-yellow">
+					<div class="main-benefits-card__icon">
+						<svg width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_8004_186)">
+								<path d="M25.9394 31.6489C26.7789 31.6489 27.4593 30.9659 27.4593 30.1233C27.4593 29.2807 26.7789 28.5977 25.9394 28.5977C25.1 28.5977 24.4196 29.2807 24.4196 30.1233C24.4196 30.9659 25.1 31.6489 25.9394 31.6489Z" fill="#9B9BFF"/>
+								<path d="M50.3591 35.9512H1.51989C0.680912 35.9512 0 36.6347 0 37.4768V44.0137C0 44.8558 0.680912 45.5393 1.51989 45.5393H50.3591C51.1981 45.5393 51.879 44.8558 51.879 44.0137V37.4768C51.879 36.6347 51.1981 35.9512 50.3591 35.9512ZM48.8392 42.487H3.03978V39.0014H48.8392V42.487Z" fill="#50287D"/>
+								<path d="M22.6839 16.1239H29.1961C32.3231 16.1239 34.9515 18.3127 35.6405 21.243H38.736C38.1473 17.5204 35.4419 14.4976 31.9005 13.4592C33.1874 12.0291 33.9726 10.1353 33.9726 8.06146C33.9716 3.61678 30.3685 0 25.9395 0C21.5105 0 17.9074 3.61678 17.9074 8.06248C17.9074 10.1373 18.6927 12.0302 19.9795 13.4602C16.4382 14.4986 13.7327 17.5214 13.144 21.244H16.2396C16.9286 18.3127 19.556 16.125 22.6839 16.125V16.1239ZM25.9395 3.05127C28.6925 3.05127 30.9318 5.29904 30.9318 8.06248C30.9318 10.8259 28.6925 13.0737 25.9395 13.0737C23.1865 13.0737 20.9472 10.8259 20.9472 8.06248C20.9472 5.29904 23.1865 3.05127 25.9395 3.05127Z" fill="#50287D"/>
+								<path d="M43.4051 21.8146C43.1163 21.4535 42.6806 21.244 42.2196 21.244H9.65941C9.19838 21.244 8.76267 21.4546 8.47389 21.8146C8.18511 22.1757 8.07568 22.6486 8.176 23.1002L11.0212 35.9512H14.135L11.5542 24.2953H40.3247L37.744 35.9512H40.8577L43.703 23.1002C43.8033 22.6486 43.6928 22.1757 43.4051 21.8146Z" fill="#9B9BFF"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_8004_186">
+									<rect width="51.879" height="45.5382" fill="white"/>
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+					<p class="main-benefits-card__text">
+						<span class="lg:font-basteleur">Individualisierbare</span> Arbeitszeitmodelle flexibel gestaltbar.
+					</p>
+					<div class="main-benefits-card__read-more">
+						<a href="/individuell" class="button button--lila-dark">
+							Mehr →
+						</a>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<section class="section-welfare">
+			<div>
+				<span class="section-title-pill uppercase">Fürsorge</span>
+			</div>
+			<p class="max-w-prose lg:text-xl">
+				<span class="font-bold">Wir machen Überstunden frühzeitig sichtbar, bevor sie zu Ausfällen führen</span> -
+				durch Belastungsmustererkennung ohne Überwachung. Mit Daten, die ohnehin schon erhoben werden.
+			</p>
+			<ul class="list-disc lg:text-xl">
+				<li>Klarheit statt Bauchgefühl</li>
+				<li>Fürsorge statt Kontrolle</li>
+				<li>Datensouveränität als Selbstverständlichkeit</li>
+			</ul>
+			<p class="ci-dots-button-group">
+				{{> partials/dots-horizontal color="bg-lila" }}
+				<a href="{{links.registration}}" class="button button--orange">Jetzt testen</a>
+			</p>
+		</section>
+	</div>
+</div>
+
+<div class="bg-white">
+	<div class="page-grid px-page-grid-gap">
+		<section class="section-software">
+			<div>
+				<span class="section-title-pill">Software</span>
+			</div>
+			<p class="mt-8 text-4xl">
+				Verwaltung ist die Grundlage, <span class="font-basteleur">Fürsorge</span> ist das Ziel. Unsere Funktionen im Überblick.
+			</p>
+			<div class="mt-8 max-w-prose">
+				<p class="text-lg font-bold">
+					Für sorgsame People-Arbeit
+				</p>
+				<p class="text-lg">
+					Was das heißt und was unsere Software alles kann, siehst du hier.
+					Verschaffe dir einen Überblick über die Funktionen oder lege gleich los mit dem Testen!
+				</p>
+			</div>
+			<ul class="section-software__features">
+				<li>
+					<a href="/software#focusapp" class="button button--beige focus-visible:bg-green hover:bg-green outline-none lg:px-3 lg:py-1">Mitarbeiter-App</a>
+				</li>
+				<li>
+					<a href="/software#single-sign-on" class="button button--beige focus-visible:bg-green hover:bg-green outline-none lg:px-3 lg:py-1">Single Sign-On</a>
+				</li>
+				<li>
+					<a href="/software#arbeitszeiterfassung" class="button button--beige focus-visible:bg-green hover:bg-green outline-none lg:px-3 lg:py-1">Arbeitszeit erfassen</a>
+				</li>
+				<li>
+					<a href="/software#abwesenheitsarten" class="button button--beige focus-visible:bg-green hover:bg-green outline-none lg:px-3 lg:py-1">Individualisierbare Abwesenheiten</a>
+				</li>
+				<li>
+					<a href="/software#teamuebersicht" class="button button--beige focus-visible:bg-green hover:bg-green outline-none lg:px-3 lg:py-1">Teamübersicht</a>
+				</li>
+				<li>
+					<a href="/software#ueberstunden" class="button button--beige focus-visible:bg-green hover:bg-green outline-none lg:px-3 lg:py-1">Kalendarische Übersicht</a>
+				</li>
+				<li>
+					<a href="/software#krankmeldungen" class="button button--beige focus-visible:bg-green hover:bg-green outline-none lg:px-3 lg:py-1">Krankmeldungen</a>
+				</li>
+				<li>
+					<a href="/software#kalenderintegration" class="button button--beige focus-visible:bg-green hover:bg-green outline-none lg:px-3 lg:py-1">Kalenderintegration</a>
+				</li>
+				<li>
+					<a href="/software#kalender" class="button button--beige focus-visible:bg-green hover:bg-green outline-none lg:px-3 lg:py-1">Überstunden</a>
+				</li>
+			</ul>
+			<p class="hidden lg:flex lg:items-center lg:gap-2">
+				{{> partials/dots-horizontal color="bg-green" }}
+				<a href="{{links.registration}}" class="button button--lila-dark">Jetzt testen</a>
+			</p>
+		</section>
+	</div>
+	<div class="page-grid my-22 lg:mt-96">
+		<div class="relative page-subgrid-full">
+			<div class="hidden bg-beige h-full w-screen absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 lg:block"></div>
+			<section class="section-purpose px-page-grid-gap">
+				<div class="relative">
+					<div class="highlight-box border-yellow bg-lila md:border-0 md:rounded-2xl">
+						<div class="highlight-box__text px-4 py-11 flex flex-col gap-5 lg:p-8 lg:gap-16 lg:max-w-1/3">
+							<p class="text-3xl lg:text-5xl">
+								<span class="font-basteleur">Warum</span> wir machen, was wir machen.
+							</p>
+							<p class="lg:text-lg lg:max-w-[28ch]">
+								<span class="font-bold">Wir sind Andreas, Benjamin, Daniel und Tobias</span> &dash;
+								die Gründer von <span>focus:</span><span class="font-basteleur">shift</span>.
+							</p>
+							<p class="ci-dots-button-group">
+								{{> partials/dots-horizontal color="bg-green" }}
+								<a href="/wir" class="button button--lila-dark">Mehr erfahren</a>
+							</p>
+						</div>
+						<div class="highlight-box__image flex-1 bg-lila-dark lg:mr-4" style="min-height: 268px">
+							<img src="/static/img/wir.jpg" alt="">
+						</div>
+					</div>
+					<div class="flex justify-end absolute z-10 right-5 bottom-0 translate-y-3/5">
+						{{> partials/we-are-open-source }}
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+<div class="relative bg-beige pb-22 pt-38 lg:pt-32 lg:pb-84">
+	{{> partials/section-jetzt-testen }}
+	<div class="page-grid px-page-grid-gap pt-30 pb-22">
+		<section class="section-demo mt-22 lg:mt-64">
+			<h3 class="section-title-pill">Demo</h3>
+			<div class="mt-8 border border-lila bg-lila rounded-2xl overflow-clip max-w-fit">
+				<div class="px-4 py-2 bg-lila flex items-center justify-start gap-1">
+					<div class="rounded-full w-3 h-3 shadow-2xl bg-orange"></div>
+					<div class="rounded-full w-3 h-3 shadow-2xl bg-yellow"></div>
+					<div class="rounded-full w-3 h-3 shadow-2xl bg-green"></div>
+				</div>
+				<img src="/static/img/uv-overview.png" width="1480" height="747" alt="Urlaubsverwaltung Startseite mit Kalenderansicht und Statistiken zu Urlaub und Überstunden." />
+			</div>
+			<div class="section-demo__text mt-8 max-w-prose">
+				<p class="text-lg">
+					Teste hier & jetzt die Perspektive verschiedener Nutzer:innen der Urlaubsverwaltung und Zeiterfassung in unserer Live-Demo.
+					Ganz ohne Registrierung oder Download.
+				</p>
+				<p class="mt-8 ci-dots-button-group">
+					{{> partials/dots-horizontal color="bg-lila" }}
+					<button popovertarget="demo-popover" class="button button--light-blue">Demo ansehen</button>
+				</p>
+				{{> partials/demo-popover id="demo-popover"}}
+			</div>
+		</section>
+	</div>
+</div>
+
+<div class="bg-white py-22">
+	<div class="page-grid px-page-grid-gap">
+		<section class="section-concept">
+			<span class="section-title-pill">Unser Konzept</span>
+			<div class="section-concept__teaser flex">
+				<div class="mx-auto flex text-5xl sm:text-8xl lg:text-9xl">
+					<span>focus<span class="text-lila font-black">:</span></span>
+					<ul class="overflow-clip">
+						<li class="font-basteleur">cloud</li>
+						<li class="font-basteleur">shift</li>
+						<li class="font-basteleur">time</li>
+						<li class="font-basteleur">people</li>
+					</ul>
+				</div>
+			</div>
+			<p class="section-concept__text text-lg max-w-prose">
+				Der Name vereint zwei Bewegungen: "focus" steht für Konzentration auf das Wesentliche, "shift" für Verschiebung der Aufmerksamkeit.
+			</p>
+			<p class="section-concept__text text-lg max-w-prose">
+				Der Doppelpunkt ist Programme - er trennt nicht, er verbindet.
+				Er deutet einen Wechsel an: <strong>vom Verwalten zum Verstehen, vom Reagieren zum Gestalten.</strong>
+			</p>
+			<p class="section-concept__read-more ci-dots-button-group">
+				{{> partials/dots-horizontal color="bg-green" }}
+				<a href="/wir" class="button button--lila-dark">Mehr erfahren</a>
+			</p>
+		</section>
+	</div>
+</div>
+
+<div class="bg-white">
+	{{> partials/section-references }}
+</div>

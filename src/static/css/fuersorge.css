@@ -1,0 +1,386 @@
+@import "./components/section-vision-and-values.css";
+
+@reference "./config.css";
+
+@keyframes parallax-shift {
+	from {
+		translate: 0 var(--parallax-depth, 0);
+	}
+	to {
+		translate: 0 calc(-1 * var(--parallax-depth, 0));
+	}
+}
+
+@keyframes parallax-reveal {
+	from {
+		opacity: 0;
+		scale: 0.94;
+	}
+	to {
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+@layer components {
+	.section-promise {
+		padding-block: --spacing(14);
+
+		grid-column: 1 / -1;
+		display: grid;
+		grid-template-columns: subgrid;
+
+		& > * {
+			grid-column: 1 / -1;
+		}
+
+		& > .section-title-pill {
+			padding-inline: var(--spacing-page-grid-gap);
+			margin-block-end: --spacing(14);
+			justify-self: start;
+		}
+
+		.parallax-grid {
+			display: grid;
+			grid-template-columns: subgrid;
+			grid-row-gap: --spacing(16);
+
+			& > div:nth-child(1) {
+				grid-column: 1 / span 3;
+			}
+
+			& > div:nth-child(2) {
+				grid-column: 2 / span 3;
+			}
+
+			& > div:nth-child(3) {
+				grid-column: 2 / -1;
+			}
+
+			& > div:nth-child(4) {
+				grid-column: 1 / span 3;
+			}
+
+			& > div:nth-child(5) {
+				grid-column: 1 / -1;
+			}
+
+			& > div:nth-child(6) {
+				grid-column: 2 / -1;
+			}
+
+			& > div:nth-child(7) {
+				grid-column: 1 / -1;
+			}
+
+			p {
+				display: block;
+				margin-block-end: --spacing(4);
+
+				color: var(--color-lila);
+				font-family: "Basteleur", sans-serif;
+				font-weight: 400;
+				font-size: var(--text-xl);
+				line-height: var(--text-xl--line-height);
+			}
+
+			img {
+				object-fit: cover;
+				border-radius: var(--radius-2xl);
+			}
+
+			/* every cell is its own scroll timeline. text and image move at
+         different speeds while the cell travels through the viewport. */
+			& > div {
+				view-timeline-name: --parallax-item;
+				view-timeline-axis: block;
+			}
+
+			@supports (animation-timeline: view()) {
+				p,
+				img,
+				.dot-visual {
+					/* parallax-shift runs across the whole passage through the viewport,
+             parallax-reveal only while the cell enters it. */
+					animation-name: parallax-shift, parallax-reveal;
+					animation-duration:
+						1ms, 1ms; /* overridden by animation-timeline, required for Firefox */
+					animation-timing-function: linear, ease-out;
+					animation-fill-mode: both, both;
+					animation-timeline: --parallax-item, --parallax-item;
+					animation-range:
+						cover 0% cover 100%,
+						entry 0% entry 85%;
+
+					@media (prefers-reduced-motion: reduce) {
+						animation: none;
+					}
+				}
+
+				/* image trails its caption a touch */
+				img {
+					animation-range:
+						cover 0% cover 100%,
+						entry 15% entry 100%;
+				}
+			}
+
+			/* travel distance == speed, the timeline range is the same for all of
+         them. images move far, captions barely drift. */
+			p {
+				--parallax-depth: --spacing(2);
+			}
+
+			img {
+				--parallax-depth: --spacing(28);
+			}
+
+			/* hand-picked irregular depths so no two images travel alike.
+         cells 3 and 6 hold no image. */
+			& > div:nth-child(1) img {
+				--parallax-depth: --spacing(34);
+			}
+
+			& > div:nth-child(2) img {
+				--parallax-depth: --spacing(19);
+			}
+
+			& > div:nth-child(4) img {
+				--parallax-depth: --spacing(44);
+			}
+
+			& > div:nth-child(5) img {
+				--parallax-depth: --spacing(26);
+			}
+
+			& > div:nth-child(7) img {
+				--parallax-depth: --spacing(38);
+			}
+		}
+
+		@variant md {
+			.section-title-pill {
+				grid-column-start: 2;
+			}
+
+			.parallax-grid {
+				& > div:nth-child(1) {
+					grid-column: 2 / span 3;
+				}
+
+				& > div:nth-child(2) {
+					grid-column: 6 / span 3;
+				}
+
+				& > div:nth-child(3) {
+					grid-column: 2 / -1;
+				}
+
+				& > div:nth-child(4) {
+					grid-column: 1 / span 3;
+				}
+
+				& > div:nth-child(5) {
+					grid-column: 5 / span 4;
+				}
+
+				& > div:nth-child(6) {
+					grid-column: 4 / -1;
+				}
+
+				& > div:nth-child(7) {
+					grid-column: 2 / span 3;
+				}
+			}
+		}
+
+		@variant lg {
+			.parallax-grid {
+				grid-row-gap: --spacing(8);
+
+				& > div:nth-child(1) {
+					grid-column: 2 / span 4;
+					grid-row: 2 / span 3;
+				}
+
+				& > div:nth-child(2) {
+					grid-column: 9 / span 4;
+					grid-row: 1 / span 5;
+				}
+
+				& > div:nth-child(3) {
+					grid-column: 6 / span 3;
+					grid-row: 4;
+				}
+
+				& > div:nth-child(4) {
+					grid-column: 7 / span 5;
+					grid-row: 7 / span 2;
+				}
+
+				& > div:nth-child(5) {
+					grid-column: 3 / span 5;
+					grid-row: 9 / span 3;
+					img {
+						aspect-ratio: var(--aspect-retro);
+					}
+				}
+
+				& > div:nth-child(6) {
+					grid-column: 8 / -1;
+					grid-row: 10;
+				}
+
+				& > div:nth-child(7) {
+					grid-column: 1 / span 4;
+					grid-row: 5 / span 3;
+				}
+			}
+		}
+	}
+
+	.section-welfare {
+		background-color: var(--color-beige);
+		padding-block: --spacing(14);
+
+		grid-column: 1 / -1;
+		display: grid;
+		grid-template-columns: subgrid;
+
+		.section-title-pill {
+			place-self: start;
+			grid-column: 1 / -1;
+
+			margin-inline: var(--spacing-page-grid-gap);
+			margin-block-end: --spacing(14);
+		}
+
+		& > *:not(:last-child) {
+			margin-block-end: --spacing(14);
+		}
+
+		.welfare-container {
+			margin-inline: var(--spacing-page-grid-gap);
+
+			grid-column: 1 / -1;
+			display: grid;
+			grid-template-columns: subgrid;
+
+			row-gap: --spacing(14);
+
+			counter-reset: section;
+
+			.dot-visual {
+				left: calc(-1 * var(--accent-line-width));
+				top: 0;
+			}
+
+			.welfare-item {
+				grid-column: 1 / -1;
+
+				display: grid;
+				grid-template-columns: min-content 1fr;
+				grid-template-rows: auto auto;
+				column-gap: --spacing(4);
+				row-gap: --spacing(4);
+
+				&::before {
+					grid-row: 1;
+					grid-column: 1;
+					align-self: baseline;
+
+					z-index: calc(var(--z-index-dot-visual) + 1);
+
+					counter-increment: section;
+					content: counter(section);
+
+					display: inline-block;
+					color: var(--color-lila);
+					font-size: var(--text-4xl);
+					line-height: var(--text-4xl--line-height);
+					font-family: "Basteleur", sans-serif;
+				}
+
+				.welfare-item__head {
+					grid-row: 1;
+					grid-column: 2;
+
+					align-self: baseline;
+					font-size: var(--text-2xl);
+					line-height: var(--text-2xl--line-height);
+					display: flex;
+					flex-direction: row;
+					gap: --spacing(2);
+				}
+
+				.welfare-item__text {
+					grid-row: 2;
+					grid-column: 2;
+					font-size: var(--text-lg);
+					line-height: var(--text-lg--line-height);
+				}
+			}
+
+			@variant md {
+				row-gap: --spacing(20);
+
+				.welfare-item {
+					grid-column-end: span 6;
+
+					&::before {
+						align-self: normal;
+					}
+				}
+
+				.welfare-item:nth-child(2n) {
+					grid-column-start: 4;
+				}
+			}
+
+			@variant lg {
+				row-gap: --spacing(16);
+
+				grid-column: 1 / -1;
+				display: grid;
+				grid-template-columns: subgrid;
+
+				/*padding-inline: 0;*/
+				/*margin-inline: 0;*/
+
+				.welfare-item {
+					grid-column-start: 2;
+					grid-column-end: span 5;
+					grid-row: sibling-index();
+
+					/* align head/text with column. item number left of it. randomly chosen 10, works :shrug: */
+					margin-inline-start: calc(-1 * --spacing(10));
+				}
+
+				.welfare-item:nth-child(2n) {
+					grid-column-start: 7;
+				}
+
+				.dot-visual {
+					top: calc(-1 * --spacing(28));
+				}
+			}
+		}
+
+		@variant md {
+			.section-title-pill {
+				place-self: start;
+				grid-column: 2 / -1;
+
+				margin-inline: 0;
+				margin-block-end: --spacing(14);
+			}
+		}
+
+		@variant lg {
+			.section-title-pill {
+				place-self: start;
+				margin-inline: 0;
+			}
+		}
+	}
+}

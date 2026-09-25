@@ -1,0 +1,19 @@
+@layer components {
+	.section-title-pill {
+		display: inline-block;
+		place-self: start;
+
+		padding-block: --spacing(1);
+		padding-inline: --spacing(3);
+
+		border: 2px dashed var(--color-lila);
+		border-radius: var(--radius-full);
+
+		font-family: "Outfit", sans-serif;
+		font-size: 1.125rem;
+		font-weight: 400;
+		text-transform: uppercase;
+
+		user-select: none;
+	}
+}

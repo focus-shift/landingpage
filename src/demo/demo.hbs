@@ -1,0 +1,68 @@
+---
+layout: layout.hbs
+title: Demo
+description: Ohne Registrierung direkt ausprobieren. Mit der Live Demo alle Funktionen ausprobieren.
+navigation:
+  activeItem: demo
+stylesheets:
+- /static/css/demo.css
+---
+
+<div class="bg-white">
+	<div class="page-grid px-page-grid-gap">
+		<section class="section-hero">
+			<div class="section-hero__image highlight-box border-yellow bg-beige">
+				<div class="highlight-box__image p-14">
+					<img
+						src="teaser.png"
+						alt=""
+						class="object-contain aspect-square"
+						fetchpriority="high"
+						decoding="async"
+					/>
+				</div>
+			</div>
+			<div class="section-hero__title">
+				<h1 class="mt-8 text-5xl">
+					Neugierig geworden? Jetzt Live-Demo starten.
+				</h1>
+			</div>
+			<div class="section-hero__text">
+				<p class="text-lg max-w-prose">
+					Teste hier & jetzt die Perspektive verschiedener Nutzer:innen der Urlaubsverwaltung
+					und Zeiterfassung in unserer Live-Demo. Ganz ohne Registrierung oder Download.
+				</p>
+				<p class="ci-dots-button-group mt-8">
+					{{> partials/dots-horizontal color="bg-lila" }}
+					<button class="button button--green" popovertarget="demo-popover">Demo Starten</button>
+				</p>
+				{{> partials/demo-popover id="demo-popover"}}
+			</div>
+		</section>
+	</div>
+</div>
+
+<div class="bg-beige pt-14 pb-28">
+	<div class="page-grid px-page-grid-gap">
+		<section class="page-subgrid-full">
+			<h2 class="section-title-pill lg:col-start-2">Demo</h2>
+			<div
+				class="mt-5 col-span-full overflow-x-auto carousel"
+				role="region"
+				aria-roledescription="Karussell"
+				aria-label="Screenshots der Urlaubsverwaltung und Zeiterfassung"
+				tabindex="0"
+			>
+				{{!-- sizes: carousel item width, see demo.css (74% minus padding/gap, page max-width 1440px) --}}
+				<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-uv-uebersicht.png" alt="Urlaubsverwaltung: Persönliche Übersicht mit Urlaubsanspruch, Resturlaub, Kalender und beantragten Abwesenheiten">
+				<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-uv-unternehmen-gesundheit.png" alt="Urlaubsverwaltung: Aggregierte Gesundheitsauswertung des Unternehmens mit Gesundheitsquote, Mehrarbeit und Verteilung der Krankheitstage">
+				<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-uv-abwesenheit-statistik.png" alt="Urlaubsverwaltung: Abwesenheitsstatistik mit Abwesenheitstagen je Monat, Verteilung der Abwesenheitsarten und genommenem Urlaub">
+				<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-uv-abwesenheitsarten.png" alt="Urlaubsverwaltung: Einstellungen zu Abwesenheitsarten mit Status, Genehmigungs- und Stornierungsprozess, Sichtbarkeit und Farbe">
+				<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-ze-zeiteintraege.png" alt="Zeiterfassung: Neuen Zeiteintrag erfassen und Liste der Zeiteinträge mit Soll-Ist-Abweichung je Tag und Kalenderwoche">
+				<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-ze-berichte.png" alt="Zeiterfassung: Wochenbericht mit geleisteten und geplanten Stunden je Tag und Person sowie CSV Download">
+			</div>
+		</section>
+	</div>
+</div>
+
+{{> partials/section-meeting }}

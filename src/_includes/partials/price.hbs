@@ -1,0 +1,157 @@
+<div class="col-span-full border-b-2 border-white pb-4 mb-8">
+	<div class="price-section-switch">
+		<button id="price-button-cloud" class="price-section-toggle price-section-toggle--cloud">Cloud</button>
+		<label class="checkbox-switch checkbox-switch--noir">
+			<span class="sr-only">On Premise</span>
+			<input type="checkbox" name="on-premise">
+		</label>
+		<button id="price-button-on-premise" class="price-section-toggle price-section-toggle--on-premise">On Premise</button>
+	</div>
+</div>
+
+<div class="section-price-cloud">
+	<div class="col-span-full highlight-box border-lila bg-white p-8 grid grid-cols-subgrid lg:col-start-2 lg:-col-end-2 lg:grid-flow-col">
+		<div class="col-span-full flex flex-col gap-8 lg:col-start-2 lg:col-span-4 lg:gap-4">
+			<h3>
+				<span class="text-lila font-bold text-lg">urlaubsverwaltung.cloud</span> <span class="bg-green px-2 py-px rounded-full text-sm uppercase">meistgewählt</span>
+			</h3>
+			<p class="font-bold text-lg">
+				Registrieren und direkt Starten!
+			</p>
+			<ul class="list-disc list-outside pl-5">
+				<li>
+					Voller Funktionsumfang
+				</li>
+				<li>
+					Stetige Weiterentwicklung
+				</li>
+				<li>
+					Sicherheitsupdates
+				</li>
+				<li>
+					Single Sign On
+				</li>
+				<li>
+					Backups
+				</li>
+				<li>
+					E-Mail-Support
+				</li>
+				<li>
+					Onboarding
+				</li>
+				<li>
+					GreenIT & optimierte Ressourcennutzung
+				</li>
+			</ul>
+		</div>
+		<form class="mt-8 col-span-full lg:col-start-6 lg:col-span-4 lg:mt-3">
+			<fieldset class="relative pb-4 pt-14 border-t-2 border-beige flex flex-col">
+				<legend class="absolute top-4 block text-lila font-bold text-lg mb-2">Zahlungsintervall:</legend>
+				<label class="cursor-pointer">
+					<input type="radio" id="subscription-year" class="cursor-pointer" value="year" name="subscription" checked>
+					Jährliche Zahlung
+				</label>
+				<label class="cursor-pointer">
+					<input type="radio" id="subscription-month" class="cursor-pointer" value="month" name="subscription">
+					Monatliche Zahlung
+				</label>
+			</fieldset>
+			<fieldset class="relative pb-4 pt-14 border-t-2 border-beige flex flex-col">
+				<legend class="absolute top-4 text-lila font-bold text-lg mb-2">Anzahl Mitarbeitende:</legend>
+				<div class="flex flex-row items-center gap-2">
+					<label class="w-28">
+						<input id="subscription-quantity" type="text" inputmode="numeric" value="5" min="5" class="border border-lila rounded-full inline-block py-2 px-4 w-full">
+					</label>
+					<button id="subscription-quantity-increase" type="button" class="w-10 h-10 flex items-center justify-center rounded-full bg-beige">&plus;</button>
+					<button id="subscription-quantity-decrease" type="button" class="w-10 h-10 flex items-center justify-center rounded-full bg-beige">&minus;</button>
+				</div>
+			</fieldset>
+			<fieldset class="relative pb-4 pt-14 border-t-2 border-beige">
+				<legend class="absolute top-4 text-lila font-bold text-lg mb-2">Software:</legend>
+				<div class="flex items-center gap-2">
+					<input id="service-urlaubsverwaltung" type="checkbox" name="software" value="urlaubsverwaltung" checked disabled>
+					<label for="service-urlaubsverwaltung">Urlaubsverwaltung</label>
+				</div>
+				<div class="flex items-center gap-2">
+					<input id="service-zeiterfassung" class="cursor-pointer" type="checkbox" name="software" value="zeiterfassung">
+					<label for="service-zeiterfassung" class="cursor-pointer">Zeiterfassung</label>
+				</div>
+			</fieldset>
+			<p class="py-4 border-t-2 border-beige">
+				<span id="subscription-price" class="text-2xl font-bold">10,00 €</span> / Monat (zzgl. MwSt.)
+			</p>
+		</form>
+		<div class="mt-8 col-span-full lg:col-start-2 lg:col-span-4">
+			<p class="font-bold lg:text-lg">Ihr habt mehr als 250 Mitarbeitende?</p>
+			<p>Meldet euch bei uns für ein individuelles Angebot</p>
+			<p class="mt-4 ci-dots-button-group">
+				{{> partials/dots-horizontal color="bg-lila" }}
+				<a href="{{links.individualPriceRequest}}" class="button button--green">Preis Anfragen</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="section-price-on-premise">
+	<ul class="page-subgrid-full gap-8">
+		<li class="col-span-full lg:col-span-4">
+			<div class="highlight-box bg-white border-lila p-8 grid">
+				<h3 class="font-bold text-lila text-lg">Open-Source-Software</h3>
+				<p class="mt-2 max-w-prose">
+					Du willst dich um Setup, Backup & Updates selbst kümmern? Dann geht es hier direkt zu Github.
+					Wir freuen uns über Feedback und Mitgestaltung!
+				</p>
+				<ul class="mt-8 list-disc list-outside pl-5">
+					<li>Offene Quellen</li>
+					<li>Aktive Community</li>
+					<li>Transparente Weiterentwicklung</li>
+					<li>Support via Github</li>
+				</ul>
+				<p class="mt-8 flex items-center gap-2">
+					{{> partials/dots-horizontal color="bg-lila" }}
+					<a href="https://github.com/urlaubsverwaltung" class="button button--light-blue">Zu Github</a>
+				</p>
+			</div>
+		</li>
+		<li class="col-span-full lg:col-span-4">
+			<div class="highlight-box bg-white border-lila p-8 grid">
+				<h3 class="font-bold text-lila text-lg">On-Premise Support</h3>
+				<p class="mt-2 max-w-prose">
+					Wir sind an deiner Seite. Wir stellen dir einen individuellen Supportvertrag zur Verfügung,
+					der auf deine Anforderungen zugeschnitten ist. Er könnte zum Beispiel folgende Leistungen beinhalten:
+				</p>
+				<ul class="mt-8 list-disc list-outside pl-5">
+					<li>Servicezeit: Mo-Fr (9:00 - 17:00 Uhr)</li>
+					<li>Support-Kanal: E-Mail</li>
+					<li>Max. Antwortzeit: 8h</li>
+					<li>12 Serviceanfragen</li>
+					<li>Laufzeit von 12 Monaten</li>
+				</ul>
+				<p class="mt-8 flex items-center gap-2">
+					{{> partials/dots-horizontal color="bg-lila" }}
+					<a href="{{links.onPremiseSupportRequest}}" class="button button--green">Preis anfragen</a>
+				</p>
+			</div>
+		</li>
+		<li class="col-span-full lg:col-span-4">
+			<div class="highlight-box bg-white border-lila p-8 grid">
+				<h3 class="font-bold text-lila text-lg">On Premise Installation</h3>
+				<p class="mt-2 max-w-prose">
+					Wir unterstützen dich gerne bei der Einrichtung der Urlaubsverwaltung & Zeiterfassung
+					auf deinen eigenen Servern.
+				</p>
+				<ul class="mt-8 list-disc list-outside pl-5">
+					<li>Stundenbasierte Abrechnung</li>
+					<li>Direkte Hilfe durch Onlinecall</li>
+					<li>Von der Installation bis zum Onboarding</li>
+				</ul>
+				<p class="mt-8 flex items-center gap-2">
+					{{> partials/dots-horizontal color="bg-lila" }}
+					<a href="{{links.onPremiseInstallationRequest}}" class="button button--green">Preis anfragen</a>
+				</p>
+			</div>
+		</li>
+	</ul>
+</div>
+

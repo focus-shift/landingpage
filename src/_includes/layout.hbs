@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		{{#if title}}{{title}} {{/if}}
+	</title>
+	<meta property="og:locale" content="de_DE" />
+	<meta property="og:url" content="https://urlaubsverwaltung.cloud" />
+	<meta property="og:site_name" content="Urlaubsverwaltung.cloud" />
+	<meta property="og:title" content="{{#if title}}{{title}}{{/if}}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="/static/uv-multidevice_sm.png" />
+	{{#if description}}
+		<meta property="og:description" content="{{description}}" />
+		<meta name="description" content="{{description}}" />
+	{{/if}}
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/static/site.webmanifest">
+	<link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#5bbad5">
+	<meta name="theme-color" content="#9b9bff" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#50287d" media="(prefers-color-scheme: dark)">
+	{{> partials/preload-fonts }}
+	{{> partials/style-fonts }}
+	{{> partials/google-tag-manager-head}}
+	<link rel="stylesheet" href="/static/css/style.css" />
+	{{#each stylesheets}}
+	<link rel="stylesheet" href="{{this}}" />
+	{{/each}}
+	<script type="module" src="/static/js/common.js"></script>
+	{{#each scripts}}
+		<script type="module" src="{{this}}"></script>
+	{{/each}}
+</head>
+<body class="flex flex-col">
+	{{> partials/google-tag-manager-body}}
+  {{> partials/navigation active=navigation.activeItem}}
+	<div id="top" class="top-anchor"></div>
+	<div class="flex-1 bg-white">
+		{{{ content }}}
+	</div>
+  {{> partials/footer }}
+	{{> partials/to-top-button target="#top" }}
+	{{> partials/support-chat}}
+</body>
+</html>

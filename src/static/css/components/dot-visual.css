@@ -1,0 +1,52 @@
+@layer components {
+	*:has(> .dot-visual) {
+		position: relative;
+
+		& > *:not(.dot-visual) {
+			z-index: calc(var(--z-index-dot-visual) + 1);
+			position: relative;
+		}
+
+		.dot-visual {
+			z-index: var(--z-index-dot-visual);
+			position: absolute;
+
+			display: flex;
+			flex-direction: column;
+			gap: --spacing(4);
+
+			pointer-events: none;
+
+			> .dot {
+				display: inline-block;
+				width: --spacing(19);
+				height: --spacing(19);
+				border-radius: var(--radius-full);
+
+				@variant lg {
+					width: --spacing(24);
+					height: --spacing(24);
+				}
+			}
+		}
+	}
+
+	.ci-dots-button-group {
+		display: flex;
+		align-items: center;
+		gap: --spacing(2);
+	}
+
+	.ci-dots-container {
+		display: inline-flex;
+		gap: --spacing(1);
+
+		.ci-dot {
+			display: inline-block;
+			width: --spacing(6);
+			height: --spacing(6);
+			border-radius: var(--radius-full);
+			pointer-events: none;
+		}
+	}
+}

@@ -1,0 +1,5 @@
+Vorname,Nachname,E-Mail-Adresse,Jährlicher Urlaubsanspruch,Anteiliger Urlaubsanspruch,Resturlaub,Abteilung_1,Abteilung_1_Abteilungsleiter,Abteilung_2,Abteilung_2_Abteilungsleiter,Abteilung_3,Abteilung_3_Abteilungsleiter,Abteilung_4,Abteilung_4_Abteilungsleiter,Abteilung_5,Abteilung_5_Abteilungsleiter
+Brigitte,Händel,haendel@urlaubsverwaltung.cloud,30,20,2,Admins,X,,,,,,,,
+Hans,Dampf,dampf@urlaubsverwaltung.cloud,30,25,5,Entwicklung,,,,,,,,,
+Franziska,Baier,baier@urlaubsverwaltung.cloud,30,10,0,Marketing,,Vertrieb,,,,,,,
+

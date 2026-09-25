@@ -1,0 +1,57 @@
+---
+layout: layout.hbs
+navigation:
+  activeItem: hilfe
+stylesheets:
+- /static/css/neuigkeiten.css
+---
+
+<div class="bg-white">
+	<div class="page-grid px-page-grid-gap">
+		<section class="section-hero">
+			<div class="section-hero__image highlight-box border-orange bg-beige">
+				<div class="highlight-box__image p-8 md:p-16 lg:p-22">
+					<img src="/static/img/hero-dokumentation.svg" alt="">
+				</div>
+			</div>
+			<div class="section-hero__title">
+				<h1 class="mt-13 text-4xl md:mt-8 md:text-5xl">
+					{{{helpSectionTitle}}}
+				</h1>
+			</div>
+		</section>
+	</div>
+</div>
+
+<div class="bg-white py-16">
+	<div class="page-grid px-page-grid-gap">
+		<div class="page-subgrid-full">
+			<nav class="col-span-full flex flex-col px-page-grid-gap lg:px-0 lg:col-span-5 lg:flex-row lg:items-center lg:gap-4" aria-label="Breadcrumb">
+				<ol class="flex flex-col gap-4 md:flex-row md:items-center md:gap-2 md:flex-wrap">
+					{{#each (eleventyNavigationBreadcrumb collections.hilfe eleventyNavigation.key) }}
+						{{#if @first}}
+							<li>
+								<span class="ci-dots-button-group">
+									{{> partials/dots-horizontal color="bg-green" }}
+									<a href="{{this.url}}" class="button button--lila-dark">{{this.title}}</a>
+								</span>
+							</li>
+						{{else}}
+							<li>
+								<a href="{{this.url}}" class="button button--lila">{{this.title}}</a>
+							</li>
+						{{/if}}
+					{{/each}}
+				</ol>
+			</nav>
+			<span class="mt-4 pl-page-grid-gap col-span-full lg:mt-0 lg:col-start-6 lg:-col-end-1">
+				<span class="section-title-pill">{{eleventyNavigation.title}}</span>
+			</span>
+		</div>
+		<div class="help-article mt-8 px-page-grid-gap col-span-full lg:mt-32 lg:col-start-6">
+			{{{content}}}
+		</div>
+	</div>
+</div>
+
+{{> partials/section-jetzt-testen }}

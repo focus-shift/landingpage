@@ -1,0 +1,10 @@
+---
+layout: layout-neuigkeiten.hbs
+title: Neuigkeiten auf urlaubsverwaltung.cloud
+description: Alle Neuigkeiten rund um die Themen Human Resource, Open Source, Releases und Updates der urlaubsverwaltung.cloud
+pagination:
+  data: collections.neuigkeiten
+  size: 10
+  alias: posts
+permalink: "neuigkeiten/{{#if pagination.pageNumber}}seite/{{addOne pagination.pageNumber}}/{{/if}}index.html"
+---
