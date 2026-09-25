@@ -28,10 +28,12 @@
 	{{> partials/style-fonts }}
 	{{> partials/google-tag-manager-head}}
 	<link rel="stylesheet" href="/static/css/style.css" />
+	<link rel="stylesheet" href="/static/css/klaro.css" />
 	{{#each stylesheets}}
 	<link rel="stylesheet" href="{{this}}" />
 	{{/each}}
 	<script type="module" src="/static/js/common.js"></script>
+	<script type="module" src="/static/js/klaro.js"></script>
 	{{#each scripts}}
 		<script type="module" src="{{this}}"></script>
 	{{/each}}

@@ -1,0 +1,673 @@
+/*
+We declare all variables here as default so that they are easy to override...
+*/
+/* Border, shadows, ... */
+/*
+Variables that begin with $var- should NEVER be used directly in CSS rules.
+they should only be included via the "@include var(property, var-name)"
+mechanism.
+*/
+/* Border styles */
+/* Cookie notice positioning */
+/* Text colors */
+/* Font Families */
+/* White */
+/* Differently shaded colors */
+/*
+Use @include var(property, varname) to include a variable, e.g.
+
+    @include var(background-color, white1);
+
+to create a white background.
+*/
+/* Spacing */
+/* Breakpoints */
+.klaro {
+	/* landingpage theme mapping (colors from theme.css) */
+	--klaro-surface: var(--color-beige);
+	--klaro-text: var(--color-black);
+	--klaro-text-muted: color-mix(in srgb, var(--color-black) 60%, transparent);
+	--klaro-border: color-mix(in srgb, var(--color-black) 12%, transparent);
+	--klaro-accent: var(--color-lila-dark);
+	--klaro-accent-soft: var(--color-lila);
+	--klaro-radius: var(--radius-3xl, 1.5rem);
+
+	font-family: var(--font-outfit, inherit);
+	font-size: 1rem;
+
+	button {
+		font-family: var(--font-outfit, inherit);
+		font-size: 1rem;
+	}
+
+	&.cm-as-context-notice {
+		height: 100%;
+		padding-bottom: 12px;
+		padding-top: 12px;
+	}
+
+	.cookie-modal,
+	.context-notice,
+	.cookie-notice {
+		/* The switch - the box around the slider */
+		.cm-switch-container {
+			border-bottom-style: var(--border-style, solid);
+			border-bottom-width: var(--border-width, 1px);
+			border-bottom-color: var(--klaro-border);
+			display: block;
+			position: relative;
+			padding: 10px;
+			padding-left: 66px;
+			line-height: 20px;
+			vertical-align: middle;
+			min-height: 40px;
+
+			&:last-child {
+				border-bottom: 0;
+			}
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			p {
+				margin-top: 0;
+			}
+		}
+
+		.cm-switch {
+			position: relative;
+			display: inline-block;
+			width: 50px;
+			height: 30px;
+		}
+
+		.cm-list-input {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			width: 50px;
+			height: 30px;
+
+			&:checked + .cm-list-label .slider {
+				background-color: var(--klaro-accent);
+			}
+
+			&.half-checked:checked + .cm-list-label .slider {
+				background-color: var(--klaro-accent);
+				opacity: 0.6;
+
+				&::before {
+					-ms-transform: translateX(10px);
+					transform: translateX(10px);
+				}
+			}
+
+			&.only-required + .cm-list-label .slider {
+				background-color: var(--klaro-accent-soft);
+				opacity: 0.8;
+
+				&::before {
+					-ms-transform: translateX(10px);
+					transform: translateX(10px);
+				}
+			}
+
+			&.required:checked + .cm-list-label .slider {
+				background-color: var(--klaro-accent-soft);
+				opacity: 0.8;
+				cursor: not-allowed;
+			}
+		}
+
+		.slider {
+			box-shadow:
+				0 4px 6px 0 rgba(0, 0, 0, 0.2),
+				5px 5px 10px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		.cm-list-title {
+			font-size: 0.9em;
+			font-weight: 600;
+		}
+
+		.cm-list-description {
+			color: var(--klaro-text-muted);
+			font-size: 0.9em;
+			padding-top: 4px;
+		}
+
+		.cm-list-label {
+			.cm-switch {
+				position: absolute;
+				left: 0;
+			}
+
+			/* The slider */
+			.slider {
+				background-color: var(--klaro-border);
+				position: absolute;
+				cursor: pointer;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				transition: 0.4s;
+				width: 50px;
+				display: inline-block;
+
+				&::before {
+					background-color: var(--color-white);
+					position: absolute;
+					content: "";
+					height: 20px;
+					width: 20px;
+					left: 5px;
+					bottom: 5px;
+					transition: 0.4s;
+				}
+
+				/* Rounded sliders */
+				&.round {
+					border-radius: 30px;
+
+					&::before {
+						border-radius: 50%;
+					}
+				}
+			}
+
+			input:focus + .slider {
+				box-shadow: 0 0 1px var(--klaro-accent);
+			}
+
+			input:checked + .slider::before {
+				-ms-transform: translateX(20px);
+				transform: translateX(20px);
+			}
+		}
+
+		.cm-list-input:focus + .cm-list-label .slider {
+			box-shadow:
+				0 4px 6px 0 rgba(125, 125, 125, 0.2),
+				5px 5px 10px 0 rgba(125, 125, 125, 0.19);
+		}
+
+		.cm-list-input:checked + .cm-list-label .slider::before {
+			-ms-transform: translateX(20px);
+			transform: translateX(20px);
+		}
+
+		.slider {
+			box-shadow:
+				0 4px 6px 0 rgba(0, 0, 0, 0.2),
+				5px 5px 10px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		a {
+			color: var(--klaro-accent);
+			text-decoration: underline;
+			text-underline-offset: 0.2em;
+		}
+
+		p,
+		strong,
+		h1,
+		h2,
+		ul,
+		li {
+			color: var(--klaro-text);
+		}
+
+		p,
+		h1,
+		h2,
+		ul,
+		li {
+			display: block;
+			text-align: left;
+			margin: 0;
+			padding: 0;
+			margin-top: 0.7em;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: var(--font-outfit, inherit);
+			font-weight: 600;
+			line-height: 1.2;
+		}
+
+		.cm-link {
+			margin-right: 0.5em;
+			vertical-align: middle;
+		}
+
+		/* same look as .button from components/button.css */
+		.cm-btn {
+			color: var(--color-black);
+			background-color: var(--color-white);
+			border-radius: var(--button-radius, 9999px);
+			margin-right: 0.5em;
+			border-style: none;
+			padding: 0.5em 1.25em;
+			font-size: 1em;
+			text-transform: uppercase;
+			white-space: nowrap;
+			cursor: pointer;
+			box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+			transition-property: scale, color, background-color, box-shadow;
+			transition-duration: 200ms;
+			transition-timing-function: ease-out;
+
+			&:active {
+				scale: 0.97;
+			}
+
+			&:disabled {
+				opacity: 0.5;
+			}
+
+			&.cm-btn-close {
+				background-color: var(--color-white);
+			}
+
+			&.cm-btn-success {
+				background-color: var(--color-orange);
+				color: var(--color-white);
+			}
+
+			&.cm-btn-success-var {
+				background-color: var(--color-green);
+				color: var(--color-black);
+			}
+
+			&.cm-btn-info {
+				background-color: var(--color-lila-dark);
+				color: var(--color-white);
+			}
+		}
+	}
+
+	.context-notice {
+		border-radius: var(--klaro-radius);
+		border-style: solid;
+		border-width: 1px;
+		border-color: var(--klaro-border);
+		background-color: var(--klaro-surface);
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		padding: 12px;
+		height: 100%;
+
+		&.cm-dark {
+			background-color: var(--color-lila-dark);
+			border-color: var(--color-lila-dark);
+
+			p {
+				color: var(--color-white);
+
+				a {
+					color: var(--color-light-blue);
+				}
+			}
+		}
+
+		p {
+			color: var(--klaro-text);
+			flex-grow: 0;
+			text-align: center;
+			padding-top: 0;
+			margin-top: 0;
+
+			a {
+				color: var(--klaro-accent);
+			}
+
+			&.cm-buttons {
+				margin-top: 12px;
+			}
+
+			&.ccn-description-empty-store {
+				margin-top: 24px;
+				font-size: var(--text-sm);
+			}
+		}
+	}
+
+	.cookie-modal {
+		overscroll-behavior: contain;
+
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		overflow: hidden;
+		left: 0;
+		top: 0;
+		z-index: 1000;
+
+		&.cm-embedded {
+			position: relative;
+			height: inherit;
+			width: inherit;
+			left: inherit;
+			right: inherit;
+			z-index: 0;
+
+			.cm-modal.cm-klaro {
+				position: relative;
+				-ms-transform: none;
+				transform: none;
+			}
+		}
+
+		.cm-bg {
+			background: color-mix(in srgb, var(--color-lila-dark) 60%, transparent);
+			height: 100%;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+
+		.cm-modal.cm-klaro {
+			background-color: var(--klaro-surface);
+			color: var(--klaro-text);
+			z-index: 1001;
+			box-shadow:
+				0 4px 6px 0 rgba(0, 0, 0, 0.2),
+				5px 5px 10px 0 rgba(0, 0, 0, 0.19);
+			width: 100%;
+			max-height: 98%;
+			top: 50%;
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			position: fixed;
+			overflow: auto;
+
+			@media (min-width: 660px) {
+				border-radius: var(--klaro-radius);
+				position: relative;
+				margin: 0 auto;
+				max-width: 640px;
+				height: auto;
+				width: auto;
+			}
+		}
+
+		.cm-modal {
+			.hide {
+				border-style: none;
+				background: none;
+				cursor: pointer;
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				z-index: 1;
+
+				svg {
+					stroke: var(--klaro-text);
+				}
+			}
+
+			.cm-footer {
+				border-top-color: var(--klaro-border);
+				border-top-width: 1px;
+				border-top-style: solid;
+				padding: 1em;
+			}
+
+			.cm-footer-buttons {
+				display: flex;
+				flex-flow: row;
+				justify-content: space-between;
+			}
+
+			.cm-footer .cm-powered-by {
+				font-size: 0.8em;
+				padding-top: 4px;
+				text-align: right;
+				padding-right: 8px;
+
+				a {
+					color: var(--klaro-text-muted);
+				}
+			}
+
+			.cm-header {
+				border-bottom-width: 1px;
+				border-bottom-style: solid;
+				border-bottom-color: var(--klaro-border);
+				padding: 1em;
+				padding-right: 24px;
+
+				h1 {
+					margin: 0;
+					font-size: 2em;
+					display: block;
+
+					&.title {
+						padding-right: 20px;
+					}
+				}
+			}
+
+			.cm-body {
+				padding: 1em;
+
+				ul {
+					display: block;
+				}
+
+				span {
+					display: inline-block;
+					width: auto;
+				}
+
+				ul.cm-services,
+				ul.cm-purposes {
+					padding: 0;
+					margin: 0;
+
+					li.cm-purpose .cm-services {
+						.cm-caret {
+							color: var(--klaro-text-muted);
+						}
+
+						.cm-content {
+							margin-left: -40px;
+							display: none;
+
+							&.expanded {
+								margin-top: 10px;
+								display: block;
+							}
+						}
+					}
+
+					li.cm-service,
+					li.cm-purpose {
+						position: relative;
+						line-height: 20px;
+						vertical-align: middle;
+						padding-left: 60px;
+						min-height: 40px;
+
+						&:first-child {
+							margin-top: 0;
+						}
+
+						p {
+							margin-top: 0;
+
+							&.purposes {
+								color: var(--klaro-text-muted);
+								font-size: 0.8em;
+							}
+						}
+
+						&.cm-toggle-all {
+							border-top-width: 1px;
+							border-top-style: solid;
+							border-top-color: var(--klaro-border);
+							padding-top: 1em;
+						}
+
+						span.cm-list-title {
+							font-weight: 600;
+						}
+
+						span.cm-opt-out,
+						span.cm-required {
+							color: var(--klaro-accent);
+							padding-left: 0.2em;
+							font-size: 0.8em;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.cookie-notice:not(.cookie-modal-notice) {
+		background-color: var(--klaro-surface);
+		color: var(--klaro-text);
+		z-index: 999;
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		right: 0;
+
+		@media (min-width: 1024px) {
+			border-radius: var(--klaro-radius);
+			position: fixed;
+			right: auto;
+			left: 10px;
+			bottom: 10px;
+			top: auto;
+			max-width: 400px;
+			box-shadow:
+				0 4px 6px 0 rgba(0, 0, 0, 0.2),
+				5px 5px 10px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		@media (max-width: 1023px) {
+			border-style: none;
+			border-radius: 0;
+		}
+
+		&.cn-embedded {
+			position: relative;
+			height: inherit;
+			width: inherit;
+			left: inherit;
+			right: inherit;
+			bottom: inherit;
+			z-index: 0;
+
+			.cn-body {
+				padding-top: 0.5em;
+			}
+		}
+
+		.cn-body {
+			margin-bottom: 0;
+			margin-right: 0;
+			bottom: 0;
+			padding: 1em;
+			padding-top: 0;
+
+			p {
+				margin-bottom: 0.5em;
+
+				&.cn-changes {
+					text-decoration: underline;
+				}
+			}
+
+			.cn-learn-more {
+				display: inline-block;
+				/* push .cn-buttons to the right without stretching this button */
+				margin-right: auto;
+			}
+
+			.cn-buttons {
+				display: inline-block;
+				margin-top: -0.5em;
+
+				@media (max-width: 384px) {
+					width: 100%;
+				}
+
+				button.cm-btn {
+					margin-top: 0.5em;
+
+					@media (max-width: 384px) {
+						width: calc(50% - 0.5em);
+					}
+				}
+			}
+
+			.cn-ok {
+				margin-top: -0.5em;
+				display: flex;
+				flex-flow: row;
+				flex-wrap: wrap;
+				justify-content: right;
+				align-items: baseline;
+
+				a,
+				div {
+					margin-top: 0.5em;
+				}
+			}
+		}
+	}
+
+	.cookie-modal-notice {
+		background-color: var(--klaro-surface);
+		color: var(--klaro-text);
+		z-index: 1001;
+		box-shadow:
+			0 4px 6px 0 rgba(0, 0, 0, 0.2),
+			5px 5px 10px 0 rgba(0, 0, 0, 0.19);
+		width: 100%;
+		max-height: 98%;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		position: fixed;
+		overflow: auto;
+		padding: 1.5em;
+		padding-top: 0.5em;
+
+		@media (min-width: 480px) {
+			border-radius: var(--klaro-radius);
+			position: relative;
+			margin: 0 auto;
+			max-width: 440px;
+			height: auto;
+			width: auto;
+		}
+
+		.cn-ok {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 1em;
+		}
+	}
+
+	.cookie-notice-hidden {
+		display: none !important;
+	}
+}
