@@ -1,0 +1,86 @@
+---
+layout: layout.hbs
+title: Urlaubsverwaltung & Zeiterfassung — Open Source, DSGVO-konform
+description: Open-Source-Urlaubsverwaltung und Zeiterfassung für den Mittelstand. In Deutschland gehostet, DSGVO-konform, ohne Mitarbeiterüberwachung. 30 Tage kostenlos testen.
+navigation:
+  activeItem: wir
+stylesheets:
+- /static/css/wir.css
+---
+
+<div class="bg-beige">
+	<div class="page-grid px-page-grid-gap">
+		<section class="section-hero">
+			<div class="section-hero__image highlight-box border-orange md:row-start-1 md:row-span-3">
+				<div class="highlight-box__image">
+					<img
+						src="/static/img/wir-teaser.jpg"
+						alt=""
+						class="object-cover object-[center_30%] aspect-square"
+						fetchpriority="high"
+						decoding="async"
+					/>
+				</div>
+			</div>
+			<div class="section-hero__title md:row-start-1 md:mt-8 md:col-span-3 lg:col-span-4">
+				<h1 class="text-4xl lg:text-5xl"><span class="font-basteleur">Warum</span> wir machen, was wir machen</h1>
+			</div>
+			<div class="section-hero__text md:row-start-2 md:col-start-5 md:col-span-4 md:px-page-grid-gap md:mt-20 lg:col-start-6 lg:mt-36 nav:mt-48">
+				<p class="section-title-pill">Hallo!</p>
+				<p class="mt-8">
+					<span class="font-bold">Wir sind Andreas, Benjamin, Daniel und Tobias</span> - die Gründer von focus:shift.
+				</p>
+				<p class="mt-8">
+					Als wir uns zusammenfanden, um an unserer Vision zu arbeiten, stellten wir uns eine einfache Frage:
+					Warum fühlt sich Zeiterfassung für die meisten Menschen wie Kontrolle an und nicht wie Unterstützung?
+				</p>
+			</div>
+		</section>
+	</div>
+</div>
+
+<section>
+	<div class="bg-beige py-16">
+		<div class="page-grid px-page-grid-gap">
+			<div class="col-span-full md:col-start-2 md:-col-end-2 lg:col-start-2 lg:col-span-7">
+				<div class="px-page-grid-gap md:px-0">
+					<h2 class="text-2xl nav:text-4xl">
+						Unsere Vision: <strong>Eine gesunde Balance</strong>.
+					</h2>
+					<p class="mt-8 text-2xl nav:text-4xl nav:mt-0">
+						Für uns war klar, dass wir keine Software bauen wollten, die nur Stunden zählt.
+						Wir wollten ein Werkzeug schaffen, das den Fürsorge-Faktor fest in den Arbeitsalltag integriert und Menschen sichtbar macht.
+					</p>
+					<div class="dot-visual left-0 -top-8 md:-left-12 nav:top-16">
+						<span class="dot bg-yellow"></span>
+						<span class="dot bg-yellow"></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-full md:col-start-2 md:-col-end-2 lg:page-subgrid-full lg:mt-24">
+				<div class="px-page-grid-gap mt-16 md:px-0 md:mt-24 lg:col-start-2 lg:col-span-4 lg:mt-0 lg:self-center">
+					<h3 class="font-bold">Warum wir Zeiterfassung neu denken</h3>
+					<p class="mt-8">
+						Wir haben gesehen, dass herkömmliche Tools oft eine Kultur des Präsentismus fördern, in der nur die Quantität
+						der Arbeit zählt, aber die Qualität unseres Wohlbefindens auf der Strecke bleibt.
+					</p>
+				</div>
+				<div class="mt-8 highlight-box border-orange lg:col-start-7 lg:col-span-5">
+					<div class="highlight-box__image">
+						<img
+							src="/static/img/zeiterfassung-neu-denken.jpg"
+							alt=""
+							class="object-cover object-[center_30%] aspect-square"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{{> partials/section-vision-and-values }}
+
+{{> partials/section-meeting }}
+
+{{> partials/section-jetzt-testen }}

@@ -1,0 +1,38 @@
+---
+layout: layout.hbs
+stylesheets:
+- /static/css/datenschutz.css
+---
+
+<div class="bg-beige">
+	<div class="page-grid px-page-grid-gap">
+		<section class="section-hero">
+			<div class="section-hero__image highlight-box border-green">
+				<div class="highlight-box__image">
+					<img
+						src="/static/img/young-smiling-lady-holding-smartphone-using-cellphone-sitting-table.jpg"
+						alt="Eine junge Frau in rotem Pullover schaut lächelnd auf ihr Smartphone am Tisch sitzend."
+						class="object-cover object-[center_30%] aspect-square"
+						fetchpriority="high"
+						decoding="async"
+					/>
+				</div>
+			</div>
+			<div class="section-hero__title">
+				<h1 class="section-title-pill">Datenschutz als Fundament</h1>
+				<p class="mt-8 text-5xl">
+					Öffentliche Einrichtungen mit besonderen Datenschutzanforderungen können sich nicht irren!
+					9 Datenschutz-Gründe für <span>focus:</span><span class="font-basteleur">shift</span>
+				</p>
+			</div>
+		</section>
+	</div>
+</div>
+
+<article class="bg-white article-datenschutz">
+	<div class="page-grid my-22 px-page-grid-gap">
+		<div class="col-span-full lg:col-start-6 lg:pl-page-grid-gap">
+			{{{content}}}
+		</div>
+	</div>
+</article>

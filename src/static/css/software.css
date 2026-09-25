@@ -1,0 +1,123 @@
+@reference "./config.css";
+
+@layer components {
+	body:has([id="focusapp"]:target) a[href="#focusapp"],
+	body:has([id="single-sign-on"]:target) a[href="#single-sign-on"],
+	body:has([id="arbeitszeiterfassung"]:target) a[href="#arbeitszeiterfassung"],
+	body:has([id="abwesenheitsarten"]:target) a[href="#abwesenheitsarten"],
+	body:has([id="teamuebersicht"]:target) a[href="#teamuebersicht"],
+	body:has([id="ueberstunden"]:target) a[href="#ueberstunden"],
+	body:has([id="krankmeldungen"]:target) a[href="#krankmeldungen"],
+	body:has([id="kalenderintegration"]:target) a[href="#kalenderintegration"],
+	body:has([id="kalender"]:target) a[href="#kalender"] {
+		background-color: var(--color-green);
+		color: var(--color-black);
+	}
+
+	[id="focusapp"]:target,
+	[id="single-sign-on"]:target,
+	[id="arbeitszeiterfassung"]:target,
+	[id="abwesenheitsarten"]:target,
+	[id="teamuebersicht"]:target,
+	[id="ueberstunden"]:target,
+	[id="krankmeldungen"]:target,
+	[id="kalenderintegration"]:target,
+	[id="kalender"]:target {
+		outline: 3px solid var(--color-green);
+		outline-offset: --spacing(4);
+		border-radius: var(--radius-lg);
+	}
+
+	.image-mask--beige {
+		position: relative;
+
+		border-radius: var(--radius-2xl);
+		overflow: clip;
+
+		width: 100%;
+		height: 300px;
+
+		& > picture > img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			border-radius: var(--radius-2xl);
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background-color: --alpha(var(--color-beige) / 40%);
+			pointer-events: none;
+			mix-blend-mode: multiply;
+		}
+	}
+
+	.features-grid {
+		& > .feature-card {
+			grid-column-end: span 4;
+		}
+
+		.feature-card__image {
+			margin-block-start: --spacing(4);
+
+			height: 300px;
+			aspect-ratio: var(--aspect-video);
+		}
+	}
+
+	.feature-detail-popover {
+		--popover-inset-x: --spacing(8);
+		--popover-inset-y: --spacing(8);
+		--popover-background-color: var(--color-white);
+
+		height: stretch;
+
+		border: 1px solid var(--color-beige);
+		box-shadow: 15px 15px 23px 0 var(--color-beige);
+		overflow: clip;
+
+		@variant md {
+			--popover-inset-x: --spacing(12);
+			--popover-inset-y: --spacing(12);
+		}
+
+		&::backdrop {
+			background-color: --alpha(var(--color-beige) / 80%);
+			backdrop-filter: blur(2px);
+		}
+
+		&:popover-open {
+			display: grid;
+			grid-template-rows: minmax(0, 1fr);
+
+			&::before {
+				content: "";
+				position: absolute;
+				display: block;
+				width: var(--accent-line-width);
+				left: 0;
+				top: 10rem;
+				height: 300px;
+				background-color: var(--color-lila);
+			}
+		}
+
+		.feature-detail-popover__inner {
+			padding-block: --spacing(8);
+			padding-inline: --spacing(8);
+
+			/* grid item min-height:auto would grow the row past the popover -> no scroll */
+			min-height: 0;
+			overflow: scroll;
+			overscroll-behavior: contain;
+
+			scrollbar-color: var(--color-orange) var(--color-beige);
+
+			@variant lg {
+				padding-inline: --spacing(32);
+			}
+		}
+	}
+}

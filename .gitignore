@@ -1,7 +1,9 @@
-.idea
-.vscode
+.idea/
+.vscode/
+node_modules/
 
-node_modules
-
+out/
 build/
 dist/
+
+.DS_Store

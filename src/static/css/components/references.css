@@ -1,0 +1,18 @@
+@layer components {
+	.references-list {
+		width: 100%;
+		padding-block: --spacing(8);
+
+		display: flex;
+		gap: var(--spacing-page-grid-gap);
+
+		filter: grayscale(100%);
+
+		img {
+			height: 90px;
+			width: auto;
+			max-width: 220px;
+			object-fit: contain;
+		}
+	}
+}

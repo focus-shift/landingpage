@@ -1,0 +1,42 @@
+<header class="page-grid main-header {{mainHeaderClass}}">
+	<div class="main-header-logo">
+		<a href="/" class="inline-block rounded-full hover-no-outline">
+			{{> partials/logo }}
+		</a>
+	</div>
+	<button popovertarget="main-navigation" class="main-navigation-button">
+		<span class="sr-only">Menü</span>
+		{{> partials/dots-horizontal color="bg-orange" }}
+	</button>
+	<nav popover id="main-navigation" class="main-navigation">
+		<ul class="main-navigation__list">
+			<li class="main-navigation__item">
+				<a class="main-navigation__link {{#eq active "fuersorge"}}active{{/eq}}" href="/fuersorge">Fürsorge</a>
+			</li>
+			<li class="main-navigation__item">
+				<a class="main-navigation__link {{#eq active "software"}}active{{/eq}}" href="/software">Software</a>
+			</li>
+			<li class="main-navigation__item">
+				<a class="main-navigation__link {{#eq active "wir"}}active{{/eq}}" href="/wir">Wir</a>
+			</li>
+			<li class="main-navigation__item">
+				<a class="main-navigation__link {{#eq active "neuigkeiten"}}active{{/eq}}" href="/neuigkeiten">Neuigkeiten</a>
+			</li>
+			<li class="main-navigation__item">
+				<a class="main-navigation__link {{#eq active "demo"}}active{{/eq}}" href="/demo">Demo</a>
+			</li>
+			<li class="main-navigation__item">
+				<a class="main-navigation__link {{#eq active "hilfe"}}active{{/eq}}" href="/hilfe">Hilfe</a>
+			</li>
+			<li class="main-navigation__item--app-download nav:hidden">
+				<!-- TODO app download link -> platform? page? overlay? -->
+				<a href="#">App Herunterladen</a>
+			</li>
+			<li class="main-navigation__item--demo nav:hidden">
+				<a href="{{links.demo.office}}">Demo Ansehen</a>
+			</li>
+		</ul>
+		<a href="{{links.login}}" class="nav-login-button button button--green nav:button--shadow">Login</a>
+		<a href="{{links.registration}}" class="nav-test-button  button button--orange nav:button--shadow">Testen</a>
+	</nav>
+</header>

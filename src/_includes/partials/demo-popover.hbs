@@ -1,0 +1,38 @@
+{{#> partials/popover id=id class="demo-popover"}}
+	<div class="h-full flex items-center justify-center">
+		<div class="max-w-prose flex flex-col items-center justify-center gap-8">
+			<p class="text-4xl font-basteleur text-center">
+				In welcher Rolle möchtest du die Demo starten?
+			</p>
+			<ul class="flex flex-col gap-4 items-center">
+				<li>
+					<a
+						href="{{links.demo.office}}"
+						class="button button--green"
+						data-goal="demo-uv"
+						data-goal-trigger="demopage-role-office"
+						target="_blank"
+						rel="noopener nofollow">Office</a>
+				</li>
+				<li>
+					<a
+						href="{{links.demo.boss}}"
+						class="button button--green"
+						data-goal="demo-uv"
+						data-goal-trigger="demopage-image-role-boss"
+						target="_blank"
+						rel="noopener nofollow">Chef:in</a>
+				</li>
+				<li>
+					<a
+						href="{{links.demo.user}}"
+						class="button button--green"
+						data-goal="demo-uv"
+						data-goal-trigger="demopage-link-role-user"
+						target="_blank"
+						rel="noopener nofollow">Nutzer:in</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+{{/partials/popover}}

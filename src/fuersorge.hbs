@@ -1,0 +1,201 @@
+---
+layout: layout.hbs
+title: Urlaubsverwaltung & Zeiterfassung — Open Source, DSGVO-konform
+description: Open-Source-Urlaubsverwaltung und Zeiterfassung für den Mittelstand. In Deutschland gehostet, DSGVO-konform, ohne Mitarbeiterüberwachung. 30 Tage kostenlos testen.
+navigation:
+  activeItem: fuersorge
+stylesheets:
+- /static/css/fuersorge.css
+---
+
+<div class="bg-beige">
+	<div class="page-grid px-page-grid-gap">
+		<section class="section-hero">
+			<div class="section-hero__image highlight-box border-green">
+				<div class="highlight-box__image">
+					<img
+						src="/static/img/ADSF82901.jpg"
+						alt="Eine Frau schaut entspannt auf ihr Smartphone."
+						class="object-cover object-[center_30%] aspect-square"
+						fetchpriority="high"
+						decoding="async"
+					/>
+				</div>
+			</div>
+			<div class="section-hero__title">
+				<h1 class="section-title-pill">Fürsorge</h1>
+				<p class="mt-8 text-5xl">
+					Hinter guter Zeiterfassung steckt mehr: <span class="font-basteleur">Einfachheit, Überblick, Fairness</span>
+					und echte <span class="lg:font-basteleur">Fürsorge.</span>
+				</p>
+			</div>
+			<div class="section-hero__text relative">
+				<h2 class="font-bold">Wie geht das und warum?</h2>
+				<p class="max-w-prose">
+					Die meisten Unternehmen merken Überlastung erst, wenn Mitarbeitende ausfallen.
+					focus:shift macht sie früher sichtbar – aus den Arbeitszeit- und Abwesenheitsdaten, die ohnehin erfasst werden.
+					Ohne zusätzliches Tracking, ohne Fragebögen, vollständig Open Source und in Deutschland gehostet.
+					Damit Du Führen kannst, bevor Du reagieren musst.
+				</p>
+				<div class="dot-visual">
+					<span class="dot bg-yellow"></span>
+					<span class="dot bg-yellow"></span>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+<div class="bg-white">
+	<div class="page-grid px-page-grid-gap">
+		<section class="section-promise">
+			<h2 class="section-title-pill">Unser Versprechen</h2>
+			<div class="parallax-grid">
+				<div>
+					<p>Keine Verhaltensbewertung</p>
+					<img
+						src="/static/img/woman-enjoying-hot-cup-coffee-cozy-inviting-space-with-relaxed-ambiance.jpg"
+						class="aspect-retro"
+						alt=""
+					/>
+					<div class="dot-visual z-0 nav:-top-8 nav:-left-12">
+						<span class="dot bg-yellow"></span>
+						<span class="dot bg-yellow"></span>
+					</div>
+				</div>
+				<div>
+					<p>Keine Datenauswertung</p>
+					<img
+						src="/static/img/VEGF05900.jpg"
+						class="aspect-portrait"
+						alt=""
+					/>
+				</div>
+				<div>
+					<p>Keine zusätzlichen Erhebungen</p>
+				</div>
+				<div>
+					<p>Keine Produktivitätsmessung</p>
+					<img
+						src="/static/img/young-male-student-casual-clothes-resting-comfortable-pouf.jpg"
+						class="aspect-retro"
+						alt=""
+					/>
+				</div>
+				<div>
+					<p>Kein Tracking</p>
+					<img
+						src="/static/img/image-young-woman-social-media-influencer-editing-her-video-laptop-sits-room-with.jpg"
+						class="aspect-cinematic"
+						alt=""
+					/>
+					<div class="dot-visual z-0 -top-1/3 right-0 nav:top-0 nav:-right-8">
+						<span class="dot bg-orange"></span>
+						<span class="dot bg-orange"></span>
+					</div>
+				</div>
+				<div>
+					<p>Keine Auswertung von Einzelpersonen</p>
+				</div>
+				<div>
+					<p>Keine Pulse-Servey-Müdigkeit</p>
+					<img
+						src="/static/img/front-view-handsome-modern-man-relaxing-work.jpg"
+						class="aspect-portrait"
+						alt=""
+					/>
+				</div>
+			</div>
+			<div hidden> <!-- TODO desktop -->
+				<p class="text-2xl">Unsere Vision: <strong>Eine gesunde Balance.</strong></p>
+				<p class="text-2xl">Für uns war klar, dass wir keine Software bauen wollten, die nur Stunden zählt.</p>
+				<p class="mt-4 flex items-center gap-2">
+					{{> partials/dots-horizontal color="bg-green" }}
+					<a href="#" class="bg-lila-dark text-white rounded-full px-3">Mehr erfahren</a>
+				</p>
+			</div>
+		</section>
+	</div>
+</div>
+
+<div class="bg-beige">
+	<div class="page-grid px-page-grid-gap">
+		<section class="section-welfare">
+			<h2 class="section-title-pill">Fürsorge in der Software</h2>
+			<div class="welfare-container">
+				<div class="welfare-item">
+					<div class="welfare-item__head">
+						<h3>
+							<span class="font-basteleur">Das Konzept:</span>&nbsp;
+							<span>Prävention statt Reaktion. Mentale Gesundheit als integraler Teil der Zeitwirtschaft.</span>
+						</h3>
+					</div>
+					<p class="welfare-item__text">
+						Mentale Gesundheit am Arbeitsplatz wird immer kritischer: Laut Studien fühlen sich 74 % der Arbeitnehmer gestresst;
+						psychische Erkrankungen verursachen in Deutschland jährlich Kosten von 103 Milliarden Euro.
+						Trotz der Dringlichkeit sucht nur jeder zweite Betroffene Hilfe, oft aus Angst vor Stigmatisierung.
+						Mit einem Anteil von 40 % an allen Fehltagen belasten psychische Probleme nicht nur die Produktivität massiv,
+						sondern mindern vor allem die Lebensqualität der Mitarbeitenden.
+					</p>
+				</div>
+				<div class="welfare-item">
+					<div class="welfare-item__head">
+						<h3>
+							<span class="font-basteleur">Die Ursache:</span>&nbsp;
+							<span>Arbeitsalltag als Auslöser</span>
+						</h3>
+					</div>
+					<p class="welfare-item__text">
+						Die Gründe für eine mentale Erkrankung sind vielfältig und können sowohl im privaten als auch im beruflichen Umfeld liegen.
+						Da wir einen großen Teil unserer Zeit am Arbeitsplatz verbringen, ist es wichtig, dass wir uns dort wohlfühlen und gesund bleiben.
+						Dennoch ist es nicht unüblich, dass Stress und Druck den Arbeitsalltag bestimmen und die mentale Gesundheit beeinträchtigen.
+					</p>
+				</div>
+				<div class="welfare-item">
+					<div class="welfare-item__head">
+						<h3>
+							<span class="font-basteleur">Die Folge:</span>&nbsp;
+							<span>Krankmeldungen und Fehlzeiten</span>
+						</h3>
+					</div>
+					<p class="welfare-item__text">
+						Mangelnde mentale Gesundheit ist mit 30 % die häufigste Ursache für Arbeitsunfähigkeit in Deutschland.
+						Da psychisch bedingte Ausfälle mit durchschnittlich 23 Tagen deutlich länger dauern als andere Erkrankungen (14 Tage),
+						entstehen für Unternehmen erhebliche wirtschaftliche Belastungen durch Fehlzeiten und Produktivitätsverlust.
+					</p>
+				</div>
+				<div class="welfare-item">
+					<div class="welfare-item__head">
+						<h3>
+							<span class="font-basteleur">Unsere Lösung:</span>&nbsp;
+							<span>Selbstkontrolle und Selbstwahrnehmung als erster Schritt zur Sensibilisierung</span>
+						</h3>
+					</div>
+					<p class="welfare-item__text">
+						Die Selbstreflexion der eigenen Zeitwirtschaft ist essenziell für die mentale Gesundheit. Mitarbeiter, die ihre Arbeitsgewohnheiten und Stressoren aktiv hinterfragen, erkennen Überlastung frühzeitiger. Laut Mind berichten 60 % der reflektierten Beschäftigten von weniger Stress und höherem Wohlbefinden. Unternehmen profitieren durch Schulungen zur Selbstwahrnehmung von zufriedeneren Teams und sinkenden Fehlzeiten, da individuelle Grenzen besser gewahrt werden.
+					</p>
+				</div>
+				<div class="welfare-item relative">
+					<div class="welfare-item__head">
+						<h3>
+							<span class="font-basteleur">Das Ergebnis:</span>&nbsp;
+							<span>Handlungsempfehlungen zur Selbstfürsorge</span>
+						</h3>
+					</div>
+					<p class="welfare-item__text">
+						Selbstfürsorge am Arbeitsplatz basiert auf gesunden Gewohnheiten und strategischen Pausen,
+						die laut Gallup die Produktivität um bis zu 30 % steigern können. Neben Stressbewältigung (z. B. Atemübungen)
+						spielt soziale Unterstützung eine Schlüsselrolle: Der Austausch mit Kollegen reduziert Isolation und stärkt das Wohlbefinden.
+						Unternehmen, die eine offene Kommunikation fördern, profitieren laut WHO von höherer Motivation und sinkender Fluktuation.
+					</p>
+					<div class="dot-visual">
+						<span class="dot bg-yellow"></span>
+						<span class="dot bg-yellow"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+{{> partials/section-vision-and-values }}
