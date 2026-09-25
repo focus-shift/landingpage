@@ -8,7 +8,7 @@ eleventyNavigation:
   parent: urlaubsverwaltung
 ---
 
-# Kalenderintegration in der urlaubsverwaltung.cloud
+# Kalenderintegration in focus:shift
 
 ## Kalenderfreigabe
 

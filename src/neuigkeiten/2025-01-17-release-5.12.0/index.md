@@ -10,7 +10,7 @@ tags:
   - update
 ---
 
-Die Version **5.12.0** bringt ein besonders spannendes neues Feature für alle welche von On-Premise auf urlaubsverwaltung.cloud wechseln möchten.
+Die Version **5.12.0** bringt ein besonders spannendes neues Feature für alle welche von On-Premise in die focus:shift Cloud wechseln möchten.
 
 <!-- more -->
 

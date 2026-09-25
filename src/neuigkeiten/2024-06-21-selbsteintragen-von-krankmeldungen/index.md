@@ -11,13 +11,13 @@ tags:
   - update
 ---
 
-Krankmelden direkt über die Urlaubsverwaltung: wenige Klicks statt aufwendiger Kommunikation, direkt über die urlaubsverwaltung.cloud.
+Krankmelden direkt über die Urlaubsverwaltung: wenige Klicks statt aufwendiger Kommunikation, direkt über focus:shift.
 
 <!-- more -->
 
 ## Krankmeldung selbst eintragen
 
-Mit der neuen Version der Urlaubsverwaltung.cloud können jetzt auch die Mitarbeitenden selbst ihre Krankmeldung eintragen. Sobald eine Krankmeldung eingereicht wurde, werden alle Personen mit der Berechtigung "Office" oder "Pflege von Krankmeldungen" benachrichtigt. Sie können die Krankmeldung dann für die Organisation annehmen und z. B. in nachgelagerten Prozessen einfließen lassen.
+Mit der neuen Version von focus:shift können jetzt auch die Mitarbeitenden selbst ihre Krankmeldung eintragen. Sobald eine Krankmeldung eingereicht wurde, werden alle Personen mit der Berechtigung "Office" oder "Pflege von Krankmeldungen" benachrichtigt. Sie können die Krankmeldung dann für die Organisation annehmen und z. B. in nachgelagerten Prozessen einfließen lassen.
 
 ### Der Ablauf der Einreichung
 
@@ -97,7 +97,7 @@ Krankmeldungen benachrichtigen zu lassen.
 
 ## Ausblick
 
-In den nächsten Versionen der urlaubsverwaltung.cloud werden wir die Funktion verbessern und ausbauen.
+In den nächsten Versionen von focus:shift werden wir die Funktion verbessern und ausbauen.
 Dabei wollen wir vor allem darauf achten, dass die Funktion einfacher zu bedienen ist und wir
 sie noch besser an eure Bedürfnisse anpassen. Meldet euch gerne bei uns, wenn ihr Feedback habt oder mitgestalten wollt.
 

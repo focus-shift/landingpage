@@ -8,7 +8,7 @@ eleventyNavigation:
   parent: urlaubsverwaltung
 ---
 
-# Benutzer und ihre Berechtigungen in der urlaubsverwaltung.cloud
+# Benutzer und ihre Berechtigungen in focus:shift
 
 Ohne Mitarbeitende, kein Unternehmen. Die Verwaltung der Mitarbeitenden und ihre Berechtigungen
 sind zentraler Teil der Urlaubsverwaltung.

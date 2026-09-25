@@ -2,7 +2,7 @@
 draft: false
 layout: layout-blog-article.hbs
 date: 2021-11-19
-title: Onboarding bei der urlaubsverwaltung.cloud
+title: Onboarding bei focus:shift
 author: Daniel Fuchs
 teaserImage: onboarding.jpg
 description: Damit der Einstieg reibungslos verläuft, haben wir eine kleine Artikelserie zusammengestellt, die die verschiedenen Möglichkeiten zum Onboarding beschreibt.

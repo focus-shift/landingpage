@@ -8,7 +8,7 @@ eleventyNavigation:
   parent: urlaubsverwaltung
 ---
 
-# Überstundenverwaltung in der urlaubsverwaltung.cloud
+# Überstundenverwaltung in focus:shift
 
 ## Gibt es die Möglichkeit Überstunden zu erfassen?
 

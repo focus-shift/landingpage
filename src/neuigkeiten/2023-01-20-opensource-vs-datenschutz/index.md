@@ -68,7 +68,7 @@ werden.
     <img class="mx-auto mt-2 lg:max-w-md lg:h-80 border-none" src="OSIApproved_300X350_0.png" alt="Open Source Initiative Logo">
   </div>
   <div class="max-w-none lg:max-w-screen">
-    <h2> Datenschutz der Open-Source-Software urlaubsverwaltung.cloud</h2>
+    <h2>Datenschutz der Open-Source-Software focus:shift</h2>
     <p class="mt-4 lg:mb-4">
         In der Urlaubsverwaltung werden sensible personenbezogene Daten verarbeitet. Schon aus diesem Grund sind Datenschutz und 
         Sicherheit ein inhärenter Bestandteil bei der Konzeption und Umsetzung von Software und Architektur der Urlaubsverwaltung.

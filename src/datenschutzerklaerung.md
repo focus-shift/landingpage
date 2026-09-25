@@ -33,7 +33,7 @@ Focus Shift Software GmbH\
 Lindenallee 126\
 76189 Karlsruhe, Deutschland
 
-E-Mail: [datenschutz@urlaubsverwaltung.cloud](mailto:datenschutz@urlaubsverwaltung.cloud)
+E-Mail: [datenschutz@focus-shift.de](mailto:datenschutz@focus-shift.de)
 
 ## 3. Begriffsbestimmung
 

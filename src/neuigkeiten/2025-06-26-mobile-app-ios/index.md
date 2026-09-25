@@ -11,7 +11,7 @@ tags:
 ---
 
 Wir freuen uns sehr, euch heute ein ganz besonderes Update präsentieren zu können:
-Ab sofort ist die **urlaubsverwaltung.cloud Mitarbeiter-App auch für iOS verfügbar!** Damit können deine Mitarbeitenden jetzt noch einfacher und flexibler Abwesenheiten beantragen und Arbeitszeiten erfassen – direkt vom iPhone oder iPad.
+Ab sofort ist die **focus:shift Mitarbeiter-App auch für iOS verfügbar!** Damit können deine Mitarbeitenden jetzt noch einfacher und flexibler Abwesenheiten beantragen und Arbeitszeiten erfassen – direkt vom iPhone oder iPad.
 
 <!-- more -->
 
@@ -26,12 +26,12 @@ Mit der neuen iOS-App stehen dir und deinem Team alle wichtigen Funktionen der U
 
   <img
       src="ios-teaser.png"
-      alt="iPhone mit der Urlaubsübersicht und iPad mit der Zeiterfassung in der urlaubsverwaltung.cloud App"
+      alt="iPhone mit der Urlaubsübersicht und iPad mit der Zeiterfassung in der focus:shift App"
     />
 
 ## Für wen ist die App gedacht?
 
-Die App richtet sich an alle Organisationen, die urlaubsverwaltung.cloud als SaaS-Lösung nutzen.
+Die App richtet sich an alle Organisationen, die focus:shift als SaaS-Lösung nutzen.
 Sie ist für alle Mitarbeitenden gedacht, die ihre Abwesenheiten und Arbeitszeiten bequem vom Smartphone oder Tablet aus verwalten möchten.
 
 ## So bekommst du die App

@@ -8,7 +8,7 @@ eleventyNavigation:
   parent: urlaubsverwaltung
 ---
 
-# Die Bedeutung von Abteilungen in der urlaubsverwaltung.cloud
+# Die Bedeutung von Abteilungen in focus:shift
 
 Abteilungen sind eine Gruppierung von Mitarbeitenden,
 die in der Regel ein berechtigtes Interesse daran haben die Abwesenheiten anderer Abteilungsmitglieder zu sehen,
