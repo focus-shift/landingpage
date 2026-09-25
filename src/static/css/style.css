@@ -1,6 +1,7 @@
 @import "./config.css";
 
 @import "./components/button.css";
+@import "./components/carousel.css";
 @import "./components/dot-visual.css";
 @import "./components/footer.css";
 @import "./components/grid.css";

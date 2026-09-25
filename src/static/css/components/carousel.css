@@ -71,6 +71,13 @@
 			}
 		}
 
+		/* circle without number, accessible name only */
+		&.carousel--plain-markers > :is(picture, img)::scroll-marker {
+			content: "" / "Bild " counter(carousel-item);
+			width: --spacing(3);
+			height: --spacing(3);
+		}
+
 		/* carousel outline would be faded by mask, outline images instead */
 		&:focus-visible {
 			outline: none;
