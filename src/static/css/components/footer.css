@@ -5,7 +5,7 @@
 	}
 
 	.footer {
-		--button-outline-color: var(--color-green);
+		--outline-color: var(--color-green);
 
 		grid-column: 1 / -1;
 		display: grid;

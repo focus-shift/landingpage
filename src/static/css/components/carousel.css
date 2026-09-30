@@ -66,8 +66,8 @@
 			}
 
 			&::scroll-marker:focus-visible {
-				outline: 2px solid var(--button-outline-color);
-				outline-offset: 2px;
+				outline: var(--outline-width) var(--outline-color) var(--outline-style);
+				outline-offset: var(--outline-offset);
 			}
 		}
 
@@ -83,8 +83,8 @@
 			outline: none;
 
 			img {
-				outline: 2px solid var(--button-outline-color);
-				outline-offset: 2px;
+				outline: var(--outline-width) var(--outline-style) var(--outline-color);
+				outline-offset: var(--outline-offset);
 			}
 		}
 

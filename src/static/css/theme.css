@@ -35,8 +35,21 @@
 }
 
 :root {
+	/* ----------------
+       semantic tokens
+       --------------- */
+
 	--z-index-header: 999;
 	--z-index-dot-visual: 1;
+
+	--outline-color: var(--color-lila-dark);
+	--outline-width: 2px;
+	--outline-offset: 2px;
+	--outline-style: solid;
+
+	/* ----------------
+       component tokens
+       --------------- */
 
 	--main-header-height: 90px;
 	--main-navigation-padding-inline: --spacing(9);
@@ -46,7 +59,6 @@
 	--button-radius: var(--radius-full);
 	--button-padding-block: --spacing(2);
 	--button-padding-inline: --spacing(8);
-	--button-outline-color: var(--color-lila-dark);
 
 	@variant md {
 		--accent-line-width: 15px;
