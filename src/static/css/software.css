@@ -72,8 +72,6 @@
 		--popover-inset-y: --spacing(8);
 		--popover-background-color: var(--color-white);
 
-		height: stretch;
-
 		border: 1px solid var(--color-beige);
 		box-shadow: 15px 15px 23px 0 var(--color-beige);
 		overflow: clip;
