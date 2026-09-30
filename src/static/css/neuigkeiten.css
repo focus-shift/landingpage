@@ -184,12 +184,9 @@
 
 		video,
 		img {
-			/* TODO block image/video */
-			border-left: var(--accent-line-width) solid var(--color-lila);
-			border-top-right-radius: var(--radius-2xl);
-			border-bottom-right-radius: var(--radius-2xl);
-			padding: --spacing(2);
-			@apply shadow-md;
+			background-color: --alpha(var(--color-lila) / 50%);
+			border-radius: var(--radius-2xl);
+			padding: --spacing(8);
 		}
 
 		p:not(:first-child) ~ img,
