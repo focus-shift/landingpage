@@ -1,3 +1,9 @@
+@utility page-subgrid-full {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: subgrid;
+}
+
 @layer components {
 	.page-grid {
 		--page-grid-columns: 4;

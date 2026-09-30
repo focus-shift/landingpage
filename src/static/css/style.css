@@ -85,45 +85,6 @@
 	[id] {
 		scroll-margin-top: calc(var(--main-header-height) + --spacing(4));
 	}
-
-	@media (hover: hover) {
-		a,
-		button,
-		input:is([type="button"], [type="submit"], [type="file"]) {
-			z-index: 0;
-			outline-style: solid;
-			outline-width: 0;
-			outline-color: var(--button-outline-color);
-			outline-offset: 0;
-
-			cursor: pointer;
-
-			/* I think this isn't a good idea, is it? */
-			border-radius: var(--radius-full);
-			/* -- */
-
-			--transition-duration: 80ms;
-
-			transition:
-				all var(--transition-duration) ease-in-out,
-				transform 150ms ease-in-out;
-			transition-behavior: allow-discrete;
-
-			&:focus-visible {
-				z-index: 1;
-				outline-width: 2px;
-				outline-offset: 2px;
-			}
-
-			@media (hover: hover) {
-				&:hover {
-					z-index: 1;
-					outline-width: 2px;
-					outline-offset: 2px;
-				}
-			}
-		}
-	}
 }
 
 @utility hover-no-outline {
@@ -136,14 +97,4 @@
 			outline-width: 0;
 		}
 	}
-}
-
-@utility page-subgrid-full {
-	grid-column: 1 / -1;
-	display: grid;
-	grid-template-columns: subgrid;
-}
-
-@utility button--shadow {
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
 }

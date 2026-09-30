@@ -1,3 +1,45 @@
+@utility button--shadow {
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+@layer base {
+	@media (hover: hover) {
+		a,
+		button,
+		input:is([type="button"], [type="submit"], [type="file"]) {
+			--transition-duration: 80ms;
+
+			z-index: 0;
+			outline-style: solid;
+			outline-width: 0;
+			outline-color: var(--button-outline-color);
+			outline-offset: 0;
+
+			cursor: pointer;
+			border-radius: var(--radius-full);
+
+			transition:
+				all var(--transition-duration) ease-in-out,
+				transform 150ms ease-in-out;
+			transition-behavior: allow-discrete;
+
+			&:focus-visible {
+				z-index: 1;
+				outline-width: 2px;
+				outline-offset: 2px;
+			}
+
+			@media (hover: hover) {
+				&:hover {
+					z-index: 1;
+					outline-width: 2px;
+					outline-offset: 2px;
+				}
+			}
+		}
+	}
+}
+
 @layer components {
 	.button {
 		display: inline-block;
