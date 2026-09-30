@@ -27,6 +27,14 @@
 	{{> partials/preload-fonts }}
 	{{> partials/style-fonts }}
 	{{> partials/google-tag-manager-head}}
+	<style>
+		.zammad-chat-welcome {
+			display: flex;
+		}
+		.zammad-chat-welcome-text {
+			margin-left: 3px;
+		}
+	</style>
 	<link rel="stylesheet" href="/static/css/style.css" />
 	<link rel="stylesheet" href="/static/css/klaro.css" />
 	{{#each stylesheets}}
@@ -34,6 +42,8 @@
 	{{/each}}
 	<script type="module" src="/static/js/common.js"></script>
 	<script type="module" src="/static/js/klaro.js"></script>
+	<script type="module" src="/static/js/jquery.min.js"></script>
+	<script type="module" src="/static/js/zammad.js"></script>
 	{{#each scripts}}
 		<script type="module" src="{{this}}"></script>
 	{{/each}}
@@ -47,6 +57,5 @@
 	</div>
   {{> partials/footer }}
 	{{> partials/to-top-button target="#top" }}
-	{{> partials/support-chat}}
 </body>
 </html>

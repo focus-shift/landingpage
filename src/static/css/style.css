@@ -52,7 +52,9 @@
 		text-underline-position: from-font;
 	}
 
-	html {
+	/* note: smooth only when something is focused (e.g. a clicked in-page link).
+	         prevents smooth scrolling to the #anchor when a new page is loaded. */
+	html:focus-within {
 		scroll-behavior: smooth;
 	}
 
