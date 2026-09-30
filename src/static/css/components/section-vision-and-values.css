@@ -2,19 +2,8 @@
 
 @layer components {
 	.section-vision {
-		/* no end padding: open-source-circle overflows to next section */
-		/*padding-block-start: --spacing(22);*/
-
-		/*grid-column: 1 / -1;*/
-		/*display: grid;*/
-		/*grid-template-columns: subgrid;*/
-
 		.section-title-pill {
 			justify-self: start;
-		}
-
-		& > * {
-			/*margin-inline: var(--spacing-page-grid-gap);*/
 		}
 
 		& > p {
@@ -22,12 +11,7 @@
 		}
 
 		@variant lg {
-			& > * {
-				/*margin-inline: 0;*/
-			}
-
 			& > div {
-				/*grid-column: 9 / span 4;*/
 				justify-self: center;
 			}
 		}

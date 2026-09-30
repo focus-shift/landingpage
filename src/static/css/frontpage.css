@@ -174,17 +174,6 @@
 				margin-block-start: --spacing(32);
 			}
 		}
-
-		@variant nav {
-			& > p:nth-of-type(1) {
-				/*grid-column-end: 13;*/
-			}
-
-			& > .section-software__features {
-				/*grid-column-start: 8;*/
-				/*grid-column-end: 19;*/
-			}
-		}
 	}
 
 	.section-purpose {
@@ -351,28 +340,6 @@
 			.section-concept__read-more {
 				margin-inline: var(--spacing-page-grid-gap);
 			}
-		}
-
-		@variant lg {
-			/*& > * {*/
-			/*	grid-column-start: 4;*/
-			/*	grid-column-end: 23;*/
-			/*}*/
-
-			/*.section-title-pill,*/
-			/*.section-concept__text,*/
-			/*.section-concept__read-more {*/
-			/*	margin-inline: 0;*/
-			/*}*/
-
-			/*.section-concept__teaser {*/
-			/*	margin-block-start: --spacing(26);*/
-			/*}*/
-
-			/*.section-concept__text {*/
-			/*	column-gap: --spacing(18);*/
-			/*	margin-block-start: --spacing(48);*/
-			/*}*/
 		}
 	}
 }
