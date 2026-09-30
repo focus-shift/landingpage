@@ -241,19 +241,6 @@
 		}
 	}
 
-	.main-navigation__item {
-	}
-
-	.main-navigation__item--app-download {
-		border-block-start: 2px solid var(--color-white);
-		padding-block-start: var(--main-navigation-list-gap);
-	}
-
-	.main-navigation__item--demo {
-		border-block-end: 2px solid var(--color-white);
-		padding-block-end: var(--main-navigation-list-gap);
-	}
-
 	.main-navigation__link {
 		display: block;
 		color: var(--color-white);
