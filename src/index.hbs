@@ -273,14 +273,9 @@ stylesheets:
 	<div class="page-grid px-page-grid-gap pt-30 pb-22">
 		<section class="section-demo mt-22 lg:mt-64">
 			<h3 class="section-title-pill">Demo</h3>
-			<div class="mt-8 border border-lila bg-lila rounded-2xl overflow-clip max-w-fit">
-				<div class="px-4 py-2 bg-lila flex items-center justify-start gap-1">
-					<div class="rounded-full w-3 h-3 shadow-2xl bg-orange"></div>
-					<div class="rounded-full w-3 h-3 shadow-2xl bg-yellow"></div>
-					<div class="rounded-full w-3 h-3 shadow-2xl bg-green"></div>
-				</div>
+			{{#> partials/browser-frame }}
 				<img src="/static/img/uv-overview.png" width="1480" height="747" alt="Urlaubsverwaltung Startseite mit Kalenderansicht und Statistiken zu Urlaub und Überstunden." />
-			</div>
+			{{/partials/browser-frame }}
 			<div class="section-demo__text mt-8 max-w-prose">
 				<p class="text-lg">
 					Teste hier & jetzt die Perspektive verschiedener Nutzer:innen der Urlaubsverwaltung und Zeiterfassung in unserer Live-Demo.

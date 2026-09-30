@@ -52,12 +52,24 @@ navigation:
 				tabindex="0"
 			>
 				{{!-- sizes: carousel item width, see carousel.css (74% minus padding/gap, page max-width 1440px) --}}
-				<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-uv-uebersicht.png" alt="Urlaubsverwaltung: Persönliche Übersicht mit Urlaubsanspruch, Resturlaub, Kalender und beantragten Abwesenheiten">
-				<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-uv-unternehmen-gesundheit.png" alt="Urlaubsverwaltung: Aggregierte Gesundheitsauswertung des Unternehmens mit Gesundheitsquote, Mehrarbeit und Verteilung der Krankheitstage">
-				<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-uv-abwesenheit-statistik.png" alt="Urlaubsverwaltung: Abwesenheitsstatistik mit Abwesenheitstagen je Monat, Verteilung der Abwesenheitsarten und genommenem Urlaub">
-				<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-uv-abwesenheitsarten.png" alt="Urlaubsverwaltung: Einstellungen zu Abwesenheitsarten mit Status, Genehmigungs- und Stornierungsprozess, Sichtbarkeit und Farbe">
-				<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-ze-zeiteintraege.png" alt="Zeiterfassung: Neuen Zeiteintrag erfassen und Liste der Zeiteinträge mit Soll-Ist-Abweichung je Tag und Kalenderwoche">
-				<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-ze-berichte.png" alt="Zeiterfassung: Wochenbericht mit geleisteten und geplanten Stunden je Tag und Person sowie CSV Download">
+				{{#> partials/browser-frame }}
+					<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-uv-uebersicht.png" alt="Urlaubsverwaltung: Persönliche Übersicht mit Urlaubsanspruch, Resturlaub, Kalender und beantragten Abwesenheiten">
+				{{/partials/browser-frame }}
+				{{#> partials/browser-frame }}
+					<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-uv-unternehmen-gesundheit.png" alt="Urlaubsverwaltung: Aggregierte Gesundheitsauswertung des Unternehmens mit Gesundheitsquote, Mehrarbeit und Verteilung der Krankheitstage">
+				{{/partials/browser-frame }}
+				{{#> partials/browser-frame }}
+					<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-uv-abwesenheit-statistik.png" alt="Urlaubsverwaltung: Abwesenheitsstatistik mit Abwesenheitstagen je Monat, Verteilung der Abwesenheitsarten und genommenem Urlaub">
+				{{/partials/browser-frame }}
+				{{#> partials/browser-frame }}
+					<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-uv-abwesenheitsarten.png" alt="Urlaubsverwaltung: Einstellungen zu Abwesenheitsarten mit Status, Genehmigungs- und Stornierungsprozess, Sichtbarkeit und Farbe">
+				{{/partials/browser-frame }}
+				{{#> partials/browser-frame }}
+					<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-ze-zeiteintraege.png" alt="Zeiterfassung: Neuen Zeiteintrag erfassen und Liste der Zeiteinträge mit Soll-Ist-Abweichung je Tag und Kalenderwoche">
+				{{/partials/browser-frame }}
+				{{#> partials/browser-frame }}
+					<img sizes="(min-width: 1440px) 1000px, calc(74vw - 60px)" src="demo-ze-berichte.png" alt="Zeiterfassung: Wochenbericht mit geleisteten und geplanten Stunden je Tag und Person sowie CSV Download">
+				{{/partials/browser-frame }}
 			</div>
 		</section>
 	</div>

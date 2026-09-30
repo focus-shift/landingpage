@@ -33,7 +33,7 @@
 			scroll-behavior: smooth;
 		}
 
-		&:scroll-marker-group {
+		&::scroll-marker-group {
 			grid-column: 1 / -1;
 			display: flex;
 			justify-content: center;
@@ -42,7 +42,8 @@
 		}
 
 		> picture,
-		> img {
+		> img,
+		> *:has(> picture, > img) {
 			scroll-snap-align: center;
 			scroll-snap-stop: always;
 			counter-increment: carousel-item;
@@ -72,7 +73,8 @@
 		}
 
 		/* circle without number, accessible name only */
-		&.carousel--plain-markers > :is(picture, img)::scroll-marker {
+		&.carousel--plain-markers
+			> :is(picture, img, *:has(> picture, > img))::scroll-marker {
 			content: "" / "Bild " counter(carousel-item);
 			width: --spacing(3);
 			height: --spacing(3);
@@ -101,7 +103,8 @@
    */
 	@supports (animation-timeline: view()) {
 		.carousel > picture,
-		.carousel > img {
+		.carousel > img,
+		.carousel > *:has(> picture, > img) {
 			animation: carousel-item-dim linear both;
 			animation-timeline: view(inline);
 
