@@ -26,7 +26,7 @@
 		}
 
 		.main-benefits-grid {
-			margin-block-start: --spacing(22);
+			margin-block-start: --spacing(40);
 			grid-column: 1 / -1;
 
 			display: grid;
