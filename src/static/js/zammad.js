@@ -12,13 +12,13 @@ function loadScript(src) {
 }
 
 // the chat can be dismissed by the user. the bear then only peeks around the left corner of the
-// page for the rest of the browser session, until it is clicked and the chat appears again.
+// page, also on later visits, until it is clicked and the chat appears again.
 const DISMISSED_KEY = "zammad-chat-dismissed";
 const PEEKING_CLASS = "zammad-chat--peeking";
 
 function isChatDismissed() {
 	try {
-		return sessionStorage.getItem(DISMISSED_KEY) === "true";
+		return localStorage.getItem(DISMISSED_KEY) === "true";
 	} catch {
 		return false;
 	}
@@ -28,9 +28,9 @@ function setChatDismissed(chatElement, dismissed) {
 	chatElement.classList.toggle(PEEKING_CLASS, dismissed);
 	try {
 		if (dismissed) {
-			sessionStorage.setItem(DISMISSED_KEY, "true");
+			localStorage.setItem(DISMISSED_KEY, "true");
 		} else {
-			sessionStorage.removeItem(DISMISSED_KEY);
+			localStorage.removeItem(DISMISSED_KEY);
 		}
 	} catch {
 		// storage not available, the chat is only dismissed on the current page
