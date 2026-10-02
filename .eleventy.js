@@ -171,12 +171,13 @@ export default function (eleventyConfig) {
 	// collections of the same name keeps drafts off the category pages - an
 	// unfiltered tag collection would render a teaser linking to an article
 	// that has not been written to disk.
+	// newest first, like the neuigkeiten collection.
 	eleventyConfig.addCollection("blog", collection =>
-		onlyPublished(collection.getFilteredByTag("blog")),
+		onlyPublished(collection.getFilteredByTag("blog").reverse()),
 	);
 
 	eleventyConfig.addCollection("update", collection =>
-		onlyPublished(collection.getFilteredByTag("update")),
+		onlyPublished(collection.getFilteredByTag("update").reverse()),
 	);
 
 	eleventyConfig.addShortcode(
