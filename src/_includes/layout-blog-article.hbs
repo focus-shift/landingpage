@@ -11,13 +11,15 @@ stylesheets:
 		<section class="section-hero">
 			<div class="section-hero__image highlight-box border-green">
 				<div class="highlight-box__image bg-light-blue">
-					<img
-						src="{{teaserImage.src}}"
-						alt="{{teaserImage.alt}}"
-						class="{{teaserImage.class}}"
-						fetchpriority="high"
-						decoding="async"
-					/>
+					{{#if teaserImage}}
+						<img
+							src="{{teaserImage.src}}"
+							alt="{{teaserImage.alt}}"
+							class="{{teaserImage.class}}"
+							fetchpriority="high"
+							decoding="async"
+						/>
+					{{/if}}
 				</div>
 			</div>
 			<div class="section-hero__title">
