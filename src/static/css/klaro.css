@@ -540,7 +540,7 @@ to create a white background.
 	.cookie-notice:not(.cookie-modal-notice) {
 		background-color: var(--klaro-surface);
 		color: var(--klaro-text);
-		z-index: 1000; /* above the zammad chat (999) */
+		z-index: 999;
 		position: fixed;
 		width: 100%;
 		bottom: 0;

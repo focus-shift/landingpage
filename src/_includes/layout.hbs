@@ -27,9 +27,16 @@
 	{{> partials/preload-fonts }}
 	{{> partials/style-fonts }}
 	{{> partials/google-tag-manager-head}}
+	<style>
+		.zammad-chat-welcome {
+			display: flex;
+		}
+		.zammad-chat-welcome-text {
+			margin-left: 3px;
+		}
+	</style>
 	<link rel="stylesheet" href="/static/css/style.css" />
 	<link rel="stylesheet" href="/static/css/klaro.css" />
-	<link rel="stylesheet" href="/static/css/zammad.css" />
 	{{#each stylesheets}}
 	<link rel="stylesheet" href="{{this}}" />
 	{{/each}}
