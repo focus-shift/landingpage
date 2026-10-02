@@ -43,6 +43,12 @@
 			color: var(--color-white);
 		}
 
+		.footer-nav-login-button,
+		.footer-nav-test-button {
+			display: block;
+			width: fit-content;
+		}
+
 		.footer__contact {
 			& > :not(:last-child) {
 				margin-block-end: --spacing(8);
