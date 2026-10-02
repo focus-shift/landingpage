@@ -2,6 +2,6 @@
 permalink: false
 eleventyNavigation:
   key: urlaubsverwaltung
-  url: /hilfe#urlaubsverwaltung
+  url: /hilfe/#urlaubsverwaltung
   parent: hilfe
 ---
