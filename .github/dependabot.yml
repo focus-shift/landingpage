@@ -19,6 +19,7 @@ updates:
     eleventy:
       patterns:
         - "@11ty/*"
+        - "@awesome.me/buildawesome"
     postcss:
       patterns:
         - "postcss"
