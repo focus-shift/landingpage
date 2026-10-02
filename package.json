@@ -3,7 +3,8 @@
 	"author": "Benjamin Seber <benjamin.seber@focus-shift.de> (https://www.focus-shift.de)",
 	"type": "module",
 	"scripts": {
-		"lint": "eslint src",
+		"lint": "eslint src lib scripts .eleventy.js",
+		"format:check": "prettier --check 'src/**/*.{css,html,md,svg}'",
 		"clean": "rm -rf $npm_package_config_outdir",
 		"predev": "npm run clean",
 		"dev": "concurrently 'npm:dev:*'",
@@ -16,7 +17,8 @@
 		"build:eleventy": "NODE_ENV=production eleventy",
 		"build:css": "NODE_ENV=production postcss 'src/static/css/*.css' '!src/static/css/{config,theme}.css' -d $npm_package_config_outdir/static/css",
 		"build:js": "NODE_ENV=production esbuild 'src/static/js/*.js' --bundle --outdir=$npm_package_config_outdir/static/js --minify",
-		"build:jquery": "mkdir -p $npm_package_config_outdir/static/js && cp node_modules/jquery/dist/jquery.min.js $npm_package_config_outdir/static/js"
+		"build:jquery": "mkdir -p $npm_package_config_outdir/static/js && cp node_modules/jquery/dist/jquery.min.js $npm_package_config_outdir/static/js",
+		"check:dist": "node scripts/check-dist.js"
 	},
 	"config": {
 		"outdir": "dist"
@@ -39,6 +41,7 @@
 		"globals": "17.6.0",
 		"handlebars": "4.7.9",
 		"html-minifier-terser": "7.2.0",
+		"html-validate": "11.16.1",
 		"http-server": "14.1.1",
 		"jquery": "3.7.1",
 		"klaro": "0.7.22",

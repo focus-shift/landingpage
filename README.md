@@ -42,6 +42,19 @@ Eine optimierte Version der Landingpage kannst du bauen mit:
 npm run build
 ```
 
+### Checks
+
+Diese Checks laufen auch in der CI bei jedem Pull Request:
+
+```bash
+npm run lint          # ESLint für JavaScript
+npm run format:check  # Prettier für CSS, HTML, Markdown und SVG
+npm run check:dist    # validiert die gebauten Seiten in dist (vorher npm run build)
+```
+
+`check:dist` prüft das HTML mit [html-validate](https://html-validate.org) und zusätzlich, dass interne Links mit `/` enden,
+jede Seite eine `description` hat und Bilder `width` und `height` gesetzt haben.
+
 ### Verzeichnisstruktur
 
 - **public**
