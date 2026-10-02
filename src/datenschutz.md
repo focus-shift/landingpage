@@ -132,7 +132,7 @@ Gegenstand der Verarbeitung personenbezogener Daten der _Mitarbeitenden_ sind fo
 				<td>Version 6.0</td>
 			</tr>
 			<tr>
-				<td>Haufe-Lexware Services GmbH & Co. KG</td>
+				<td>Haufe-Lexware Services GmbH &amp; Co. KG</td>
 				<td>Munzingerstr. 9. 79111 Freiburg</td>
 				<td>Buchhaltung und Abrechnung</td>
 				<td><a

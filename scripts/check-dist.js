@@ -98,7 +98,6 @@ const config = {
 		"input-attributes": "off",
 		"no-autoplay": "off",
 		"no-implicit-button-type": "off",
-		"no-raw-characters": "off",
 		"unique-landmark": "off",
 		"wcag/h32": "off",
 	},
