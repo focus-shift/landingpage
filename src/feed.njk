@@ -13,11 +13,9 @@ metadata:
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link rel="self" href="{{ metadata.feedUrl }}" />
   <link rel="alternate" type="text/html" href="{{ metadata.url }}" />
-  <updated>{{ collections.blogposts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <updated>{{ collections.neuigkeiten | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ metadata.url }}</id>
-  {%- for post in collections.blogposts -%}
-  {%- if not post.data.isDraft -%}
-  {%- if post.data.date | isPublicationDateReached -%}
+  {%- for post in collections.neuigkeiten -%}
   {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
@@ -29,7 +27,5 @@ metadata:
     </author>
     <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
   </entry>
-  {%- endif -%}
-  {%- endif -%}
   {%- endfor %}
 </feed>

@@ -53,7 +53,8 @@ npm run check:dist    # validiert die gebauten Seiten in dist (vorher npm run bu
 ```
 
 `check:dist` prüft das HTML mit [html-validate](https://html-validate.org) und zusätzlich, dass interne Links mit `/` enden,
-jede Seite eine `description` hat und Bilder `width` und `height` gesetzt haben.
+jede Seite eine `description` hat und Bilder `width` und `height` gesetzt haben. Außerdem prüft es, dass `feed.xml` genau die
+veröffentlichten Artikel enthält.
 
 ### Verzeichnisstruktur
 

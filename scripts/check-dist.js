@@ -3,6 +3,7 @@
 // Runs html-validate on every generated page plus a few project rules that
 // guard against mistakes we already shipped once (missing trailing slashes on
 // internal links, pages without meta description, images without dimensions).
+// Also checks that the feed lists exactly the published articles.
 
 import fs from "node:fs";
 import path from "node:path";
@@ -137,8 +138,52 @@ for (const file of files) {
 if (results.length > 0) {
 	console.log(formatterFactory("stylish")(results));
 }
-if (!valid) {
+
+// The feed once looped over a collection that didn't exist and stayed empty
+// without anyone noticing. Every built article must be in the feed, and every
+// feed entry must link to a built page (drafts are not written to disk).
+function checkFeed() {
+	const feedUrl = "https://focus-shift.de";
+	const feed = fs.readFileSync(path.join(outdir, "feed.xml"), "utf8");
+	const entries = [...feed.matchAll(/<entry>[\s\S]*?<\/entry>/g)].map(
+		([entry]) => entry,
+	);
+	const linked = new Set(
+		entries.map(entry => {
+			const href = entry.match(/<link href="([^"]*)"/)?.[1] ?? "";
+			return decodeURI(href.replace(feedUrl, ""));
+		}),
+	);
+
+	const articles = fs
+		.readdirSync(path.join(outdir, "neuigkeiten"))
+		.filter(name => /^\d{4}-\d{2}-\d{2}-/.test(name))
+		.map(name => `/neuigkeiten/${name}/`);
+
+	const errors = [];
+	if (entries.length === 0) {
+		errors.push("feed.xml has no entries");
+	}
+	for (const article of articles.filter(article => !linked.has(article))) {
+		errors.push(`article ${article} is missing in feed.xml`);
+	}
+	for (const link of linked) {
+		if (!fs.existsSync(path.join(outdir, link, "index.html"))) {
+			errors.push(`feed.xml links to ${link}, which was not built`);
+		}
+	}
+	return { entries: entries.length, errors };
+}
+
+const feed = checkFeed();
+for (const error of feed.errors) {
+	console.error(error);
+}
+
+if (!valid || feed.errors.length > 0) {
 	process.exit(1);
 }
 
-console.log(`${files.length} pages checked, no problems found.`);
+console.log(
+	`${files.length} pages and ${feed.entries} feed entries checked, no problems found.`,
+);
