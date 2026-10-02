@@ -11,6 +11,7 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import htmlmin from "html-minifier-terser";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import { isDraftArticle } from "./lib/draft.js";
+import { readingTimeMinutes } from "./lib/reading-time.js";
 
 const markdownIt = markdown();
 
@@ -116,6 +117,10 @@ export default function (eleventyConfig) {
 
 	eleventyConfig.addShortcode("date", function (date, formatFunction) {
 		return format(date, formatFunction, { locale: de });
+	});
+
+	eleventyConfig.addShortcode("readingTime", function (content) {
+		return readingTimeMinutes(content);
 	});
 
 	eleventyConfig.addShortcode("orElse", function (value, fallback) {

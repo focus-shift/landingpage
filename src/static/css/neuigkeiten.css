@@ -53,6 +53,12 @@
 			line-height: var(--text-3xl--line-height);
 		}
 
+		.blog-post-teaser-text__date {
+			margin-block-start: --spacing(1);
+			font-size: var(--text-base);
+			line-height: var(--text-base--line-height);
+		}
+
 		.blog-post-teaser-text__excerpt {
 			margin-block: --spacing(2) --spacing(8);
 			font-size: var(--text-lg);
