@@ -7,13 +7,13 @@
 		"clean": "rm -rf $npm_package_config_outdir",
 		"predev": "npm run clean",
 		"dev": "concurrently 'npm:dev:*'",
-		"dev:eleventy": "NODE_ENV=development eleventy --serve --port 3000",
+		"dev:eleventy": "NODE_ENV=development buildawesome --serve --port 3000",
 		"dev:css": "NODE_ENV=development postcss 'src/static/css/*.css' '!src/static/css/{config,theme}.css' -d $npm_package_config_outdir/static/css --watch",
 		"dev:js": "NODE_ENV=development esbuild 'src/static/js/*.js' --bundle --outdir=$npm_package_config_outdir/static/js --watch",
 		"dev:jquery": "mkdir -p $npm_package_config_outdir/static/js && cp node_modules/jquery/dist/jquery.min.js $npm_package_config_outdir/static/js",
 		"prebuild": "npm run clean",
 		"build": "concurrently 'npm:build:*'",
-		"build:eleventy": "NODE_ENV=production eleventy",
+		"build:eleventy": "NODE_ENV=production buildawesome",
 		"build:css": "NODE_ENV=production postcss 'src/static/css/*.css' '!src/static/css/{config,theme}.css' -d $npm_package_config_outdir/static/css",
 		"build:js": "NODE_ENV=production esbuild 'src/static/js/*.js' --bundle --outdir=$npm_package_config_outdir/static/js --minify",
 		"build:jquery": "mkdir -p $npm_package_config_outdir/static/js && cp node_modules/jquery/dist/jquery.min.js $npm_package_config_outdir/static/js"
@@ -22,11 +22,11 @@
 		"outdir": "dist"
 	},
 	"dependencies": {
-		"@11ty/eleventy": "3.1.6",
 		"@11ty/eleventy-img": "7.0.0",
 		"@11ty/eleventy-navigation": "1.0.5",
 		"@11ty/eleventy-plugin-handlebars": "1.0.0",
 		"@11ty/eleventy-plugin-rss": "3.0.0",
+		"@awesome.me/buildawesome": "4.0.0-alpha.10",
 		"@eslint/js": "10.0.1",
 		"@tailwindcss/postcss": "4.3.1",
 		"concurrently": "10.0.5",
