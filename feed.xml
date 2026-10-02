@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="de">
+  <title>focus:shift</title>
+  <subtitle></subtitle>
+  <link rel="self" href="https://focus-shift.de/feed.xml" />
+  <link rel="alternate" type="text/html" href="https://focus-shift.de" />
+  <updated>2026-10-02T09:18:03Z</updated>
+  <id>https://focus-shift.de</id>
+</feed>
