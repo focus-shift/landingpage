@@ -1,0 +1,54 @@
+@reference "./config.css";
+
+@layer components {
+	.legal-article {
+		h1 {
+			margin-block-start: --spacing(8);
+			margin-block-end: --spacing(4);
+			font-family: "Basteleur", sans-serif;
+			font-size: var(--text-3xl);
+			line-height: var(--text-3xl--line-height);
+		}
+
+		h2 {
+			display: inline-block;
+
+			margin-block-start: --spacing(16);
+			margin-block-end: --spacing(4);
+			padding-block: --spacing(1);
+			padding-inline: --spacing(3);
+
+			border: 2px dashed var(--color-lila);
+			border-radius: var(--radius-full);
+
+			font-family: "Outfit", sans-serif;
+			font-size: var(--text-lg);
+			line-height: var(--text-lg--line-height);
+			text-transform: uppercase;
+		}
+
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-block: --spacing(4);
+		}
+
+		p {
+			margin-block: --spacing(4);
+			max-width: var(--max-width-prose);
+		}
+
+		a {
+			text-decoration: underline;
+		}
+
+		ul {
+			list-style: disc inside;
+		}
+
+		ol {
+			list-style: decimal inside;
+		}
+	}
+}

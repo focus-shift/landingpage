@@ -1,0 +1,4 @@
+Sitemap: https://focus-shift.de/sitemap.xml
+
+User-agent: *
+Disallow:

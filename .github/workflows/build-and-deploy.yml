@@ -1,0 +1,104 @@
+name: Build and deploy github pages
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    concurrency:
+      group: ${{ github.workflow }}-build-${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: setup nodejs
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: ".tool-versions"
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Upload './dist' directory (only on main for deployment)
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v7
+        with:
+          name: dist-files
+          path: ./dist
+
+  link-check:
+    runs-on: ubuntu-24.04
+    concurrency:
+      group: ${{ github.workflow }}-link-check-${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: setup nodejs
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: ".tool-versions"
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Run Eleventy server
+        run: npm run dev & echo $! > eleventy.pid
+      - name: Wait for Eleventy server
+        run: |
+          for i in {1..20}; do
+            if curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/; then
+              echo "Eleventy is running!"
+              break
+            fi
+            echo "Waiting for Eleventy..."
+            sleep 2
+          done
+      - name: Check internal links
+        run: docker run --rm --network host ghcr.io/linkchecker/linkchecker:latest http://localhost:3000
+      - name: Shutdown Eleventy server
+        run: |
+          if [ -f eleventy.pid ]; then
+            kill $(cat eleventy.pid)
+            rm eleventy.pid
+            echo "Eleventy Server was shut down."
+          else
+            echo "No PID file found, skipping kill."
+          fi
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs:
+      - build
+      - link-check
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Download './dist' directory
+        uses: actions/download-artifact@v8
+        with:
+          name: dist-files
+          path: ./dist
+
+      - name: Set that the dist folder is not a Jekyll site
+        run: touch ./dist/.nojekyll
+
+      - name: Set CNAME to focus-shift.de
+        run: echo "focus-shift.de" > ./dist/CNAME
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.9.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: ./dist

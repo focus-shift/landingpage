@@ -1,0 +1,94 @@
+---
+layout: layout.hbs
+pagination:
+  size: 10
+  alias: posts
+navigation:
+  activeItem: neuigkeiten
+stylesheets:
+  - /static/css/neuigkeiten.css
+---
+
+<div class="bg-white">
+	<div class="page-grid px-page-grid-gap">
+		<section class="section-hero">
+			<div class="section-hero__image highlight-box border-green">
+				<div class="highlight-box__image">
+					<img
+						src="/static/img/young-smiling-lady-holding-smartphone-using-cellphone-sitting-table.jpg"
+						alt="Eine junge Frau in rotem Pullover schaut lächelnd auf ihr Smartphone am Tisch sitzend."
+						class="object-cover object-[center_30%] aspect-square"
+						fetchpriority="high"
+						decoding="async"
+					/>
+				</div>
+			</div>
+			<div class="section-hero__title">
+				<h1 class="section-title-pill">Neuigkeiten</h1>
+				<p class="mt-8 text-5xl">
+					Wir und die Welt <span class="font-basteleur">entwickeln</span> uns ständig weiter.
+					Hier erfährst du das Neuste dazu.
+				</p>
+			</div>
+		</section>
+	</div>
+</div>
+
+
+<div class="bg-beige">
+	<div class="page-grid px-page-grid-gap py-32">
+		<div id="posts" class="col-span-full grid grid-cols-subgrid">
+			<p class="section-title-pill text-center">Filter</p>
+			<ul class="col-start-2 pl-(--highlight-box-border-width) self-center flex flex-row gap-2">
+				<li>
+					<a href="/neuigkeiten/blog#posts" class="button button--lila-dark"{{#eq blogCategory "blog"}}{{#eq pagination.pageNumber 0}} aria-current="page"{{/eq}}{{/eq}}>Blog</a>
+				</li>
+				<li>
+					<a href="/neuigkeiten/update#posts" class="button button--light-blue"{{#eq blogCategory "update"}}{{#eq pagination.pageNumber 0}} aria-current="page"{{/eq}}{{/eq}}>
+						<strong>up</strong><span class="text-white font-black text-2xl leading-0">:</span><span>date</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="blog-post-list mt-9 col-span-full lg:col-start-2 lg:-col-end-2">
+			{{#each posts}}
+				<article class="blog-post-teaser blog-post-teaser--{{data.category}}">
+					<div class="blog-post-teaser-text">
+						<h2 class="blog-post-teaser-text__title">{{data.title}}</h2>
+						<div class="blog-post-teaser-text__excerpt">
+							{{{markdownToHtml data.excerpt}}}
+						</div>
+						<p class="ci-dots-button-group">
+							{{> partials/dots-horizontal }}
+							<a href="{{this.url}}" class="button">weiterlesen</a>
+						</p>
+					</div>
+					<div class="blog-post-teaser-image">
+						{{#if data.teaserImage}}
+							<img
+								src="{{data.teaserImage.src}}"
+								alt="{{data.teaserImage.alt}}"
+								class="{{data.teaserImage.class}}"
+							/>
+						{{/if}}
+					</div>
+				</article>
+			{{/each}}
+		</div>
+		<div class="col-span-full lg:col-start-2 lg:-col-end-2">
+			{{#if pagination.hrefs.length}}
+				<nav class="blog-post-pagination" aria-label="Seitennavigation">
+					{{#if pagination.href.previous}}
+						<a href="{{pagination.href.previous}}#posts" class="button" rel="prev">zurück</a>
+					{{/if}}
+					<span class="blog-post-pagination__status">
+						Seite {{addOne pagination.pageNumber}} von {{pagination.hrefs.length}}
+					</span>
+					{{#if pagination.href.next}}
+						<a href="{{pagination.href.next}}#posts" class="button" rel="next">weiter</a>
+					{{/if}}
+				</nav>
+			{{/if}}
+		</div>
+	</div>
+</div>

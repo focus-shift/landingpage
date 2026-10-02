@@ -1,0 +1,33 @@
+@layer components {
+	.highlight-box {
+		border-left-width: var(--accent-line-width);
+		border-top-right-radius: --spacing(5);
+		border-bottom-right-radius: --spacing(5);
+		overflow: clip;
+
+		display: flex;
+		flex-direction: column;
+
+		.highlight-box__text {
+			padding: --spacing(8);
+		}
+
+		@variant md {
+			flex-direction: row;
+
+			.highlight-box__image {
+				flex: 1;
+			}
+
+			.highlight-box__text {
+				flex: 1;
+			}
+		}
+
+		@variant lg {
+			.highlight-box__text {
+				padding: --spacing(16) --spacing(8);
+			}
+		}
+	}
+}

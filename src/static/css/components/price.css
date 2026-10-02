@@ -1,0 +1,102 @@
+@layer components {
+	.checkbox-switch {
+		display: inline-block;
+
+		input[type="checkbox"] {
+			cursor: pointer;
+			margin: 0;
+			margin-top: 0.25em;
+			width: 2.5rem;
+			height: 1.25rem;
+			appearance: none;
+			border: 1px solid rgba(0, 0, 0, 0.25);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+			background-position: left center;
+			border-radius: 9999px;
+			transition:
+				background-position 0.15s ease-in-out,
+				background-color 0.15s ease-in-out;
+			background-color: var(--color-lila-dark);
+
+			&:checked {
+				background-color: var(--color-lila);
+				background-position: right center;
+				background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+			}
+		}
+
+		&.checkbox-switch--noir {
+			input[type="checkbox"] {
+				background-color: var(--color-lila);
+				background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+			}
+		}
+	}
+
+	.price-section-switch {
+		display: grid;
+		grid-template-columns: 1fr min-content 1fr;
+		grid-auto-flow: column;
+
+		.price-section-toggle {
+			/* override default button hover outline */
+			outline-width: 0;
+
+			text-transform: uppercase;
+			font-size: var(--text-lg);
+
+			&:focus-visible {
+				outline-width: revert;
+			}
+		}
+
+		.price-section-toggle--cloud {
+			grid-column: 1;
+			place-self: center end;
+			font-weight: var(--font-weight-bold);
+		}
+
+		label {
+			grid-column: 2;
+			padding-inline: --spacing(8);
+		}
+
+		.price-section-toggle--on-premise {
+			grid-column: 3;
+			place-self: center start;
+		}
+	}
+
+	.section-price-cloud,
+	.section-price-on-premise {
+		grid-column: 1 / -1;
+		display: grid;
+		grid-template-columns: subgrid;
+	}
+
+	.section-price-on-premise {
+		display: none;
+	}
+
+	body:has(input[name="on-premise"]:checked) {
+		.price-section-switch {
+			.price-section-toggle--cloud {
+				font-weight: var(--font-weight-normal);
+			}
+
+			.price-section-toggle--on-premise {
+				font-weight: var(--font-weight-bold);
+			}
+		}
+
+		.section-price-cloud {
+			display: none;
+		}
+
+		.section-price-on-premise {
+			display: grid;
+		}
+	}
+}

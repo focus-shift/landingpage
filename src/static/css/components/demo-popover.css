@@ -1,0 +1,8 @@
+@layer components {
+	.demo-popover {
+		--popover-background-color: var(--color-lila);
+		--popover-background-opacity: 80%;
+
+		box-shadow: 0 4px 4px 0 --alpha(var(--color-black) / 40%);
+	}
+}
