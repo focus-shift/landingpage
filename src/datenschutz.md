@@ -252,18 +252,18 @@ der Erhebung bis zur Löschung.
 ## 9. Mitarbeiterschulungen
 
 Alle Mitwirkenden absolvieren jährlich Schulungen zu Datenschutz und IT-Sicherheit.
-Es liegen Zertifikate von allen im Jahr 2025 vor.
+Es liegen Zertifikate von allen im Jahr 2026 vor.
 
 <div class="grid grid-cols-2 gap-4">
 	<img
-		src="/static/img/datenschutz/Datenschutz-Zertifikat-Weigel.png"
+		src="/static/img/datenschutz/weigel_cyber_security_zertifikat_2026.png"
 		alt="Datenschutz Zertifikat von Andreas Weigel"
 		class="rounded-b md:rounded-b-lg xl:rounded-b-2xl"
 		width="595"
 		height="841"
 	>
 	<img
-		src="/static/img/datenschutz/CyberSecurity-Zertifikat-Weigel.png"
+		src="/static/img/datenschutz/weigel_datenschutz_zertifikat_2026.png"
 		alt="CyberSecurity Zertifikat von Andreas Weigel"
 		class="rounded-b md:rounded-b-lg xl:rounded-b-2xl"
 		width="595"
@@ -329,4 +329,4 @@ Es liegen Zertifikate von allen im Jahr 2025 vor.
   - Angriffe auf Mitarbeiter enttarnen.
   - Social Engineering Angriffe auf Privatpersonen.
 
-<time datetime="2025-09-15">Aktualisiert am 15.09.2025</time>
+<time datetime="2026-10-02">Aktualisiert am 02.10.2026</time>
