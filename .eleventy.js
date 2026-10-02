@@ -13,7 +13,7 @@ import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import { isDraftArticle } from "./lib/draft.js";
 import { readingTimeMinutes } from "./lib/reading-time.js";
 
-const markdownIt = markdown();
+const markdownIt = markdown({ html: true });
 
 const paths = {
 	input: "src",
