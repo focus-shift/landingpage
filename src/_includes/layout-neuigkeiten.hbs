@@ -56,7 +56,7 @@ stylesheets:
 					<div class="blog-post-teaser-text">
 						<h2 class="blog-post-teaser-text__title">{{data.title}}</h2>
 						<p class="blog-post-teaser-text__date">
-							<small><time datetime="{{date this.date 'yyyy-MM-dd'}}">{{date this.date 'd. MMMM yyyy'}}</time></small>
+							<time datetime="{{date this.date 'yyyy-MM-dd'}}">{{date this.date 'd. MMMM yyyy'}}</time>
 						</p>
 						<div class="blog-post-teaser-text__excerpt">
 							{{{markdownToHtml data.excerpt}}}
