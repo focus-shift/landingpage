@@ -44,6 +44,8 @@ export default function (eleventyConfig) {
 		`./${paths.input}/**/*.{png,jpg,jpeg,webp,avif,mp4,xml,svg}`,
 	);
 	eleventyConfig.addPassthroughCopy(`./${paths.input}/static/fonts/**/*`);
+	// public/static/* (favicons, pdfs, ...) -> <outdir>/static/*
+	eleventyConfig.addPassthroughCopy({ public: "." });
 
 	eleventyConfig.addWatchTarget(`${paths.input}/static/js/**/*.js`);
 	eleventyConfig.addWatchTarget(`${paths.input}/static/css/**/*.css`);
