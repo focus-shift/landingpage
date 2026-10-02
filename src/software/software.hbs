@@ -217,7 +217,9 @@ scripts:
 				<div id="single-sign-on" class="feature-card">
 					<h3 class="font-basteleur">Single Sign-On</h3>
 					<p>Dein Unternehmen hat bereits einen OpenId Provider wie z. B. Microsoft 365, Azure Active Directory, Microsoft Entra, Auth0, Okta oder Google Workspace im Einsatz? Wir helfen dir gerne bei der Einrichtung deiner Urlaubsverwaltung im eigenen Intranet.</p>
-					<div class="feature-card__image image-mask--beige"></div>
+					<div class="feature-card__image image-mask--beige">
+						<img src="/static/img/oauth-providers.svg" width="1096" height="798" alt="Logos der OpenID Provider Auth0, Microsoft Azure, Keycloak und Google Workspace." />
+					</div>
 				</div>
 			</div>
 		</section>
@@ -291,6 +293,11 @@ scripts:
 					</div>
 					<div class="lg:col-start-5 lg:col-span-5 lg:row-start-1 lg:mt-16">
 						<img src="/static/img/baer-datensouveraen.png" alt="" class="absolute scale-35 -translate-x-24 top-16 lg:static lg:mix-blend-multiply lg:scale-50">
+					</div>
+					<div class="hidden lg:z-10 lg:block lg:col-start-8 lg:col-span-5 lg:row-start-1" style="--color-lila:var(--color-beige)">
+						{{#> partials/browser-frame }}
+							<img src="feature-ueberstunden.png" alt="Überstundenkonto eines Jahres mit Summe der eingetragenen und der abbaubaren Stunden, darunter die einzelnen Einträge für Überstundenaufbau, -abbau und Übertrag aus dem Vorjahr mit laufender Summe." />
+						{{/partials/browser-frame }}
 					</div>
 				</div>
 			</div>
