@@ -137,21 +137,23 @@ if (results.length > 0) {
 	console.log(formatterFactory("stylish")(results));
 }
 
+function readFeedEntries() {
+	const feedUrl = "https://focus-shift.de";
+	const feed = fs.readFileSync(path.join(outdir, "feed.xml"), "utf8");
+	return [...feed.matchAll(/<entry>[\s\S]*?<\/entry>/g)].map(([entry]) => {
+		const href = entry.match(/<link href="([^"]*)"/)?.[1] ?? "";
+		return {
+			link: decodeURI(href.replace(feedUrl, "")),
+			date: entry.match(/<updated>([^<]*)<\/updated>/)?.[1] ?? "",
+		};
+	});
+}
+
 // The feed once looped over a collection that didn't exist and stayed empty
 // without anyone noticing. Every built article must be in the feed, and every
 // feed entry must link to a built page (drafts are not written to disk).
-function checkFeed() {
-	const feedUrl = "https://focus-shift.de";
-	const feed = fs.readFileSync(path.join(outdir, "feed.xml"), "utf8");
-	const entries = [...feed.matchAll(/<entry>[\s\S]*?<\/entry>/g)].map(
-		([entry]) => entry,
-	);
-	const linked = new Set(
-		entries.map(entry => {
-			const href = entry.match(/<link href="([^"]*)"/)?.[1] ?? "";
-			return decodeURI(href.replace(feedUrl, ""));
-		}),
-	);
+function checkFeed(entries) {
+	const linked = new Set(entries.map(entry => entry.link));
 
 	const articles = fs
 		.readdirSync(path.join(outdir, "neuigkeiten"))
@@ -173,15 +175,65 @@ function checkFeed() {
 	return { entries: entries.length, errors };
 }
 
-const feed = checkFeed();
-for (const error of feed.errors) {
+// The blog and update listings once showed the oldest article first, since
+// Eleventy sorts collections by date ascending. Every listing must show the
+// newest article first, across all of its pages. The dates come from the feed,
+// as neither the listings nor the article folder names reliably carry them.
+const listings = [
+	"/neuigkeiten/",
+	"/neuigkeiten/blog/",
+	"/neuigkeiten/update/",
+];
+
+function checkListingOrder(entries) {
+	const dates = new Map(entries.map(entry => [entry.link, entry.date]));
+	const errors = [];
+	for (const listing of listings) {
+		const articles = [];
+		for (let page = listing; page;) {
+			const html = fs.readFileSync(
+				path.join(outdir, page, "index.html"),
+				"utf8",
+			);
+			const teasers = html.matchAll(
+				/<article class="blog-post-teaser[\s\S]*?<a href="([^"]*)"/g,
+			);
+			articles.push(...[...teasers].map(([, href]) => decodeURI(href)));
+			page = html.match(/<a href="([^"#]*)[^"]*"[^>]*rel="next"/)?.[1];
+		}
+
+		if (articles.length === 0) {
+			errors.push(`listing ${listing} has no articles`);
+		}
+		for (const article of articles.filter(article => !dates.has(article))) {
+			errors.push(
+				`listing ${listing} links to ${article}, which is not in feed.xml`,
+			);
+		}
+		const unordered = articles.findIndex(
+			(article, i) => i > 0 && dates.get(article) > dates.get(articles[i - 1]),
+		);
+		if (unordered > 0) {
+			const [previous, article] = articles.slice(unordered - 1, unordered + 1);
+			errors.push(
+				`listing ${listing} is not sorted newest first: ${article} (${dates.get(article)}) comes after ${previous} (${dates.get(previous)})`,
+			);
+		}
+	}
+	return errors;
+}
+
+const feedEntries = readFeedEntries();
+const feed = checkFeed(feedEntries);
+const listingErrors = checkListingOrder(feedEntries);
+for (const error of [...feed.errors, ...listingErrors]) {
 	console.error(error);
 }
 
-if (!valid || feed.errors.length > 0) {
+if (!valid || feed.errors.length > 0 || listingErrors.length > 0) {
 	process.exit(1);
 }
 
 console.log(
-	`${files.length} pages and ${feed.entries} feed entries checked, no problems found.`,
+	`${files.length} pages, ${feed.entries} feed entries and ${listings.length} listings checked, no problems found.`,
 );
