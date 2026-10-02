@@ -127,7 +127,8 @@ loadScript("/static/js/jquery.min.js")
 		new ZammadChat({
 			host: "wss://support.apps.urlaubsverwaltung.cloud/ws",
 			title: "Kann ich dir helfen?",
-			background: "rgb(49, 130, 206)",
+			// header, send button and messages of the visitor
+			background: "var(--color-lila-dark)",
 			fontSize: "12px",
 			chatId: 1,
 			flat: true,

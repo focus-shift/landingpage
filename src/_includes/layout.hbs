@@ -139,6 +139,23 @@
 		.zammad-chat-is-open .zammad-chat-dismiss {
 			display: none;
 		}
+		/* opened, the head of the bear replaces the chat icon in the header */
+		.zammad-chat-is-open .zammad-chat-icon {
+			display: none;
+		}
+		.zammad-chat-is-open .zammad-chat-welcome {
+			align-items: center;
+		}
+		.zammad-chat-is-open .zammad-chat-welcome::before {
+			content: "";
+			flex: none;
+			width: 2.5em;
+			height: 2.5em;
+			margin-right: 0.5em;
+			border-radius: 50%;
+			/* zoomed onto the head, which sits within x 145-245 and y 78-178 of the 340x351 svg */
+			background: var(--color-yellow) url("/static/img/baer-chat.svg") no-repeat -3.625em -1.95em / 8.5em auto;
+		}
 		/* dismissed, the bear peeks around the left corner of the page. a click brings it back. */
 		.zammad-chat.zammad-chat:not(.zammad-chat-is-open) {
 			transform-origin: 3.5em 100%;
