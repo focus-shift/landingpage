@@ -1,5 +1,5 @@
 ---
-title: Berichte - Hilfe
+title: Berichte – Hilfe
 description: Hier findest du Hilfe zu dem Thema Berichte
 eleventyNavigation:
   key: berichte
@@ -69,8 +69,8 @@ Die Nachvollziehbarkeit von Änderungen ist insbesondere für Unternehmen und Te
 ## Zeiteinträge über Berichte bearbeiten
 
 Mitarbeitende mit der Berechtigung "darf die Berechtigungen aller Personen bearbeiten" können Zeiteinträge direkt über die Berichte bearbeiten.
-So können fehlerhafte oder ungenaue Einträge einfach korrigiert werden - ohne dass die betroffenen Mitarbeitenden selbst aktiv werden müssen.
+So können fehlerhafte oder ungenaue Einträge einfach korrigiert werden – ohne dass die betroffenen Mitarbeitenden selbst aktiv werden müssen.
 Die Zeiteinträge können über die [Änderungshistorie für Zeiteinträge](#aenderungshistorie-fuer-zeiteintraege)
 angepasst werden und sind somit für alle Beteiligten nachvollziehbar und transparent.
 
-Gerade für Personalabteilungen und Führungskräfte ist es entscheidend, die Richtigkeit der Berichte zu überprüfen und gegebenenfalls zentral anzupassen. Diese Funktion stellt sicher, dass alle Zeiteinträge korrekt und vollständig sind - für eine verlässliche Datenbasis.
+Gerade für Personalabteilungen und Führungskräfte ist es entscheidend, die Richtigkeit der Berichte zu überprüfen und gegebenenfalls zentral anzupassen. Diese Funktion stellt sicher, dass alle Zeiteinträge korrekt und vollständig sind – für eine verlässliche Datenbasis.

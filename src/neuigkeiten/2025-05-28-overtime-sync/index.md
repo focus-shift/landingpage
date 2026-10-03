@@ -2,7 +2,7 @@
 draft: false
 layout: layout-blog-article.hbs
 date: 2025-06-06
-title: Neues Feature-Release - Nahtlose Synchronisierung von Überstunden zwischen Zeiterfassung und Urlaubsverwaltung
+title: Neues Feature-Release – Nahtlose Synchronisierung von Überstunden zwischen Zeiterfassung und Urlaubsverwaltung
 author: Andreas Weigel
 teaserImage: teaser.png
 description: Zwei Tools, ein Flow. Unsere neue Synchronisation verbindet Zeiterfassung und Urlaubsverwaltung – damit Überstunden automatisch übertragen, Abbauzeiten sauber gebucht und Mitarbeitende wie HR entlastet werden.

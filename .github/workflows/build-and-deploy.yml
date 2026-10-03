@@ -30,6 +30,8 @@ jobs:
         run: npm run lint
       - name: Check formatting
         run: npm run format:check
+      - name: Check dashes
+        run: npm run check:dashes
       - name: Build
         run: npm run build
       - name: Validate built pages

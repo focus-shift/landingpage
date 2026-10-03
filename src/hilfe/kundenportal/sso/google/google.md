@@ -1,6 +1,6 @@
 ---
 redirect_from: /hilfe/sso/google/
-title: Google Workspace - Single Sign-On (SSO) - Hilfe
+title: Google Workspace – Single Sign-On (SSO) – Hilfe
 description: Single Sign-On (SSO) mit Google Workspace (Cloud Identity) für focus-shift.de
 eleventyNavigation:
   key: google-workspace

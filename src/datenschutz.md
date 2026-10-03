@@ -293,7 +293,7 @@ Es liegen Zertifikate von allen im Jahr 2026 vor.
   - Technische und organisatorische Maßnahmen.
   - Auftragsdatenverarbeitung mit Dienstleistern.
   - Datenschutz im Marketing.
-- Datenschutz im Alltag - DSGVO im Unternehmen
+- Datenschutz im Alltag – DSGVO im Unternehmen
   - Vertraulichkeit von personenbezogenen Daten.
   - Richtiger Umgang und Aufbewahrung.
   - Umgang mit Behörden.

@@ -49,6 +49,7 @@ Diese Checks laufen auch in der CI bei jedem Pull Request:
 ```bash
 npm run lint          # ESLint für JavaScript
 npm run format:check  # Prettier für CSS, HTML, Markdown und SVG
+npm run check:dashes  # Gedankenstriche und Bis-Striche in src (siehe CLAUDE.md)
 npm run check:dist    # validiert die gebauten Seiten in dist (vorher npm run build)
 ```
 

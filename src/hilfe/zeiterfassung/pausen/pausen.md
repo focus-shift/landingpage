@@ -1,5 +1,5 @@
 ---
-title: Pausen - Hilfe
+title: Pausen – Hilfe
 description: Hier findest du Hilfe zu dem Thema Pausen
 eleventyNavigation:
   key: pausen

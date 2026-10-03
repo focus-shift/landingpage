@@ -2,10 +2,10 @@
 draft: false
 layout: layout-blog-article.hbs
 date: 2026-04-08
-title: Die stille Doppelschicht - Was pflegende Angehörige im Betrieb mit Ihrer Fürsorgepflicht zu tun haben
+title: Die stille Doppelschicht – Was pflegende Angehörige im Betrieb mit Ihrer Fürsorgepflicht zu tun haben
 author: Andreas Weigel
 teaserImage: teaser.png
-description: Die stille Doppelschicht - Was pflegende Angehörige im Betrieb mit Ihrer Fürsorgepflicht zu tun haben
+description: Die stille Doppelschicht – Was pflegende Angehörige im Betrieb mit Ihrer Fürsorgepflicht zu tun haben
 tags:
   - blog
 ---

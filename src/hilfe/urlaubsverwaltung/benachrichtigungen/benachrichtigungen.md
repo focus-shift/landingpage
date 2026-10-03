@@ -1,6 +1,6 @@
 ---
 redirect_from: /hilfe/benachrichtigungen/
-title: Benachrichtigungen - Hilfe
+title: Benachrichtigungen – Hilfe
 description: Hier findest du Hilfe zu dem Thema Benachrichtigungen
 eleventyNavigation:
   key: benachrichtigungen

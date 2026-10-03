@@ -1,5 +1,5 @@
 export default {
 	layout: "layout-wissensbasis.hbs",
 	helpSectionTitle:
-		'Dokumentation &dash; <span class="font-basteleur">Hilfe</span> bei der Verwendung des Kundenportals',
+		'Dokumentation – <span class="font-basteleur">Hilfe</span> bei der Verwendung des Kundenportals',
 };

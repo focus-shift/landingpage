@@ -2,10 +2,10 @@
 draft: false
 layout: layout-blog-article.hbs
 date: 2026-04-06
-title: Warum Sport mehr leistet als Fitness - Bewegung als soziales Fundament in einer digitalisierten Arbeitswelt
+title: Warum Sport mehr leistet als Fitness – Bewegung als soziales Fundament in einer digitalisierten Arbeitswelt
 author: Andreas Weigel
 teaserImage: teaser.svg
-description: Warum Sport mehr leistet als Fitness - Bewegung als soziales Fundament in einer digitalisierten Arbeitswelt
+description: Warum Sport mehr leistet als Fitness – Bewegung als soziales Fundament in einer digitalisierten Arbeitswelt
 tags:
   - blog
 ---

@@ -2,10 +2,10 @@
 draft: false
 layout: layout-blog-article.hbs
 date: 2021-11-11
-title: Starte deine Digitalisierung - Urlaub, Krankmeldungen, Überstunden digital
+title: Starte deine Digitalisierung – Urlaub, Krankmeldungen, Überstunden digital
 author: Tobias Schneider
 teaserImage: urlaubsverwaltung.png
-description: Starte deine Digitalisierungsstrategie - Urlaub, Krankmeldungen und Überstunden digital abbilden
+description: Starte deine Digitalisierungsstrategie – Urlaub, Krankmeldungen und Überstunden digital abbilden
 tags:
   - blog
 ---
@@ -20,7 +20,7 @@ Die Verwaltung von Abwesenheiten und Vertretungen ist mit einem hohen Administra
 Prozesse standardisiert sind. Mit dem Produkt focus:shift bietet die Focus Shift Software GmbH eine
 intuitive Lösung für die Herausforderung, Abwesenheiten digital zu verwalten. Um insbesondere kleinen und
 mittelständischen Unternehmen den wichtigen Schritt in das digitale Personalmanagement zu erleichtern, erhalten
-Neukunden, die sich bis zum 31.12.2021 registrieren, die ersten 3 Monate kostenlos - zusätzlich zu der 30-tägigen
+Neukunden, die sich bis zum 31.12.2021 registrieren, die ersten 3 Monate kostenlos – zusätzlich zu der 30-tägigen
 Testphase.
 
 Der Prozess der Abwesenheitsverwaltung ist in sich abgeschlossen und damit optimal dafür geeignet, firmeninterne

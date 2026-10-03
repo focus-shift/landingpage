@@ -2,10 +2,10 @@
 draft: false
 layout: layout-blog-article.hbs
 date: 2023-02-23
-title: Zeiterfassung - Arbeitszeiten, neue Berichte und geleistete Stunden
+title: Zeiterfassung – Arbeitszeiten, neue Berichte und geleistete Stunden
 author: Andreas Weigel
 teaserImage: /static/img/zeiterfassung-multi-device.png
-description: Zeiterfassung - Arbeitszeiten konfigurieren, neue Berichte erstellen und geleistete Stunden vergleichen
+description: Zeiterfassung – Arbeitszeiten konfigurieren, neue Berichte erstellen und geleistete Stunden vergleichen
 tags:
   - blog
 ---

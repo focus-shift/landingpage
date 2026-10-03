@@ -2,7 +2,7 @@
 draft: false
 layout: layout-blog-article.hbs
 date: 2023-10-27
-title: Dobrodošla Hrvatska - Kroatische Feiertage hinzugefügt 🇭🇷
+title: Dobrodošla Hrvatska – Kroatische Feiertage hinzugefügt 🇭🇷
 author: Andreas Weigel
 release-version: 4.71.0
 teaserImage: kroatien.png

@@ -1,5 +1,5 @@
 ---
-title: Personen - Hilfe
+title: Personen – Hilfe
 description: Hier findest du Hilfe zu dem Thema Personen
 eleventyNavigation:
   key: personen
@@ -13,7 +13,7 @@ Ohne Mitarbeitende kein Unternehmen. Die Verwaltung der Mitarbeitenden und ihrer
 
 ## Arbeitszeiten pro Mitarbeitenden festlegen
 
-Die Arbeitszeiten können pro Mitarbeitenden individuell festgelegt werden - sowohl für die ganze Woche als auch detailliert pro Wochentag. Diese Einstellungen können von Mitarbeitenden mit der Berechtigung "darf Arbeitszeiten aller Personen bearbeiten" vorgenommen werden.
+Die Arbeitszeiten können pro Mitarbeitenden individuell festgelegt werden – sowohl für die ganze Woche als auch detailliert pro Wochentag. Diese Einstellungen können von Mitarbeitenden mit der Berechtigung "darf Arbeitszeiten aller Personen bearbeiten" vorgenommen werden.
 
 <img
   src="arbeitszeiten_pro_mitarbeitenden.png"

@@ -20,7 +20,7 @@ Das **Release 2.18.0** bringt wichtige Verbesserungen für die **Performance** d
 
 Jetzt wird es ein wenig technisch – aber keine Sorge, wir erklären es einfach!
 
-Wir haben die **Zugriffe** auf die Datenbank vorangetrieben - also da wo eure und unsere Daten gespeichert werden - verbessert.
+Wir haben die **Zugriffe** auf die Datenbank vorangetrieben – also da wo eure und unsere Daten gespeichert werden – verbessert.
 Damit wird die **Performance** der Zeiterfassung erheblich gesteigert, da die Datenbank nicht so lange suchen muss. Das kennen wir alle,
 wir suchen etwas und es dauert ewig, bis wir es finden. Das ist jetzt vorbei! Die Zeiterfassung weiß nun genau, wo sie suchen muss.
 
