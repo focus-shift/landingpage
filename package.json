@@ -5,6 +5,7 @@
 	"scripts": {
 		"lint": "eslint src lib scripts .eleventy.js",
 		"format:check": "prettier --check 'src/**/*.{css,html,md,svg}'",
+		"check:dashes": "node scripts/check-dashes.js",
 		"clean": "rm -rf $npm_package_config_outdir",
 		"predev": "npm run clean",
 		"dev": "concurrently 'npm:dev:*'",
