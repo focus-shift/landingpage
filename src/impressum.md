@@ -6,7 +6,7 @@ description: Impressum focus-shift.de
 
 # Impressum
 
-Angaben gemäß § 5 TMG
+Angaben gemäß § 5 DDG
 
 Focus Shift Software GmbH  
 Lindenallee 126  
