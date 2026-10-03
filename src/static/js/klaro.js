@@ -13,6 +13,8 @@ const config = {
 	cookieExpiresAfterDays: 365,
 	hideDeclineAll: true,
 	noticeIsModal: true,
+	// renders the notice title, which names the notice dialog via aria-labelledby
+	showNoticeTitle: true,
 	translations: {
 		de: {
 			consentModal: {
@@ -22,6 +24,7 @@ const config = {
 					" Mit einem Klick auf „Akzeptieren“ gestalten wir gemeinsam ein Erlebnis, das zu dir passt.",
 			},
 			consentNotice: {
+				title: "Cookie-Einstellungen",
 				description:
 					" Hallo! Aktiviere zusätzliche Dienste für {purposes}! Du kannst die Einstellungen jederzeit ändern.",
 				learnMore: "Auswählen",
