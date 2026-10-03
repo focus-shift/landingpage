@@ -15,6 +15,21 @@
 			</div>
 			<div class="page-subgrid-full mt-14 highlight-box bg-lila border-green p-8 lg:p-22">
 				<div class="col-span-full bg-white shadow rounded-2xl place-self-center p-4 w-full lg:col-start-2 lg:-col-end-2">
+					{{!-- shown by klaro until the visitor consents to cal.com. klaro sets display: block on this element. --}}
+					<div data-name="cal-com" data-type="placeholder">
+						<div class="flex flex-col items-center gap-6 py-12 px-4 text-center">
+							<p class="text-lg max-w-prose">
+								Für die Terminbuchung nutzen wir den Kalender von cal.com.
+								Beim Laden werden Daten an cal.com übertragen und Cookies von cal.com gesetzt.
+							</p>
+							<button type="button" class="button button--lila-dark" data-klaro-accept="cal-com">
+								Kalender laden
+							</button>
+							<p>
+								Oder schreib uns an <a href="mailto:support@focus-shift.de" class="underline">support@focus-shift.de</a>.
+							</p>
+						</div>
+					</div>
 					<div id="meeting-calendar" class="w-full h-full"></div>
 				</div>
 			</div>
@@ -22,7 +37,8 @@
 	</div>
 </div>
 
-<script type="text/javascript">
+{{!-- executed by klaro only after the visitor consented to cal.com --}}
+<script type="text/plain" data-type="text/javascript" data-name="cal-com">
 	(function (C, A, L) {
 		let p = function (a, ar) {
 			a.q.push(ar);
