@@ -65,18 +65,28 @@
 			p(cal, ar);
 		};
 	})(window, "https://app.cal.com/embed/embed.js", "init");
-	Cal("init", {origin: "https://cal.com"});
 
-	Cal("inline", {
-		elementOrSelector: "#meeting-calendar",
-		calLink: "aweigel/demo",
-		layout: "month_view"
-	});
+	// klaro executes this script again whenever consents are applied. the calendar is rendered only once,
+	// until it is removed again when the consent is withdrawn (see onDecline of the cal-com service in klaro.js).
+	// block scoped, a top-level const would throw on the next execution.
+	{
+		const meetingCalendar = document.getElementById("meeting-calendar");
+		if (!meetingCalendar.dataset.calRendered) {
+			meetingCalendar.dataset.calRendered = "true";
+			Cal("init", {origin: "https://cal.com"});
 
-	Cal("ui", {
-		"theme": "light",
-		"styles": {"branding": {"brandColor": "#f0f9ff"}},
-		"hideEventTypeDetails": false,
-		"layout": "month_view"
-	});
+			Cal("inline", {
+				elementOrSelector: "#meeting-calendar",
+				calLink: "aweigel/demo",
+				layout: "month_view"
+			});
+
+			Cal("ui", {
+				"theme": "light",
+				"styles": {"branding": {"brandColor": "#f0f9ff"}},
+				"hideEventTypeDetails": false,
+				"layout": "month_view"
+			});
+		}
+	}
 </script>

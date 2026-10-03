@@ -816,9 +816,8 @@ nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entge
 
 #### 13.5.1.
 
-Sie können Ihre Einwilligung zur Nutzung von cal.com jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie
-die Cookies unserer Website in Ihrem Browser löschen. Beim nächsten Besuch werden Sie erneut um Ihre Einwilligung
-gebeten. Ohne Einwilligung wird der Kalender nicht geladen und es werden keine Daten an cal.com übermittelt.
+Sie können Ihre Einwilligung zur Nutzung von cal.com jederzeit mit Wirkung für die Zukunft über den Link
+„Cookie-Einstellungen“ im Fußbereich unserer Website widerrufen. Ohne Einwilligung wird der Kalender nicht geladen und es werden keine Daten an cal.com übermittelt.
 Alternativ können Sie einen Termin per E-Mail an support@focus-shift.de vereinbaren.
 
 ## 14. Rechte der betroffenen Person

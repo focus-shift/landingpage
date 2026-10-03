@@ -110,8 +110,15 @@ const config = {
 			name: "cal-com",
 			cookies: [],
 			purposes: ["scheduling"],
-			// re-executing the script would render a second calendar
-			onlyOnce: true,
+			// remove the calendar when the consent is withdrawn, e.g. via the cookie settings in the footer.
+			// the script renders the calendar again on the next consent.
+			onDecline: `
+									const meetingCalendar = document.getElementById("meeting-calendar");
+									if (meetingCalendar) {
+											meetingCalendar.replaceChildren();
+											delete meetingCalendar.dataset.calRendered;
+									}
+							`,
 		},
 	],
 };
@@ -125,6 +132,13 @@ Klaro.setup(config);
 // buttons in placeholders load a single service, e.g. the cal.com calendar.
 // same behaviour as the contextual consent notice of klaro: the consent is only saved
 // if the visitor already made a decision in the cookie notice, otherwise it applies to this page only.
+// e.g. the link in the footer, so visitors can change or withdraw their consent at any time
+document.addEventListener("click", event => {
+	if (event.target.closest("[data-klaro-show]")) {
+		Klaro.show(config, true);
+	}
+});
+
 document.addEventListener("click", event => {
 	const button = event.target.closest("[data-klaro-accept]");
 	if (!button) {
