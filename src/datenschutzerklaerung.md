@@ -4,7 +4,7 @@ title: Datenschutz UV
 description: Data privacy by design - weil Transparenz uns wichtig ist.
 ---
 
-Stand: 12.05.2021
+Stand: 03.10.2026
 
 # Datenschutzerklärung
 
@@ -759,19 +759,81 @@ Die Daten werden gelöscht, sobald sie die Einwilligung zur Nutzung von GoCardle
 
 Sie können die Einwilligung zur Nutzung von GoCardless deaktivieren. In diesem Fall werden keine Daten mehr übermittelt.
 
-## 12. Rechte der betroffenen Person
+## 13. cal.com
+
+### 13.1. Umfang der Verarbeitung personenbezogener Daten
+
+#### 13.1.1.
+
+Auf unserer Website können Sie über einen eingebundenen Kalender von cal.com einen Termin mit uns vereinbaren.
+Der Kalender wird erst geladen, wenn Sie über das Infobanner oder über die Schaltfläche „Kalender laden“
+in die Nutzung von cal.com eingewilligt haben. Erst dann werden Daten an cal.com übermittelt und Cookies
+von cal.com gesetzt.
+
+#### 13.1.2.
+
+Betreiber von cal.com ist Cal.com, Inc., 2261 Market Street #4382, San Francisco, CA 94114, United States of America.
+
+#### 13.1.3.
+
+Folgende Daten werden im Rahmen der Nutzung erhoben:
+Beim Laden des Kalenders IP-Adresse, Informationen zu Browser und Endgerät, die aufrufende Seite (Referrer-URL)
+sowie Datum und Uhrzeit des Aufrufs. Bei einer Terminbuchung zusätzlich die im Buchungsformular angegebenen Daten,
+insbesondere Name, E-Mail-Adresse und gegebenenfalls Ihre Anmerkungen zum Termin.
+
+#### 13.1.4.
+
+Dabei setzt cal.com Cookies, die der Sicherheit des Dienstes (z. B. Schutz vor Bots und Cross-Site-Request-Forgery)
+und der Durchführung der Terminbuchung dienen.
+
+### 13.2.
+
+Rechtsgrundlage für die Verarbeitung personenbezogener Daten
+Rechtsgrundlage für die Verarbeitung der personenbezogenen Daten der Nutzer ist die Einwilligung nach Art.
+6 Abs. 1 S. 1 lit. a DSGVO sowie für das Setzen von Cookies § 25 Abs. 1 TDDDG.
+
+Die Daten werden in den USA verarbeitet. Cal.com, Inc. ist nach dem EU-U.S. Data Privacy Framework zertifiziert.
+Die Übermittlung erfolgt auf Grundlage des Angemessenheitsbeschlusses der Europäischen Kommission nach Art. 45 DSGVO.
+
+### 13.3. Zweck der Datenverarbeitung
+
+#### 13.3.1.
+
+Die Weitergabe der Daten dient der Vereinbarung von Terminen, z. B. für eine Demo oder eine Beratung.
+
+#### 13.3.2.
+
+Die Datenschutzerklärung von cal.com finden Sie hier: https://cal.com/privacy.
+
+### 13.4. Dauer der Speicherung
+
+#### 13.4.1.
+
+Die bei einer Terminbuchung übermittelten Daten werden gelöscht, sobald sie für die Durchführung des Termins
+nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
+
+### 13.5. Widerspruchs- und Beseitigungsmöglichkeit
+
+#### 13.5.1.
+
+Sie können Ihre Einwilligung zur Nutzung von cal.com jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie
+die Cookies unserer Website in Ihrem Browser löschen. Beim nächsten Besuch werden Sie erneut um Ihre Einwilligung
+gebeten. Ohne Einwilligung wird der Kalender nicht geladen und es werden keine Daten an cal.com übermittelt.
+Alternativ können Sie einen Termin per E-Mail an support@focus-shift.de vereinbaren.
+
+## 14. Rechte der betroffenen Person
 
 Werden personenbezogene Daten von Ihnen verarbeitet, sind Sie Betroffener i.S.d.
 DSGVO und es stehen Ihnen folgende Rechte gegenüber dem Verantwortlichen zu:
 
-### 13.1. Auskunftsrecht
+### 14.1. Auskunftsrecht
 
-#### 13.1.1.
+#### 14.1.1.
 
 Sie können von dem Verantwortlichen eine Bestätigung darüber verlangen, ob
 personenbezogene Daten, die Sie betreffen, von uns verarbeitet werden.
 
-#### 13.1.2.
+#### 14.1.2.
 
 Liegt eine solche Verarbeitung vor, können Sie von dem Verantwortlichen über folgende
 Informationen Auskunft verlangen:
@@ -803,7 +865,7 @@ aussagekräftige Informationen über die involvierte Logik sowie die Tragweite u
 die angestrebten Auswirkungen einer derartigen Verarbeitung für die betroffene
 Person.
 
-#### 13.1.3.
+#### 14.1.3.
 
 Ihnen steht das Recht zu, Auskunft darüber zu verlangen, ob die Sie betreffenden
 personenbezogenen Daten in ein Drittland oder an eine internationale Organisation
@@ -811,18 +873,18 @@ personenbezogenen Daten in ein Drittland oder an eine internationale Organisatio
 geeigneten Garantien gem. Art. 46 DSGVO im Zusammenhang mit der Übermittlung
 unterrichtet zu werden.
 
-### 13.2. Recht auf Berichtigung
+### 14.2. Recht auf Berichtigung
 
-#### 13.2.1.
+#### 14.2.1.
 
 Sie haben ein Recht auf Berichtigung und/oder Vervollständigung gegenüber dem
 Verantwortlichen, sofern die verarbeiteten personenbezogenen Daten, die Sie betreffen,
 unrichtig oder unvollständig sind. Der Verantwortliche hat die Berichtigung unverzüglich
 vorzunehmen.
 
-### 13.3. Recht auf Einschränkung der Verarbeitung
+### 14.3. Recht auf Einschränkung der Verarbeitung
 
-#### 13.3.1.
+#### 14.3.1.
 
 Unter den folgenden Voraussetzungen können Sie die Einschränkung der Verarbeitung der
 Sie betreffenden personenbezogenen Daten verlangen:
@@ -842,7 +904,7 @@ Ausübung oder Verteidigung von Rechtsansprüchen benötigen, oder
 eingelegt haben und noch nicht feststeht, ob die berechtigten Gründe des
 Verantwortlichen gegenüber Ihren Gründen überwiegen.
 
-#### 13.3.2.
+#### 14.3.2.
 
 Wurde die Verarbeitung der Sie betreffenden personenbezogenen Daten eingeschränkt,
 dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder
@@ -851,15 +913,15 @@ Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus G
 eines wichtigen öffentlichen Interesses der Union oder eines Mitgliedstaats verarbeitet
 werden.
 
-#### 13.3.3.
+#### 14.3.3.
 
 Wurde die Einschränkung der Verarbeitung nach den o.g. Voraussetzungen eingeschränkt,
 werden Sie von dem Verantwortlichen unterrichtet bevor die Einschränkung aufgehoben
 wird.
 
-### 13.4. Recht auf Löschung
+### 14.4. Recht auf Löschung
 
-#### 13.4.1.
+#### 14.4.1.
 
 Sie können von dem Verantwortlichen verlangen, dass die Sie betreffenden
 personenbezogenen Daten unverzüglich gelöscht werden, und der Verantwortliche ist
@@ -886,7 +948,7 @@ Mitgliedstaaten erforderlich, dem der Verantwortliche unterliegt.
 (6) Die Sie betreffenden personenbezogenen Daten wurden in Bezug auf angebotene
 Dienste der Informationsgesellschaft gemäß Art. 8 Abs. 1 DSGVO erhoben.
 
-#### 13.5. Information an Dritte
+#### 14.5. Information an Dritte
 
 Hat der Verantwortliche die Sie betreffenden personenbezogenen Daten öffentlich
 gemacht und ist er gem. Art. 17 Abs. 1 DSGVO zu deren Löschung verpflichtet, so trifft
@@ -896,7 +958,7 @@ Verantwortliche, die die personenbezogenen Daten verarbeiten, darüber zu inform
 dass Sie als betroffene Person von ihnen die Löschung aller Links zu diesen
 personenbezogenen Daten oder von Kopien oder Replikationen dieser personenbezogenen Daten verlangt haben.
 
-#### 13.6. Ausnahmen
+#### 14.6. Ausnahmen
 
 Das Recht auf Löschung besteht nicht, soweit die Verarbeitung erforderlich ist
 
@@ -919,9 +981,9 @@ beeinträchtigt, oder
 
 (5) zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
 
-### 13.7. Recht auf Unterrichtung
+### 14.7. Recht auf Unterrichtung
 
-#### 13.7.1.
+#### 14.7.1.
 
 Haben Sie das Recht auf Berichtigung, Löschung oder Einschränkung der Verarbeitung
 gegenüber dem Verantwortlichen geltend gemacht, ist dieser verpflichtet, allen
@@ -930,14 +992,14 @@ diese Berichtigung oder Löschung der Daten oder Einschränkung der Verarbeitung
 mitzuteilen, es sei denn, dies erweist sich als unmöglich oder ist mit einem
 unverhältnismäßigen Aufwand verbunden.
 
-#### 13.7.2.
+#### 14.7.2.
 
 Ihnen steht gegenüber dem Verantwortlichen das Recht zu, über diese Empfänger
 unterrichtet zu werden.
 
-### 13.8. Recht auf Datenübertragbarkeit
+### 14.8. Recht auf Datenübertragbarkeit
 
-### 13.8.1.
+### 14.8.1.
 
 Sie haben das Recht, die Sie betreffenden personenbezogenen Daten, die Sie dem
 Verantwortlichen bereitgestellt haben, in einem strukturierten, gängigen und
@@ -948,7 +1010,7 @@ die Verarbeitung auf einer Einwilligung gem. Art. 6 Abs. 1 S. 1 lit. a DSGVO
 oder Art. 9 Abs. 2 lit. a DSGVO oder auf einem Vertrag gem. Art. 6 Abs. 1 S. 1 lit. b
 DSGVO beruht und (2)
 
-#### 13.8.2.
+#### 14.8.2.
 
 die Verarbeitung mithilfe automatisierter Verfahren erfolgt.
 In Ausübung dieses Rechts haben Sie ferner das Recht, zu erwirken, dass die Sie
@@ -956,70 +1018,70 @@ betreffenden personenbezogenen Daten direkt von einem Verantwortlichen einem
 anderen Verantwortlichen übermittelt werden, soweit dies technisch machbar ist.
 Freiheiten und Rechte anderer Personen dürfen hierdurch nicht beeinträchtigt werden.
 
-#### 13.8.3.
+#### 14.8.3.
 
 Das Recht auf Datenübertragbarkeit gilt nicht für eine Verarbeitung personenbezogener
 Daten, die für die Wahrnehmung einer Aufgabe erforderlich ist, die im öffentlichen
 Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, die dem Verantwortlichen
 übertragen wurde.
 
-## 14. Widerspruchsrecht
+## 15. Widerspruchsrecht
 
-### 14.1.
+### 15.1.
 
 Sie haben das Recht, aus Gründen, die sich aus ihrer besonderen Situation ergeben,
 jederzeit gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten, die
 aufgrund von Art. 6 Abs. 1 S. 1 lit. e oder f DSGVO erfolgt, Widerspruch einzulegen; dies
 gilt auch für ein auf diese Bestimmungen gestütztes Profiling.
 
-### 14.2.
+### 15.2.
 
 Der Verantwortliche verarbeitet die Sie betreffenden personenbezogenen Daten nicht
 mehr, es sei denn, er kann zwingende schutzwürdige Gründe für die Verarbeitung
 nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die
 Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
 
-### 14.3.
+### 15.3.
 
 Werden die Sie betreffenden personenbezogenen Daten verarbeitet, um Direktwerbung
 zu betreiben, haben Sie das Recht, jederzeit Widerspruch gegen die Verarbeitung der Sie
 betreffenden personenbezogenen Daten zum Zwecke derartiger Werbung einzulegen;
 dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in Verbindung steht.
 
-### 14.4.
+### 15.4.
 
 Widersprechen Sie der Verarbeitung für Zwecke der Direktwerbung, so werden die Sie
 betreffenden personenbezogenen Daten nicht mehr für diese Zwecke verarbeitet.
 
-### 14.5.
+### 15.5.
 
 Sie haben die Möglichkeit, im Zusammenhang mit der Nutzung von Diensten der
 Informationsgesellschaft – ungeachtet der Richtlinie 2002/58/EG – Ihr Widerspruchsrecht
 mittels automatisierter Verfahren auszuüben, bei denen technische Spezifikationen
 verwendet werden.
 
-### 14.6.
+### 15.6.
 
 Sie haben auch das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, bei der Verarbeitung
 Sie betreffender personenbezogener Daten, die zu wissenschaftlichen oder historischen Forschungszwecken
 oder zu statistischen Zwecken gem. Art. 89 Abs. 1 DSGVO erfolgt, dieser zu widersprechen.
 
-### 14.7.
+### 15.7.
 
 Ihr Widerspruchsrecht kann insoweit beschränkt werden, als es voraussichtlich die
 Verwirklichung der Forschungs- oder Statistikzwecke unmöglich macht oder ernsthaft
 beeinträchtigt und die Beschränkung für die Erfüllung der Forschungs- oder
 Statistikzwecke notwendig ist.
 
-## 15. Recht auf Widerruf der datenschutzrechtlichen Einwilligungserklärung
+## 16. Recht auf Widerruf der datenschutzrechtlichen Einwilligungserklärung
 
 Sie haben das Recht, Ihre datenschutzrechtliche Einwilligungserklärung jederzeit zu
 widerrufen. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund
 der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.
 
-## 16. Automatisierte Entscheidung im Einzelfall einschließlich Profiling
+## 17. Automatisierte Entscheidung im Einzelfall einschließlich Profiling
 
-### 16.1.
+### 17.1.
 
 Sie haben das Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung –
 einschließlich Profiling – beruhenden Entscheidung unterworfen zu werden, die Ihnen
@@ -1035,7 +1097,7 @@ berechtigten Interessen enthalten oder
 
 (3) mit Ihrer ausdrücklichen Einwilligung erfolgt.
 
-### 16.2.
+### 17.2.
 
 mit Ihrer ausdrücklichen Einwilligung erfolgt.
 Allerdings dürfen diese Entscheidungen nicht auf besonderen Kategorien
@@ -1043,7 +1105,7 @@ personenbezogener Daten nach Art. 9 Abs. 1 DSGVO beruhen, sofern nicht Art. 9 Ab
 lit. a oder g DSGVO gilt und angemessene Maßnahmen zum Schutz der Rechte und
 Freiheiten sowie Ihrer berechtigten Interessen getroffen wurden.
 
-### 16.3.
+### 17.3.
 
 Hinsichtlich der in (1) und (3) genannten Fälle trifft der Verantwortliche angemessene
 Maßnahmen, um die Rechte und Freiheiten sowie Ihre berechtigten Interessen zu wahren,
@@ -1051,9 +1113,9 @@ wozu mindestens das Recht auf Erwirkung des Eingreifens einer Person seitens des
 Verantwortlichen, auf Darlegung des eigenen Standpunkts und auf Anfechtung der
 Entscheidung gehört.
 
-## 17. Recht auf Beschwerde bei einer Aufsichtsbehörde
+## 18. Recht auf Beschwerde bei einer Aufsichtsbehörde
 
-### 17.1.
+### 18.1.
 
 Unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen
 Rechtsbehelfs steht Ihnen das Recht auf Beschwerde bei einer Aufsichtsbehörde,
@@ -1061,7 +1123,7 @@ insbesondere in dem Mitgliedstaat ihres Aufenthaltsorts, ihres Arbeitsplatzes od
 Orts des mutmaßlichen Verstoßes, zu, wenn Sie der Ansicht sind, dass die Verarbeitung
 der Sie betreffenden personenbezogenen Daten gegen die DSGVO verstößt.
 
-### 17.2.
+### 18.2.
 
 Die Aufsichtsbehörde, bei der die Beschwerde eingereicht wurde, unterrichtet den
 Beschwerdeführer über den Stand und die Ergebnisse der Beschwerde, einschließlich der
