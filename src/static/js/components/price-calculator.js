@@ -29,6 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	const priceElement = document.querySelector("#subscription-price");
 
+	// common.js is loaded on every page, the calculator only exists on the pricing page
+	if (!checkbox) {
+		return;
+	}
+
 	// disable focusable -> buttons are used
 	checkbox.setAttribute("tabindex", "-1");
 

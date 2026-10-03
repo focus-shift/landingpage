@@ -116,7 +116,20 @@ function stackChatAboveCookieNotice() {
 	update();
 }
 
-loadScript("/static/js/jquery.min.js")
+// the chat is not needed for the first paint. loading it after the page has loaded keeps
+// jquery and the chat script (with its css) from competing with the hero image and fonts.
+function afterPageLoad() {
+	return new Promise(resolve => {
+		if (document.readyState === "complete") {
+			resolve();
+		} else {
+			window.addEventListener("load", () => resolve(), { once: true });
+		}
+	});
+}
+
+afterPageLoad()
+	.then(() => loadScript("/static/js/jquery.min.js"))
 	.then(() =>
 		loadScript(
 			"https://support.apps.urlaubsverwaltung.cloud/assets/chat/chat.min.js",
