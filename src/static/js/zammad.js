@@ -47,7 +47,7 @@ function addDismissButton() {
 	const button = document.createElement("button");
 	button.type = "button";
 	button.className = "zammad-chat-dismiss";
-	button.textContent = "Nein, Danke.";
+	button.textContent = "Nein, danke.";
 	button.addEventListener("click", event => {
 		// do not open the chat via the click handler of the header
 		event.stopPropagation();
