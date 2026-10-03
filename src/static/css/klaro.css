@@ -670,4 +670,17 @@ to create a white background.
 	.cookie-notice-hidden {
 		display: none !important;
 	}
+
+	/* the notice title only names the dialog for screen readers */
+	#id-cookie-title {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border-width: 0;
+	}
 }
