@@ -4,8 +4,59 @@
   <subtitle></subtitle>
   <link rel="self" href="https://focus-shift.de/feed.xml" />
   <link rel="alternate" type="text/html" href="https://focus-shift.de" />
-  <updated>2026-06-22T00:00:00Z</updated>
+  <updated>2026-10-02T00:00:00Z</updated>
   <id>https://focus-shift.de</id>
+  <entry>
+    <title>Neuer Name, neuer Blick: Warum wir den Fokus verschieben</title>
+    <link href="https://focus-shift.de/neuigkeiten/2026-10-02-Neuer-Name-neuer-Blick/" />
+    <updated>2026-10-02T00:00:00Z</updated>
+    <id>https://focus-shift.de/neuigkeiten/2026-10-02-Neuer-Name-neuer-Blick/</id>
+    <author>
+      <name>Andreas Weigel</name>
+    </author>
+    <content type="html">&lt;p&gt;Wir haben in den vergangenen Monaten zwei Dinge getan, die zusammengehören: einen neuen Namen bekommen — &lt;span class=&quot;whitespace-nowrap&quot;&gt;&lt;span&gt;focus&lt;/span&gt;&lt;span class=&quot;font-black text-lila&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;font-basteleur&quot;&gt;shift&lt;/span&gt;&lt;/span&gt; — und einen neuen Bereich in der Software eröffnet, den es vorher nicht gab. Dieser Beitrag erklärt, warum wir beides gemacht haben, und warum es dieselbe Entscheidung war.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Klarheit statt Kontrolle — und was das mit unserem neuen Namen zu tun hat&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;ein-freitagabend-wie-du-ihn-vielleicht-kennst&quot;&gt;Ein Freitagabend, wie du ihn vielleicht kennst&lt;/h2&gt;
+&lt;p&gt;Es ist ein Freitag im Juli, kurz vor 17 Uhr. Die Wochenrunde in einem 14-köpfigen Kundenservice-Team. Am Ende sagt einer der erfahrensten Kollegen beiläufig, dass er das dritte Wochenende in Folge Tickets bearbeitet hat. Kein Vorwurf, kein Drama. Nur eine Bemerkung, die im Raum liegt.&lt;/p&gt;
+&lt;p&gt;Die Teamleitung merkt in dieser Sekunde etwas, was sie ungern denkt: &lt;em&gt;Sie hätte es wissen müssen.&lt;/em&gt; Aber sie hat es nicht gewusst. Nicht weil sie schlecht führt. Sondern weil die Software, in der die Wochenenden bereits erfasst sind, es ihr nicht gezeigt hat.&lt;/p&gt;
+&lt;p&gt;Kennst du diesen Moment? Wenn eine Beobachtung dich einholt, die im System schon längst dokumentiert war, aber nirgendwo sichtbar wurde? Wenn du merkst: Nicht dein Bauchgefühl hat versagt. Zwischen den Excel-Tabellen und deinem Gedächtnis klafft eine Lücke, und nichts füllt sie.&lt;/p&gt;
+&lt;p&gt;Das ist der Moment, für den wir gebaut haben, was wir gebaut haben.&lt;/p&gt;
+&lt;h2 id=&quot;was-hr-software-heute-macht-—-und-was-sie-nicht-macht&quot;&gt;Was HR-Software heute macht — und was sie nicht macht&lt;/h2&gt;
+&lt;p&gt;Der Markt für HR-Software ist voll. Es gibt Zeiterfassung, es gibt Urlaubsverwaltung, es gibt Krankmeldungs-Systeme. Vieles davon funktioniert gut. Und trotzdem passiert der Freitagabend-Moment tausendfach, jede Woche, in Unternehmen, die alles davon einsetzen.&lt;/p&gt;
+&lt;p&gt;Der Grund ist einfach: Die meisten Systeme sind gebaut, um &lt;em&gt;einzelne Vorgänge&lt;/em&gt; zu verwalten. Ein Urlaubsantrag. Eine Krankmeldung. Ein Überstundeneintrag. Sie werden erfasst, dokumentiert, archiviert. Aber sie werden nicht zu einem Bild zusammengefügt, aus dem eine Führungskraft ablesen kann, wie es ihrem Team eigentlich geht.&lt;/p&gt;
+&lt;p&gt;Was in den letzten Jahren dazukam, sind zwei Reaktionen auf diese Lücke, die beide nicht überzeugen:&lt;/p&gt;
+&lt;p&gt;Auf der einen Seite die Dashboards mit vielen Zahlen und wenig Aussage. Sie zeigen Krankenstand, Fluktuation, Employee Net Promoter Score — Kennzahlen, die für die Geschäftsführung zusammengetragen werden, aber die Führungskraft im Alltag nicht handlungsfähig machen. Sie erklären nichts. Sie beantworten die falschen Fragen.&lt;/p&gt;
+&lt;p&gt;Auf der anderen Seite die Wellbeing-Programme und Stimmungsabfragen. Sie versuchen, aus Fragebögen zu ermitteln, was ohnehin in den Nutzungsdaten steht. Sie messen zusätzlich, statt sichtbar zu machen. Und sie erzeugen Erwartungen, die sich später nicht einlösen lassen.&lt;/p&gt;
+&lt;p&gt;Zwischen beidem gibt es einen Raum, der lange leer war. Wir haben ihn gefüllt.&lt;/p&gt;
+&lt;h2 id=&quot;warum-aus-urlaubsverwaltungcloud-focusshift-geworden-ist&quot;&gt;Warum aus urlaubsverwaltung.cloud &lt;span class=&quot;whitespace-nowrap&quot;&gt;&lt;span&gt;focus&lt;/span&gt;&lt;span class=&quot;font-black text-lila&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;font-basteleur&quot;&gt;shift&lt;/span&gt;&lt;/span&gt; geworden ist&lt;/h2&gt;
+&lt;p&gt;Vielleicht ist dir schon aufgefallen, dass neben urlaubsverwaltung.cloud jetzt auch &lt;span class=&quot;whitespace-nowrap&quot;&gt;&lt;span&gt;focus&lt;/span&gt;&lt;span class=&quot;font-black text-lila&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;font-basteleur&quot;&gt;shift&lt;/span&gt;&lt;/span&gt; auftaucht. Ein neuer Name, ein neues Logo, neue Farben. Eine Zeit lang gibt es beide Auftritte noch nebeneinander. Wichtiger als das Äußere ist aber die Haltung dahinter: Sie war schon länger da und bekommt jetzt einen Namen.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Focus Shift.&lt;/strong&gt; Fokus verlagern. Vom Reagieren zum Sehen. Von der einzelnen Kennzahl zum Muster. Von der Kontrolle zur Fürsorge. Vom Bauchgefühl zur Klarheit — ohne dass daraus eine Überwachungslogik wird. &lt;em&gt;Time for what matters.&lt;/em&gt; Zeit für das, was zählt.&lt;/p&gt;
+&lt;p&gt;Die Software heißt immer noch, was sie schon immer war: Urlaubsverwaltung und Zeiterfassung für den Mittelstand. Open Source. In Deutschland gehostet. DSGVO-konform. Was neu ist, ist der Anspruch, dass diese Software auch etwas darüber sagen kann, wie es den Menschen geht, die sie nutzen — ohne dass jemand dabei zum gläsernen Angestellten wird.&lt;/p&gt;
+&lt;h2 id=&quot;was-belastungsmuster-sind-—-und-was-sie-nicht-sind&quot;&gt;Was Belastungsmuster sind — und was sie nicht sind&lt;/h2&gt;
+&lt;p&gt;Wir nennen den neuen Bereich in der Software „Gesundheit&amp;quot;. Er zeigt drei Verteilungen: Mehrarbeit im Unternehmen. Offene Urlaubstage. Krankheitstage. Nicht als Rangliste einzelner Personen. Sondern als Verteilung — wie viele Menschen liegen in welchem Band, wie hat sich das gegenüber dem Vorjahr verändert, wie sieht es im Vergleich zur Restfirma aus.&lt;/p&gt;
+&lt;div class=&quot;flex my-8&quot;&gt;
+    &lt;figure&gt;
+            &lt;img src=&quot;https://focus-shift.de/neuigkeiten/2026-10-02-Neuer-Name-neuer-Blick/gesundheit.png&quot; alt=&quot;Gesundheits-Bereich der Urlaubsverwaltung mit aggregierten Verteilungen zu Mehrarbeit, offenen Urlaubstagen und Krankheitstagen&quot; class=&quot;rounded-lg&quot; /&gt;
+        &lt;figcaption class=&quot;text-sm text-center&quot;&gt;Der neue Bereich „Gesundheit“: aggregierte Auswertung ohne Personenbezug&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;Warum Verteilungen und keine Personen? Weil ein Durchschnittswert nichts sagt. Wenn die durchschnittlichen Überstunden in einer Abteilung 7 Stunden pro Person sind, kann das bedeuten, dass alle etwa gleich viel Mehrarbeit haben — oder dass drei Personen 25 Stunden machen und der Rest nichts. Das sind zwei völlig verschiedene Führungssituationen. Der Durchschnitt versteckt das. Die Verteilung zeigt es.&lt;/p&gt;
+&lt;p&gt;Und warum ohne Personenbezug? Weil die Frage nicht ist, welche einzelne Person gerade zu viel arbeitet — das weißt du als Führungskraft besser als jede Software. Die Frage ist, ob dein Team als Ganzes ein Muster zeigt, das du sonst übersiehst. Muster, die vor dem Ausfall stehen, vor der Kündigung, vor dem Freitagabend-Moment, an dem dir jemand beiläufig erzählt, was du hättest wissen sollen.&lt;/p&gt;
+&lt;p&gt;Jede Auswertung im neuen Bereich beginnt mit einem Header, der uns wichtig ist: „Aggregierte Auswertung ohne Personenbezug.&amp;quot; Das ist keine Marketing-Formulierung. Das ist die Grenze, die wir uns selbst gezogen haben — und die wir auch dann halten, wenn sie unbequem ist. Weil Fürsorge etwas anderes ist als Kontrolle, und wir uns entschieden haben, auf welcher Seite dieser Unterscheidung wir bauen.&lt;/p&gt;
+&lt;h2 id=&quot;was-das-fuer-dich-als-fuehrungskraft-aendert&quot;&gt;Was das für dich als Führungskraft ändert&lt;/h2&gt;
+&lt;p&gt;Nicht viel — und deshalb ist es so wichtig.&lt;/p&gt;
+&lt;p&gt;Du wirst nicht plötzlich Alarme bekommen, die dir sagen, dass Marlene aus der Buchhaltung Burnout-gefährdet ist. Du wirst nicht mit Wellbeing-Scores konfrontiert, die niemand versteht. Du wirst nicht in Compliance-Trainings sitzen, in denen erklärt wird, warum das neue Dashboard eigentlich datenschutzrechtlich okay ist.&lt;/p&gt;
+&lt;p&gt;Was du bekommst, ist eine Sicht. Eine Verteilung deiner Zahlen, die dir erlaubt, das Muster zu sehen, das du sonst mühsam aus Einzeleinträgen rekonstruieren müsstest. Ein „Was du im Team prüfen kannst&amp;quot; unter jedem Diagramm — nicht als Handlungsanweisung, sondern als offene Frage, die dich zum eigenen Nachdenken einlädt. Und die stille Sicherheit, dass die Sicht bei dir bleibt, nicht bei einer Excel-Datei, die irgendwann in der falschen E-Mail landet.&lt;/p&gt;
+&lt;p&gt;Wenn du das nächste Mal in deiner Freitagsrunde sitzt und jemand beiläufig einen Satz sagt, der dir bekannt vorkommt, wirst du ihn vielleicht schon vorher gesehen haben. Nicht weil eine Software dir das Team abgenommen hat. Sondern weil sie sichtbar gemacht hat, was ohnehin da war.&lt;/p&gt;
+&lt;h2 id=&quot;ein-neuer-name-fuer-eine-alte-ueberzeugung&quot;&gt;Ein neuer Name für eine alte Überzeugung&lt;/h2&gt;
+&lt;p&gt;Gesunde Arbeit beginnt mit Überblick. Das ist der Satz, unter dem wir die Marke seit einem halben Jahr denken, und mit dem wir sie jetzt öffentlich machen. Er ist bewusst schlicht. Er verspricht keine Rettung, keine Revolution, keine bessere Zukunft. Er beschreibt eine Voraussetzung.&lt;/p&gt;
+&lt;p&gt;Und er bedeutet auch: Wir werden nie eine Software bauen, die dir sagt, was du zu tun hast. Wir werden eine Software bauen, die dir zeigt, was du wissen musst, um es selbst zu entscheiden.&lt;/p&gt;
+&lt;p&gt;Der neue Name — &lt;span class=&quot;whitespace-nowrap&quot;&gt;&lt;span&gt;focus&lt;/span&gt;&lt;span class=&quot;font-black text-lila&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;font-basteleur&quot;&gt;shift&lt;/span&gt;&lt;/span&gt; — ist eine Verpflichtung, kein Marketing-Stunt. Wir werden daran gemessen werden, ob wir sie einlösen. Der neue Bereich in der Software ist der erste Schritt. Weitere folgen.&lt;/p&gt;
+&lt;p&gt;Wenn du wissen willst, wie das für dein Team konkret aussieht: &lt;a href=&quot;https://focus-shift.de/demo/&quot;&gt;Schau dir den neuen Bereich in der Demo an&lt;/a&gt; — oder &lt;a href=&quot;https://focus-shift.de/demo/#termin-vereinbaren&quot;&gt;buche ein Online-Gespräch mit jemandem aus unserem Team&lt;/a&gt;. Beides ist unverbindlich. Beides sagt mehr als noch ein Blogpost.&lt;/p&gt;
+&lt;p&gt;Wir freuen uns, wenn du dabei bist.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Dein &lt;span class=&quot;whitespace-nowrap&quot;&gt;&lt;span&gt;focus&lt;/span&gt;&lt;span class=&quot;font-black text-lila&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;font-basteleur&quot;&gt;shift&lt;/span&gt;&lt;/span&gt;-Team&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Urlaubsverwaltung 6.0.0 – Neue Navigation, globale Suche und ein aufgeräumteres Nutzererlebnis</title>
     <link href="https://focus-shift.de/neuigkeiten/2026-06-22-release-6.0.0/" />
