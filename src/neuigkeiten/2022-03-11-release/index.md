@@ -2,7 +2,7 @@
 draft: false
 layout: layout-blog-article.hbs
 date: 2022-03-11
-title: Kalimera Griechenland - Griechische Feiertage und Übersetzung
+title: Kalimera Griechenland – Griechische Feiertage und Übersetzung
 author: Tobias Schneider
 release-version: 4.33.0
 description: Urlaubsverwaltung 4.33.0 veröffentlicht. Darin enthalten sind griechische Feiertage und Übersetzung.

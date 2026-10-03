@@ -1,6 +1,6 @@
 ---
 redirect_from: /hilfe/ueberstunden/
-title: Überstunden - Hilfe
+title: Überstunden – Hilfe
 description: Hier findest du Hilfe zu dem Thema Überstunden
 eleventyNavigation:
   key: ueberstunden

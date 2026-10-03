@@ -1,6 +1,6 @@
 ---
 redirect_from: /hilfe/abwesenheiten/
-title: Abwesenheit - Hilfe
+title: Abwesenheit – Hilfe
 description: Hier findest du Hilfe zu dem Thema Abwesenheiten
 eleventyNavigation:
   key: abwesenheiten

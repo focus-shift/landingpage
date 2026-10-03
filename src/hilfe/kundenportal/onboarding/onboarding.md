@@ -1,6 +1,6 @@
 ---
 redirect_from: /hilfe/onboarding/
-title: Onboarding - Hilfe
+title: Onboarding – Hilfe
 description: Hier findest du Hilfe zu dem Thema Onboarding
 eleventyNavigation:
   key: onboarding

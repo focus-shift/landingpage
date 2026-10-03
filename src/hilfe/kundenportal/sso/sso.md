@@ -1,6 +1,6 @@
 ---
 redirect_from: /hilfe/sso/
-title: Single Sign-On (SSO) - Hilfe
+title: Single Sign-On (SSO) – Hilfe
 description: Hier findest du Hilfe zu dem Thema Single Sign-On (SSO)
 eleventyNavigation:
   key: sso

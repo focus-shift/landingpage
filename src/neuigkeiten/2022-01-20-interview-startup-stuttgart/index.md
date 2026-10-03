@@ -2,10 +2,10 @@
 draft: false
 layout: layout-blog-article.hbs
 date: 2022-01-20
-title: Focus Shift im Interview - wie alles begann
+title: Focus Shift im Interview – wie alles begann
 author: Andreas Weigel
 teaserImage: microphone.png
-description: Focus Shift im Interview - wie alles begann
+description: Focus Shift im Interview – wie alles begann
 tags:
   - blog
 ---

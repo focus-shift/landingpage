@@ -1,6 +1,6 @@
 ---
 redirect_from: /hilfe/krankmeldungen/
-title: Krankmeldungen - Hilfe
+title: Krankmeldungen – Hilfe
 description: Hier findest du Hilfe zu dem Thema Krankmeldungen
 eleventyNavigation:
   key: krankmeldungen
@@ -69,7 +69,7 @@ Wenn eine Krankmeldung innerhalb eines gebuchten Urlaubs angelegt wird, wird
 momentan der Urlaub für die Krankheitstage nicht automatisch storniert. Man muss
 den Urlaub händisch stornieren und anschließend die Krankmeldung anlegen.
 
-Beispiel: Max Mustermann hat Urlaub vom 23.11. - 27.11. und war nun am 25.11.
+Beispiel: Max Mustermann hat Urlaub vom 23.11. bis 27.11. und war nun am 25.11.
 krank
 
 Vorgehen:

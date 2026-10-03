@@ -70,7 +70,7 @@ Dir fehlen Feiertage für ein bestimmtes Land? Dann melde dich bei uns am einfac
 ## Berechtigungen über die Anwendung vergeben
 
 Wir freuen uns, euch ab sofort die Möglichkeit zu geben, direkt in der Anwendung die Berechtigungen von Personen
-pflegen zu können. Egal ob Teamleiter, Mitarbeiter oder Administrator - ihr habt die Möglichkeit, die Zugriffsrechte
+pflegen zu können. Egal ob Teamleiter, Mitarbeiter oder Administrator – ihr habt die Möglichkeit, die Zugriffsrechte
 ganz bequem und sicher anzupassen, ohne die Anwendung verlassen zu müssen.
 
 <div class="flex my-8">

@@ -1,6 +1,6 @@
 ---
 redirect_from: /hilfe/kalender/
-title: Kalender - Hilfe
+title: Kalender – Hilfe
 description: Hier findest du Hilfe zu dem Thema Kalender
 eleventyNavigation:
   key: kalender

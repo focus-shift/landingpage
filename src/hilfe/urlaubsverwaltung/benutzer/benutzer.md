@@ -1,6 +1,6 @@
 ---
 redirect_from: /hilfe/benutzer/
-title: Benutzer - Hilfe
+title: Benutzer – Hilfe
 description: Hier findest du Hilfe zu dem Thema Benutzer
 eleventyNavigation:
   key: benutzer

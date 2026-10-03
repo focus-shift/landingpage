@@ -1,6 +1,6 @@
 ---
 redirect_from: /hilfe/feiertage/
-title: Feiertage - Hilfe
+title: Feiertage – Hilfe
 description: Hier findest du Hilfe zu dem Thema Feiertage
 eleventyNavigation:
   key: feiertage

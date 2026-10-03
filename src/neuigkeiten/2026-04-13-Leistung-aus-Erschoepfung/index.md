@@ -2,10 +2,10 @@
 draft: false
 layout: layout-blog-article.hbs
 date: 2026-04-13
-title: Leistung aus Erschöpfung - Warum reaktives Krisenmanagement in Organisationen systematisch zu spät kommt
+title: Leistung aus Erschöpfung – Warum reaktives Krisenmanagement in Organisationen systematisch zu spät kommt
 author: Andreas Weigel
 teaserImage: teaser.png
-description: Leistung aus Erschöpfung - Warum reaktives Krisenmanagement in Organisationen systematisch zu spät kommt
+description: Leistung aus Erschöpfung – Warum reaktives Krisenmanagement in Organisationen systematisch zu spät kommt
 tags:
   - blog
 ---

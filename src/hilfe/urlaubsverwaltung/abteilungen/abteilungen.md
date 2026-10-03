@@ -1,6 +1,6 @@
 ---
 redirect_from: /hilfe/abteilungen/
-title: Abteilungen - Hilfe
+title: Abteilungen – Hilfe
 description: Hier findest du Hilfe zu dem Thema Abteilungen
 eleventyNavigation:
   key: abteilungen

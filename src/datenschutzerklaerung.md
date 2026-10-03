@@ -1,7 +1,7 @@
 ---
 layout: layout-legal.hbs
 title: Datenschutz UV
-description: Data privacy by design - weil Transparenz uns wichtig ist.
+description: Data privacy by design – weil Transparenz uns wichtig ist.
 ---
 
 Stand: 12.05.2021
