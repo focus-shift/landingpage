@@ -26,6 +26,18 @@ const config = {
 					" Hallo! Aktiviere zusätzliche Dienste für {purposes}! Du kannst die Einstellungen jederzeit ändern.",
 				learnMore: "Auswählen",
 			},
+			purposes: {
+				scheduling: {
+					title: "Terminbuchung",
+					description:
+						"Diese Dienste ermöglichen es dir, direkt einen Termin mit uns zu vereinbaren.",
+				},
+			},
+			"cal-com": {
+				title: "cal.com",
+				description:
+					"Kalender zur Terminbuchung. Beim Laden werden Daten an cal.com übertragen und Cookies von cal.com gesetzt.",
+			},
 		},
 	},
 	services: [
@@ -92,6 +104,22 @@ const config = {
 							`,
 			purposes: ["marketing"],
 		},
+		{
+			// the inline calendar script in section-meeting.hbs is executed by klaro after consent.
+			// the cookies are set on cal.com and therefore cannot be deleted by klaro.
+			name: "cal-com",
+			cookies: [],
+			purposes: ["scheduling"],
+			// remove the calendar when the consent is withdrawn, e.g. via the cookie settings in the footer.
+			// the script renders the calendar again on the next consent.
+			onDecline: `
+									const meetingCalendar = document.getElementById("meeting-calendar");
+									if (meetingCalendar) {
+											meetingCalendar.replaceChildren();
+											delete meetingCalendar.dataset.calRendered;
+									}
+							`,
+		},
 	],
 };
 
@@ -100,3 +128,27 @@ window.klaro = Klaro;
 window.klaroConfig = config;
 // we set up Klaro with the config
 Klaro.setup(config);
+
+// buttons in placeholders load a single service, e.g. the cal.com calendar.
+// same behaviour as the contextual consent notice of klaro: the consent is only saved
+// if the visitor already made a decision in the cookie notice, otherwise it applies to this page only.
+// e.g. the link in the footer, so visitors can change or withdraw their consent at any time
+document.addEventListener("click", event => {
+	if (event.target.closest("[data-klaro-show]")) {
+		Klaro.show(config, true);
+	}
+});
+
+document.addEventListener("click", event => {
+	const button = event.target.closest("[data-klaro-accept]");
+	if (!button) {
+		return;
+	}
+	const serviceName = button.dataset.klaroAccept;
+	const manager = Klaro.getManager(config);
+	manager.updateConsent(serviceName, true);
+	if (manager.confirmed) {
+		manager.saveConsents("contextual-accept");
+	}
+	manager.applyConsents(false, true, serviceName);
+});
