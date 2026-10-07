@@ -33,7 +33,7 @@
 		"@eslint/js": "10.0.1",
 		"@tailwindcss/postcss": "4.3.3",
 		"concurrently": "10.0.5",
-		"cssnano": "9.1.1",
+		"cssnano": "9.2.2",
 		"date-fns": "4.4.0",
 		"esbuild": "0.28.2",
 		"eslint": "10.9.1",
