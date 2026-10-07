@@ -6,12 +6,32 @@ on:
   workflow_dispatch:
 
 jobs:
-  link-check-on-uv-cloud:
+  link-check:
     runs-on: ubuntu-24.04
     concurrency:
-      group: ${{ github.workflow }}-link-check-on-uv-cloud-${{ github.ref }}
+      group: ${{ github.workflow }}-link-check-${{ github.ref }}
       cancel-in-progress: true
     steps:
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: setup nodejs
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: ".tool-versions"
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build
+      # Checks the built pages: internal links and anchors as files in ./dist,
+      # external links over HTTP. Links matching .lycheeignore are skipped.
       - name: Check all links
-        run: docker run --rm --network host -v "./link-check-skip-file.txt:/skipfiles/link-check-skip-file.txt" tennox/linkcheck:3.0.0 https://focus-shift.de -e --skip-file /skipfiles/link-check-skip-file.txt
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          args: >-
+            --no-progress
+            --root-dir ${{ github.workspace }}/dist
+            --index-files index.html
+            --include-fragments
+            'dist/**/*.html'

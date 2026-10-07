@@ -18,7 +18,7 @@ So findest du schneller die passenden Informationen und kannst die Zeiterfassung
 
 ## Neue Hilfe-Funktion im Avatar-Menü für die Zeiterfassung
 
-Ab sofort findest du im **Avatar-Menü** einen direkten Zugang zur [**Hilfe-Seite der Zeiterfassung**](/hilfe/#dokumentation-zeiterfassung) – damit du noch schneller und einfacher Antworten auf deine Fragen bekommst.
+Ab sofort findest du im **Avatar-Menü** einen direkten Zugang zur [**Hilfe-Seite der Zeiterfassung**](/hilfe/#zeiterfassung) – damit du noch schneller und einfacher Antworten auf deine Fragen bekommst.
 
 <div class="flex my-8">
     <figure>
