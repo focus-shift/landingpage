@@ -25,8 +25,8 @@ Wenn nur Startzeit und Dauer angegeben werden, wird die Endzeit automatisch gese
 
 ### Zeiteintrag mit der Stoppuhr erfassen
 
-Pausen können auch durch Anklicken des Start-Buttons der Stoppuhr erfasst werden.
-Wichtig ist, den Pause-Regler zu aktivieren.
+Pausen können auch mit der Stoppuhr erfasst werden.
+Starte dazu die Stoppuhr, öffne die Bearbeitung der laufenden Stoppuhr und aktiviere dort den Regler "Pause".
 Die Stoppuhr läuft im Hintergrund weiter, auch wenn du die Seite wechselst.
 Du kannst die Stoppuhr jederzeit anhalten und so die Pause speichern.
 
@@ -35,8 +35,8 @@ Du kannst die Stoppuhr jederzeit anhalten und so die Pause speichern.
       alt="Stoppuhr/Stechuhr mit Pausenfunktion"
     />
 
-Wenn du die Stoppuhr startest, kannst du auch einen Kommentar hinzufügen oder die Startzeit nachträglich ändern.
-Der Kommentar wird dann automatisch zum Zeiteintrag hinzugefügt.
+In der Bearbeitung der laufenden Stoppuhr kannst du auch einen Kommentar hinzufügen oder die Startzeit nachträglich ändern.
+Der Kommentar wird dann automatisch zur Pause hinzugefügt.
 
 ### Pausen im Bericht
 
@@ -53,6 +53,7 @@ Auch im CSV-Download werden sie aufgelistet.
 
 Wie jeder Zeiteintrag hat auch jeder Pauseneintrag eine Änderungshistorie.
 So können alle Änderungen nachvollzogen werden.
+Die Historie öffnest du in den Berichten über das Historie-Symbol des Eintrags.
 
     <img
       src="pause-historie.png"

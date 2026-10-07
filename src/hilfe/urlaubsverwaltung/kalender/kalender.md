@@ -25,8 +25,8 @@ iCal oder auch iCalendar ist ein standardisiertes Datenformat zum Austausch von 
 Die Urlaubsverwaltung bietet die folgenden Möglichkeiten für eine Kalenderfreigabe:
 
 - **Mein Kalender**: Der Freigabe-Link enthält nur deine Abwesenheiten
-- **Abteilung**: Der Freigabe-Link enthält die Abwesenheiten deiner Abteilung
-- **Firma**: Der Freigabe-Link enthält die Abwesenheiten deiner Firma. Diese Freigabe ist nur möglich, wenn ein Office-Benutzer die Konfigurationsmöglichkeit erlaubt hat.
+- **Abteilung**: Der Freigabe-Link enthält die Abwesenheiten deiner Abteilung. Bist du Mitglied in mehreren Abteilungen, gibt es pro Abteilung einen eigenen Freigabe-Link.
+- **Firma**: Der Freigabe-Link enthält die Abwesenheiten deiner Firma. Diese Freigabe ist nur möglich, wenn eine Person mit der Berechtigung _Office_ oder _Chef_ den Firmenkalender auf der Seite "Kalenderfreigabe" aktiviert hat. Wird der Firmenkalender wieder deaktiviert, werden alle Freigaben des Firmenkalenders gelöscht.
 
 <aside class="wissensbasis-info">
   <p>
@@ -45,7 +45,7 @@ Die Kalenderfreigabe kann pro Benutzer konfiguriert werden. Um die Konfiguration
  alt="Übersichtsseite mit hervorgehobener Schaltfläche „Kalenderfreigabe“ oberhalb des Kalenders"
 />
 
-2. Wähle z. B. "Meinen Kalender freigeben"
+2. Wähle aus, welche vergangenen Abwesenheiten der Kalender enthalten soll (die des letzten Quartals, halben Jahres, Jahres oder alle), und klicke z. B. auf "Meinen Kalender freigeben". Zukünftige Abwesenheiten sind immer enthalten.
 
 <img
  src="kalenderfreigabe-aktivieren.png"
@@ -53,6 +53,7 @@ Die Kalenderfreigabe kann pro Benutzer konfiguriert werden. Um die Konfiguration
 />
 
 3. Es wird ein geheimer Link generiert, welchen du jetzt zum Abonnieren verwenden kannst. Weitere Informationen über das Abonnieren findest du [hier](#welche-moeglichkeiten-habe-ich-eine-ical-kalenderfreigabe-in-meinem-client-zu-verwenden).
+   Über "Neuen Link generieren" erhältst du einen neuen geheimen Link, der bisherige Link funktioniert dann nicht mehr.
 
 <img
  src="kalenderfreigabe-link.png"
@@ -89,17 +90,19 @@ Hier eine Liste von Anleitungen beliebter Kalenderlösungen, welche die iCal Kal
 <li><a href="https://docs.nextcloud.com/server/latest/user_manual/de/groupware/calendar.html#subscribe-to-a-calendar" target="_blank" rel="noopener">Nextcloud Kalender-App</a></li>
 </ul>
 
-### Wird die iCal Kalenderfreigabe die bisherigen Kalenderintegrationen wie Exchange und Google Calendar ersetzen?
+### Gibt es neben der iCal Kalenderfreigabe noch weitere Kalenderintegrationen?
 
-Ja, wir haben die Kalenderintegration für Google Calendar und Exchange in Version 4 der Urlaubsverwaltung als `deprecated` markiert und werden diese in Version 5 entfernen. Die Integration kann aber ohne weitere Einschränkungen durch die iCal Kalenderfreigabe ersetzt werden.
+Ja, die Urlaubsverwaltung kann Abwesenheiten und Krankmeldungen in einen [Google Calendar](#google-calendar) synchronisieren.
+Die Synchronisation wird von einer Person mit der Berechtigung _Office_ unter "Einstellungen > Kalender Synchronisation" für die ganze Urlaubsverwaltung eingerichtet.
+Die frühere Anbindung an Microsoft Exchange gibt es seit Version 5 der Urlaubsverwaltung nicht mehr, hier kann die iCal Kalenderfreigabe verwendet werden.
 
-#### Welche Vorteile bringt mir das?
+#### Welche Vorteile bietet die iCal Kalenderfreigabe?
 
 Durch die iCal Kalenderfreigabe können die Berechtigungen und Sichtbarkeiten feingranular konfiguriert werden, wodurch ein Datenschutz-konformer Einsatz möglich wird.
 
 ## Google Calendar
 
-Die Urlaubsverwaltung bietet die Möglichkeit, Kalendereinträge in einen Google Calendar zu synchronisieren. Um die Synchronisation zu konfigurieren, müssen folgende Voraussetzungen erfüllt sein:
+Die Urlaubsverwaltung bietet die Möglichkeit, Abwesenheiten und Krankmeldungen als Termine in einen Google Calendar zu synchronisieren. Um die Synchronisation zu konfigurieren, müssen folgende Voraussetzungen erfüllt sein:
 
 1. **Google Calendar API** ist aktiviert unter [API-Bibliothek](https://console.cloud.google.com/apis/library) ([Dokumentation](https://cloud.google.com/apis/docs/getting-started))
 
@@ -148,6 +151,9 @@ Die Urlaubsverwaltung bietet die Möglichkeit, Kalendereinträge in einen Google
 
    Der **Testnutzer** entspricht dem Benutzerkonto der Person, die den Google-Kalender zur Synchronisation verwendet.
 
+   Solange sich eine App mit der Zielgruppe „Extern“ im Status „Testen“ befindet, laufen die Zugriffe nach Googles Richtlinien nach 7 Tagen ab und die Synchronisation stoppt.
+   Veröffentliche die App deshalb unter „Zielgruppe“ als „In Produktion“ oder verwende die Zielgruppe „Intern“, wenn dein Google-Kalender zu einer Google-Workspace-Organisation gehört.
+
    <figure class="mb-4">
         <img
           src="google-calendar-api-oauth-client-testuser.png"
@@ -162,4 +168,7 @@ Die Urlaubsverwaltung bietet die Möglichkeit, Kalendereinträge in einen Google
 
 5. Handshake ist in der Urlaubsverwaltung durchgeführt
 
-   Alle Informationen aus den vorherigen Punkten müssen nun in deiner Urlaubsverwaltung unter **„Einstellungen > Kalender Synchronisation“** eingetragen werden. Anschließend klickst du auf **„Zugriff erlauben“**. Es öffnet sich eine Seite, auf der du dich mit deinem Google-Konto anmelden kannst. Nach erfolgreicher Anmeldung wird die Synchronisation automatisch durchgeführt, und es erscheint die Bestätigung: **„Verbindung zum Google-Kalender ist hergestellt.“**
+   Wähle in deiner Urlaubsverwaltung unter **„Einstellungen > Kalender Synchronisation“** bei **„Kalenderanbindung“** den Eintrag **„Google Kalender“** aus und trage alle Informationen aus den vorherigen Punkten ein. Anschließend klickst du auf **„Zugriff erlauben“**. Es öffnet sich eine Seite, auf der du dich mit deinem Google-Konto anmelden kannst. Nach erfolgreicher Anmeldung erscheint die Bestätigung: **„Verbindung zum Google-Kalender ist hergestellt.“**
+
+   Ab jetzt werden neue und geänderte Abwesenheiten und Krankmeldungen in den Google-Kalender übertragen. Bereits bestehende Einträge werden nicht nachträglich synchronisiert.
+   Änderst du später die Client-ID, den Clientschlüssel oder die Kalender-ID, musst du erneut auf **„Zugriff erlauben“** klicken.
