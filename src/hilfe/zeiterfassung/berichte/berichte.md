@@ -14,13 +14,16 @@ eleventyNavigation:
 In der Ansicht "Berichte" können die **geleisteten Arbeitsstunden** pro Mitarbeitenden grafisch als auch
 als CSV-Download eingesehen werden. Zusätzlich werden die **einzelnen Zeiteinträge** angezeigt,
 die nach Mitarbeitenden selektiert werden können. Es können auch mehrere Mitarbeitende ausgewählt werden.
+Die Berichte anderer Personen und die Auswahl von Mitarbeitenden stehen nur Personen mit der Berechtigung "darf die Berichte aller Personen sehen" zur Verfügung.
+Alle anderen sehen ihren eigenen Bericht.
 
     <img
       src="berichte.png"
       alt="Übersicht über geleistete und geplante Arbeitsstunden"
     />
 
-Die Ansicht eines Tages gibt einen schnellen Überblick darüber, wann und wie tatsächlich gearbeitet wurde.
+Die Berichte gibt es als Wochen- und als Monatsansicht. Innerhalb der Ansicht sind die Einträge nach Tagen gruppiert,
+das gibt einen schnellen Überblick darüber, wann und wie tatsächlich gearbeitet wurde.
 
 ## Abweichung zu den geleisteten Arbeitsstunden
 
@@ -28,6 +31,9 @@ Die Berichte zeigen den Vergleich zwischen den geplanten und den tatsächlich ge
 Angezeigt werden die geplanten Arbeitsstunden pro Tag sowie die tatsächlich geleisteten Arbeitsstunden. Eine weitere Kennzahl,
 die **Abweichung der geplanten Arbeitsstunden**, zeigt, ob an einem Tag Überstunden geleistet oder weniger Stunden
 gearbeitet wurden als vorgesehen. Darüber hinaus werden diese Werte auch auf Wochen- und Monatsbasis aggregiert, was den Nutzern eine detailliertere Analyse ihrer Arbeitszeit über längere Zeiträume hinweg ermöglicht und einen genaueren Überblick sowie eine bessere Planung der Arbeitszeit unterstützt.
+
+Abwesenheiten aus der Urlaubsverwaltung wie Urlaub, Krankmeldungen oder Betriebsurlaub werden in den Berichten und unter "Zeit" angezeigt
+und bei den geplanten Arbeitsstunden berücksichtigt.
 
 ## Darstellung von Pausen
 
@@ -47,6 +53,11 @@ Ein Pausensymbol zeigt, ob es sich bei einer erfassten Zeit um eine Pause handel
     />
 
 Pausen werden nicht in die geleistete Arbeitszeit eingerechnet.
+
+Überschneidet sich eine Pause mit einem Zeiteintrag, wird sie standardmäßig nicht vom Zeiteintrag abgezogen.
+Personen mit der Berechtigung "darf die globalen Einstellungen bearbeiten" können unter "Einstellungen > Abzug von Pausen"
+festlegen, dass überschneidende Pausen ab einem bestimmten Datum automatisch abgezogen werden.
+Ein Zeiteintrag von 9:00 bis 18:00 Uhr mit einer Pause von 12:00 bis 13:00 Uhr ergibt dann 8 statt 9 Stunden Arbeitszeit.
 
 ## Änderungshistorie für Zeiteinträge
 
@@ -68,7 +79,8 @@ Die Nachvollziehbarkeit von Änderungen ist insbesondere für Unternehmen und Te
 
 ## Zeiteinträge über Berichte bearbeiten
 
-Mitarbeitende mit der Berechtigung "darf die Berechtigungen aller Personen bearbeiten" können Zeiteinträge direkt über die Berichte bearbeiten.
+Mitarbeitende mit der Berechtigung "darf die Zeiteinträge aller Personen bearbeiten" können Zeiteinträge direkt über die Berichte bearbeiten.
+Ihre eigenen, nicht festgeschriebenen Zeiteinträge können alle Mitarbeitenden ebenfalls über die Berichte bearbeiten.
 So können fehlerhafte oder ungenaue Einträge einfach korrigiert werden – ohne dass die betroffenen Mitarbeitenden selbst aktiv werden müssen.
 Die Zeiteinträge können über die [Änderungshistorie für Zeiteinträge](#aenderungshistorie-fuer-zeiteintraege)
 angepasst werden und sind somit für alle Beteiligten nachvollziehbar und transparent.

@@ -17,18 +17,27 @@ sind zentraler Teil der Urlaubsverwaltung.
 
 In der Urlaubsverwaltung gibt es aktuell folgende Arten von Berechtigungen:
 
-- **Benutzer**: hat Zugang zur Urlaubsverwaltung und darf Urlaub für sich selbst beantragen
-- **Abteilungsleiter**: darf Urlaubsanträge für die Benutzer seiner Abteilungen einsehen, genehmigen und ablehnen
+- **Benutzer**: hat Zugang zur Urlaubsverwaltung und darf Abwesenheiten für sich selbst beantragen
+- **Abteilungsleiter**: darf Abwesenheiten für die Benutzer seiner Abteilungen einsehen, genehmigen und ablehnen
 - **Freigabe-Verantwortlicher**: ist bei der zweistufigen Genehmigung von Anträgen verantwortlich für die endgültige Freigabe
-- **Chef**: darf Urlaubsanträge **aller** Benutzer einsehen, genehmigen und ablehnen
-- **Office**: darf Einstellungen zur Anwendung vornehmen, die Daten **aller** Mitarbeiter verwalten, Urlaub für **alle** Mitarbeiter beantragen/stornieren und Krankmeldungen pflegen
-- **Inaktiv**: hat keinen Zugang mehr zur Urlaubsverwaltung (Daten des Benutzers bleiben zur Archivierung bestehen)
+- **Chef**: darf Abwesenheiten **aller** Benutzer einsehen, genehmigen und ablehnen
+- **Office**: darf Einstellungen zur Anwendung vornehmen, die Daten **aller** Mitarbeiter verwalten, Abwesenheiten für **alle** Mitarbeiter beantragen/stornieren und Krankmeldungen pflegen
+
+Zusätzlich können Abteilungsleitern, Freigabe-Verantwortlichen und Chefs weitere Berechtigungen gegeben werden:
+
+- **Pflege von Krankmeldungen**: darf Krankmeldungen aller Mitarbeitenden pflegen, für die die Person verantwortlich ist
+- **Pflege von Abwesenheiten**: darf Abwesenheiten aller Mitarbeitenden pflegen, für die die Person verantwortlich ist
+
+Beide Funktionen sind in der Berechtigung _Office_ bereits enthalten.
+
+Über den Status _Inaktiv_ hat eine Person keinen Zugang mehr zur Urlaubsverwaltung, ihre Daten bleiben aber bestehen (siehe [Wie kann ich Benutzer löschen?](#wie-kann-ich-benutzer-loeschen)).
 
 Es ist geplant, das aktuelle Berechtigungskonzept [feingranularer](https://github.com/urlaubsverwaltung/urlaubsverwaltung/issues/467) zu gestalten.
 
 ## Wie stelle ich die Berechtigungen eines Benutzers ein?
 
 Als Benutzer mit der Berechtigung _Office_ kannst du über die Suche jemanden finden und direkt in das jeweilige Konto der betreffenden Person navigieren.
+Die Suche findet nur aktive Personen. Inaktive Personen findest du unter "Unternehmen > Mitarbeitende" bei "Inaktive Mitarbeitende".
 
 <img
   src="benutzer-finden.png"
@@ -48,30 +57,44 @@ Nachdem die Berechtigungen für einen Mitarbeitenden angepasst wurden, sind dies
 
 ## Welcher Benutzer darf nach Registrierung Einstellungen vornehmen?
 
-Nach der Registrierung der Urlaubsverwaltung bekommt der erste Benutzer, der sich einloggt, automatisch die Berechtigung _Office_
+Nach der Registrierung der Urlaubsverwaltung bekommt der erste Benutzer automatisch die Berechtigung _Office_
 
-> darf Einstellungen zur Anwendung vornehmen, die Daten aller Mitarbeiter verwalten, Urlaub für alle Mitarbeiter beantragen/stornieren und Krankmeldungen pflegen
+> darf Einstellungen zur Anwendung vornehmen, die Daten aller Mitarbeiter verwalten, Abwesenheiten für alle Mitarbeiter beantragen/stornieren und Krankmeldungen pflegen
 
-Alle weiteren Benutzer werden initial mit der Berechtigung _Benutzer_ angelegt. Für zusätzlich Berechtigungen anderer Benutzer müssen diese von ersten Benutzer vergeben werden.
+Alle weiteren Benutzer werden initial mit der Berechtigung _Benutzer_ angelegt. Zusätzliche Berechtigungen vergibt eine Person mit der Berechtigung _Office_.
+Gibt es keine aktive Person mit der Berechtigung _Office_ mehr, erhält die nächste neu angelegte Person automatisch die Berechtigung _Office_.
 
 ## Wie kann ich Benutzer löschen?
 
-Über die Anwendung kann man Benutzer nicht löschen, nur inaktivieren.
-Beim Editieren des Benutzers muss die Berechtigung _Inaktiv_ ausgewählt werden:
+Als Benutzer mit der Berechtigung _Office_ kannst du eine Person entweder inaktivieren oder endgültig löschen.
+
+### Inaktivieren
+
+Beim Editieren der Berechtigungen wird der Status _Inaktiv_ ausgewählt:
 
     <img
       src="benutzer-inaktiv.png"
       alt="Inaktivieren eines Benutzers"
     />
 
-Mit dieser Berechtigung kann sich der Benutzer nicht mehr einloggen, aber seine Daten bleiben zu Archivierungszwecken bestehen.
+Eine inaktive Person hat keine Berechtigungen mehr und kann sich nicht mehr einloggen, ihre Daten bleiben aber zu Archivierungszwecken bestehen.
+Wird die Person wieder auf _Benutzer_ gesetzt, ist sie wieder aktiv.
+
+### Löschen
+
+Im Konto der Person gibt es den Bereich "Konto löschen".
+Nach Klick auf "Konto von … löschen" musst du den Löschvorgang durch Eingabe des angezeigten Namens bestätigen.
+Dabei werden alle Daten der Person gelöscht, auch ihre Berechtigungen. Das Löschen kann nicht rückgängig gemacht werden.
+War die Person z. B. Abteilungsleiter, sollte diese Aufgabe danach neu besetzt werden.
+
+Die letzte Person mit der Berechtigung _Office_ kann nicht gelöscht werden.
 
 ## Wieso kann ein Benutzer keinen Urlaub beantragen?
 
 Damit ein Benutzer Urlaub beantragen kann, müssen seine Daten vollständig sein.
 In der Regel ist für den Zeitraum des Urlaubsantrags kein Urlaubsanspruch oder keine Arbeitszeiten konfiguriert.
 
-Unter dem Menüpunkt "Benutzer" ist eine Liste der Benutzer zu finden.
+Unter dem Menüpunkt "Unternehmen > Mitarbeitende" ist eine Liste der Mitarbeitenden zu finden.
 Mit Klick auf "Konto" des betreffenden Benutzers gelangt man zur Übersicht der Daten des Benutzers. Hier können die einzelnen Benutzerdaten wie Stammdaten,
 Arbeitszeiten und Urlaubsanspruch durch Klick auf die Editieren-Aktion (Stift-Icon) gepflegt werden. Sobald der Benutzer über alle erforderlichen Daten
 verfügt, sollte er auch in der Lage sein, Urlaub zu beantragen.

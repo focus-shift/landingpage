@@ -47,7 +47,9 @@ Der Kommentar wird dann automatisch zum Zeiteintrag hinzugefügt.
 
 Mitarbeitende mit der Berechtigung "darf die Zeiteinträge aller Personen bearbeiten" haben die Möglichkeit, die Startseitenansicht eines anderen Mitarbeitenden einzusehen und für diese Person Zeiteinträge zu erfassen.
 
-Mit einem Klick auf den Avatar eines Mitarbeitenden kann die Startseitenansicht für diese Person aufgerufen werden.
+Auf der Startseite unter "Zeit" gibt es dafür das Suchfeld "Zeiten anderer Person pflegen…".
+Nach Eingabe des Namens öffnet ein Klick auf "Zeit" die Startseitenansicht der gewünschten Person.
+Alternativ kann die Ansicht in den Berichten mit einem Klick auf den Avatar eines Mitarbeitenden aufgerufen werden.
 
     <img
       src="zeiteintrag_fuer_mitarbeitenden.png"
@@ -56,11 +58,12 @@ Mit einem Klick auf den Avatar eines Mitarbeitenden kann die Startseitenansicht 
 
 ## Können Zeiteinträge festgeschrieben werden?
 
-Ja, das Hinzufügen und Ändern von Zeiteinträgen kann ab einem bestimmten Datum verhindert werden, um sie vor Änderungen zu schützen.
+Ja, das Hinzufügen und Ändern von Zeiteinträgen kann für zurückliegende Tage verhindert werden, um sie vor Änderungen zu schützen.
 Dies ist besonders wichtig, wenn die Zeitbuchungen für die Lohnabrechnung verwendet werden.
 
 In der Zeiterfassung können Personen mit der Berechtigung "darf die globalen Einstellungen bearbeiten" unter
-'Einstellungen > Festschreiben von Zeitslots' einstellen nach wie vielen Tagen Zeiteinträge für die Mitarbeitenden festgeschrieben werden sollen.
+"Einstellungen > Festschreiben von Zeiteinträgen" die Festschreibung aktivieren und einstellen, nach wie vielen Tagen – ausgehend vom heutigen Datum – Zeiteinträge festgeschrieben werden.
+Die Festschreibung ist standardmäßig deaktiviert. Die Tage werden jede Nacht festgeschrieben.
 
     <img
       src="zeiteintrag_festschreiben.png"
@@ -78,5 +81,6 @@ Dies bedeutet, dass an diesem Tag keine weiteren Zeiteinträge hinzugefügt bzw.
       alt="Zeiteinträge-Übersicht, in der ein festgeschriebener Tag mit Schloss-Symbol markiert ist"
     />
 
-Für Personen mit der Berechtigung "darf die globalen Einstellungen bearbeiten" wird das Schloss-Symbol angezeigt.
-Diese können aber weiterhin neue Zeiteinträge hinzufügen bzw. bearbeiten.
+Das Schloss-Symbol wird allen Personen angezeigt, auch Personen mit der Berechtigung "darf die Zeiteinträge aller Personen bearbeiten".
+Diese können an festgeschriebenen Tagen aber weiterhin Zeiteinträge hinzufügen bzw. bearbeiten.
+Die Berechtigung "darf die globalen Einstellungen bearbeiten" allein reicht dafür nicht aus.
