@@ -48,7 +48,7 @@
 		"klaro": "0.7.22",
 		"lint-staged": "17.6.0",
 		"markdown-it": "15.0.2",
-		"markdown-it-anchor": "9.2.1",
+		"markdown-it-anchor": "10.0.0",
 		"postcss": "8.5.28",
 		"postcss-cli": "12.0.0",
 		"prettier": "3.9.9",
