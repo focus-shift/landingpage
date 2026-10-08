@@ -31,7 +31,7 @@ Dies änderte sich am 13.09.2022 mit dem Gerichtsurteil des Bundesarbeitsgericht
 >
 > -- <a href="https://www.bundesarbeitsgericht.de/presse/einfuehrung-elektronischer-zeiterfassung-initiativrecht-des-betriebsrats/">Bundesarbeitsgericht</a>
 
-<a target="_blank" href="https://dup-magazin.de/management/strategie/so-kommen-sie-der-pflicht-zur-arbeitszeiterfassung-nach/">
+<a target="_blank" href="https://web.archive.org/web/20221202084734/https://dup-magazin.de/management/strategie/so-kommen-sie-der-pflicht-zur-arbeitszeiterfassung-nach/">
 49% der KMUs erfassen bereits die Arbeitszeit. 50% davon erfassen ihre Arbeitszeit jedoch mit Stift und Papier und 24% verwenden eine
 elektronische Tabelle, also wahrscheinlich Excel. </a>
 So ganz wird das dem EuGH-Urteil nach einer objektiven, verlässlichen und zugänglichen Zeiterfassung nicht gerecht.
