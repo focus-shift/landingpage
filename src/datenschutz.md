@@ -136,7 +136,7 @@ Gegenstand der Verarbeitung personenbezogener Daten der _Mitarbeitenden_ sind fo
 				<td>Munzingerstr. 9. 79111 Freiburg</td>
 				<td>Buchhaltung und Abrechnung</td>
 				<td><a
-					href="https://avv.lexware.de/lexware-office/">AVV</a>
+					href="https://avv.lexware.de/lexware-office">AVV</a>
 				</td>
 				<td>12.11.2025</td>
 			</tr>
@@ -165,7 +165,7 @@ Gegenstand der Verarbeitung personenbezogener Daten der _Mitarbeitenden_ sind fo
 				<td>GoCardless Ltd.</td>
 				<td>Sutton Yard, Goswell Rd, London EC1V 7EN, United Kingdom</td>
 				<td>SEPA Zahlungsabwicklung</td>
-				<td><a href="https://gocardless.com/privacy/merchants/">AVV</a></td>
+				<td><a href="https://gocardless.com/privacy/merchants">AVV</a></td>
 				<td>26 June 2025</td>
 			</tr>
 			<tr>

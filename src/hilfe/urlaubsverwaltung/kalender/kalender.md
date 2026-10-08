@@ -85,7 +85,7 @@ Hier eine Liste von Anleitungen beliebter Kalenderlösungen, welche die iCal Kal
 <ul>
 <li><a href="https://support.apple.com/de-de/guide/calendar/icl1022/mac" target="_blank" rel="noopener">Apple Calendar</a></li>
 <li><a href="https://support.google.com/calendar/answer/37100" target="_blank" rel="noopener">Google Calendar</a></li>
-<li><a href="https://support.microsoft.com/de-de/office/importieren-oder-abonnieren-eines-kalenders-in-outlook-com-oder-outlook-im-web-cff1429c-5af6-41ec-a5b4-74f2c278e98c" target="_blank" rel="noopener">Microsoft Calendar</a></li>
+<li><a href="https://support.microsoft.com/de-de/outlook/import-or-subscribe-to-a-calendar-in-outlook-com-or-outlook-on-the-web" target="_blank" rel="noopener">Microsoft Calendar</a></li>
 <li><a href="https://support.mozilla.org/de/kb/neue-kalender-erstellen#w_icalendar-ics" target="_blank" rel="noopener">Mozilla Thunderbird</a></li>
 <li><a href="https://docs.nextcloud.com/server/latest/user_manual/de/groupware/calendar.html#subscribe-to-a-calendar" target="_blank" rel="noopener">Nextcloud Kalender-App</a></li>
 </ul>
@@ -104,7 +104,7 @@ Durch die iCal Kalenderfreigabe können die Berechtigungen und Sichtbarkeiten fe
 
 Die Urlaubsverwaltung bietet die Möglichkeit, Abwesenheiten und Krankmeldungen als Termine in einen Google Calendar zu synchronisieren. Um die Synchronisation zu konfigurieren, müssen folgende Voraussetzungen erfüllt sein:
 
-1. **Google Calendar API** ist aktiviert unter [API-Bibliothek](https://console.cloud.google.com/apis/library) ([Dokumentation](https://cloud.google.com/apis/docs/getting-started))
+1. **Google Calendar API** ist aktiviert unter [API-Bibliothek](https://console.cloud.google.com/apis/library) ([Dokumentation](https://docs.cloud.google.com/apis/docs/getting-started))
 
    <figure>
        <img
@@ -124,7 +124,7 @@ Die Urlaubsverwaltung bietet die Möglichkeit, Abwesenheiten und Krankmeldungen 
 
 2. Ein **OAuth2 Client** als Webanwendung ist erstellt
 
-   Gehe dazu auf https://console.developers.google.com und führe folgende Schritte aus:
+   Gehe dazu auf https://console.cloud.google.com/apis/dashboard und führe folgende Schritte aus:
 
    - OAuth2-Client-ID erstellen
 

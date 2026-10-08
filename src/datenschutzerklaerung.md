@@ -696,7 +696,7 @@ Die anonymisierte Weitergabe der E-Mail-Adresse dient dem Abruf
 
 Die Datenschutzerklärung von Automattic finden Sie hier: https://automattic.com/privacy/.
 Weitere Informationen finden Sie in der Datenschutzerklärung von Gravatar:
-https://de.gravatar.com/site/privacy.
+https://automattic.com/privacy/.
 
 ### 11.4. Dauer der Speicherung
 
@@ -743,9 +743,9 @@ Die Weitergabe der Daten dient der Zahlungsabwicklung.
 
 #### 12.3.2.
 
-Die Datenschutzerklärung von GoCardless finden Sie hier: https://gocardless.com/privacy/.
+Die Datenschutzerklärung von GoCardless finden Sie hier: https://gocardless.com/privacy.
 Weitere Informationen zu GoCardless und die DSGVO sind hier zu finden:
-https://gocardless.com/de-de/rechtliches/gdpr/
+https://gocardless.com/de-de/rechtliches/gdpr
 
 ### 12.4. Dauer der Speicherung
 
