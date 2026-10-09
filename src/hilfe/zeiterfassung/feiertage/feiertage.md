@@ -49,6 +49,7 @@ Die Zeiterfassung bietet alle geltenden Feiertagsregelungen der Länder
 
 - 🇩🇪 Deutschland
 - 🇧🇪 Belgien
+- 🇧🇬 Bulgarien
 - 🇨🇭 Schweiz
 - 🇪🇸 Spanien
 - 🇫🇮 Finnland
@@ -61,6 +62,7 @@ Die Zeiterfassung bietet alle geltenden Feiertagsregelungen der Länder
 - 🇳🇱 Niederlande
 - 🇦🇹 Österreich
 - 🇵🇱 Polen
+- 🇵🇹 Portugal – auch Azoren und Madeira
 - 🇷🇴 Rumänien
 - 🇺🇸 USA – Washington, D.C., Virginia und Maryland
 
