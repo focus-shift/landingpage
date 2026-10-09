@@ -56,7 +56,6 @@
 		transition-timing-function: ease-out;
 
 		&:active {
-			scale: 0.97;
 			transform: translateY(1px);
 		}
 	}
