@@ -44,7 +44,7 @@
 		"html-minifier-terser": "7.2.0",
 		"html-validate": "11.16.2",
 		"http-server": "14.1.1",
-		"jquery": "3.7.1",
+		"jquery": "4.0.0",
 		"klaro": "0.7.22",
 		"lint-staged": "17.6.0",
 		"markdown-it": "15.0.2",
